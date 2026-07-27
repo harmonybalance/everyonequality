@@ -227,6 +227,24 @@
   .footer-line { font-size: 13px; color: var(--text-dim); margin-bottom: 0.5rem; }
   .footer-line a { color: var(--bronze-soft); font-weight: 600; }
   .footer-copy { font-size: 11px; color: var(--text-faint); letter-spacing: 0.07em; margin-top: 1.2rem; padding-top: 1.2rem; border-top: 1px solid var(--line); max-width: 620px; margin-left: auto; margin-right: auto; }
+
+  /* Serial section */
+  .serial-sec { background: var(--bg-soft); }
+  .cat-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.7rem; margin-bottom: 2.6rem; }
+  .cat-card { background: rgba(255,255,255,0.035); border: 1px solid var(--line); border-radius: 14px;
+    padding: 1.3rem 1rem; text-align: center; transition: border-color 0.2s; }
+  .cat-card:hover { border-color: var(--bronze-deep); }
+  .cat-card b { display: block; font-size: 14.5px; font-weight: 700; color: #fff; margin-bottom: 0.3rem; }
+  .cat-card span { font-size: 12px; color: var(--bronze-soft); }
+  .feat-row { display: flex; align-items: baseline; gap: 1rem; padding: 0.95rem 0.2rem;
+    border-top: 1px solid var(--line); transition: background 0.15s; }
+  .feat-row:last-of-type { border-bottom: 1px solid var(--line); margin-bottom: 2.4rem; }
+  .feat-row:hover { background: rgba(255,255,255,0.03); }
+  .feat-row b { font-size: 11.5px; font-weight: 700; color: var(--bronze); flex-shrink: 0;
+    letter-spacing: 0.06em; min-width: 100px; }
+  .feat-row span { font-size: 15.5px; color: var(--text); }
+  .feat-row:hover span { color: #fff; }
+  @media (max-width: 760px) { .cat-grid { grid-template-columns: repeat(2, 1fr); } .feat-row b { min-width: 74px; } }
 </style>
 </head>
 <body>
@@ -239,6 +257,7 @@
       <a href="#review">추천사</a>
       <a href="#contents">목차</a>
       <a href="#author">저자</a>
+      <a href="serial.html">연재</a>
       <a href="#cta" class="nav-buy">구매하기</a>
     </div>
   </div>
@@ -386,6 +405,27 @@
         <p>탁월한 품질 역시 고객의 관점에서 문제를 바라보고 더 나은 방식을 찾아가는 치열한 과정 속에서 만들어진다는 믿음으로, 오늘도 현장에서 고객과 함께 답을 찾고 있다.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- Serial -->
+<section class="serial-sec" id="serial">
+  <div class="container">
+    <p class="eyebrow reveal">Serial</p>
+    <p class="about-head reveal">품질과 성장에 대한<br>137편의 기록</p>
+    <p class="about-copy reveal">《모두의 품질》이 나오기까지, 현장에서 쓰고 다듬어 온 생각들을 다섯 갈래로 정리했습니다.</p>
+    <div class="cat-grid">
+      <a class="cat-card reveal" href="serial.html#quality"><b>품질</b><span>11편</span></a>
+      <a class="cat-card reveal" href="serial.html#customer"><b>고객</b><span>39편</span></a>
+      <a class="cat-card reveal" href="serial.html#system"><b>시스템과 문제해결</b><span>35편</span></a>
+      <a class="cat-card reveal" href="serial.html#leadership"><b>리더와 경영</b><span>17편</span></a>
+      <a class="cat-card reveal" href="serial.html#growth"><b>성장과 태도</b><span>35편</span></a>
+    </div>
+      <a class="feat-row reveal" href="posts/001.html"><b>고객</b><span>고객에게</span></a>
+      <a class="feat-row reveal" href="posts/016.html"><b>품질</b><span>품질의 판단 기준</span></a>
+      <a class="feat-row reveal" href="posts/021.html"><b>성장과 태도</b><span>더하기 보다 더 큰 빼기</span></a>
+      <a class="feat-row reveal" href="posts/011.html"><b>리더와 경영</b><span>존경받는 리더</span></a>
+    <a href="serial.html" class="btn-ghost reveal">전체 글 보기 →</a>
   </div>
 </section>
 
