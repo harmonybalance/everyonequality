@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>모두의 품질 | 성장하는 회사가 선택한 단 하나의 전략</title>
+<meta name="description" content="일하는 모두가 알아야 할 최소한의 지식, 《모두의 품질》. 기초 개념부터 실제 사례까지 품질을 가장 쉽고 친절하게 풀어낸 책. 박해원 지음, 파지트, 2026년 8월 출간.">
+<link rel="canonical" href="https://roundupcompany.co.kr/">
+<meta property="og:title" content="모두의 품질 | 성장하는 회사가 선택한 단 하나의 전략">
+<meta property="og:description" content="일하는 모두가 알아야 할 최소한의 지식. 박해원 지음 · 파지트 · 2026년 8월 출간">
+<meta property="og:image" content="https://roundupcompany.co.kr/book.png">
+<meta property="og:url" content="https://roundupcompany.co.kr">
+<meta property="og:type" content="book">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #111009;
+    --bg-soft: #1A1810;
+    --ink: #17150F;
+    --bronze: #C2996B;
+    --bronze-soft: #D6B58C;
+    --bronze-deep: #8F6C3F;
+    --text: rgba(255,255,255,0.82);
+    --text-dim: rgba(255,255,255,0.55);
+    --text-faint: rgba(255,255,255,0.38);
+    --line: rgba(255,255,255,0.12);
+    --serif: 'Noto Serif KR', serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+  body {
+    font-family: 'Pretendard Variable', Pretendard, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+    word-break: keep-all;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+  .container { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+  /* ── Nav ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(17,16,9,0.82);
+    backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s;
+  }
+  nav.scrolled { border-bottom-color: var(--line); }
+  .nav-inner {
+    max-width: 1000px; margin: 0 auto; padding: 0 24px;
+    height: 64px; display: flex; align-items: center; justify-content: space-between;
+  }
+  .nav-title { font-size: 16px; font-weight: 800; color: #fff; letter-spacing: -0.01em; }
+  .nav-title .star { color: var(--bronze); margin-right: 0.45rem; font-size: 13px; }
+  .nav-links { display: flex; gap: 1.7rem; align-items: center; }
+  .nav-links a { font-size: 13.5px; font-weight: 500; color: var(--text-dim); transition: color 0.2s; }
+  .nav-links a:hover { color: #fff; }
+  .nav-buy {
+    padding: 8px 20px; background: var(--bronze); color: var(--ink) !important;
+    border-radius: 999px; font-size: 13px !important; font-weight: 700 !important;
+  }
+  .nav-buy:hover { background: var(--bronze-soft); }
+  @media (max-width: 760px) { .nav-links a:not(.nav-buy) { display: none; } }
+
+  /* ── Sections ── */
+  section { padding: 104px 0; }
+  .eyebrow {
+    display: flex; align-items: center; gap: 0.7rem;
+    font-size: 11.5px; font-weight: 700; letter-spacing: 0.24em;
+    text-transform: uppercase; color: var(--bronze);
+    margin-bottom: 2.2rem;
+  }
+  .eyebrow::after { content: ""; flex: 0 0 44px; height: 1px; background: var(--bronze); opacity: 0.55; }
+  .stars { color: var(--bronze); letter-spacing: 0.4em; font-size: 13px; }
+
+  .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.on { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reveal { opacity: 1; transform: none; transition: none; }
+  }
+
+  /* ── Hero ── */
+  .hero {
+    min-height: 100svh; display: flex; align-items: center; text-align: center;
+    padding: 130px 0 90px;
+    background: radial-gradient(ellipse 70% 45% at 50% 18%, rgba(198,156,109,0.16), transparent 65%), var(--bg);
+  }
+  .hero-inner { max-width: 760px; margin: 0 auto; padding: 0 24px; display: flex; flex-direction: column; align-items: center; }
+  .hero-tag {
+    font-size: clamp(13px, 1.8vw, 15.5px); font-weight: 600;
+    letter-spacing: 0.14em; color: var(--bronze-soft); margin-bottom: 1.2rem;
+  }
+  .hero h1 {
+    font-size: clamp(46px, 9vw, 76px); font-weight: 900;
+    letter-spacing: -0.02em; line-height: 1.18; color: #fff;
+    margin-bottom: 1rem;
+  }
+  .hero-en {
+    font-size: 12px; font-weight: 600; letter-spacing: 0.26em;
+    text-transform: uppercase; color: var(--text-faint); margin-bottom: 1.1rem;
+  }
+  .hero .stars { margin-bottom: 3rem; }
+  .hero-book { margin-bottom: 2.6rem; }
+  .hero-book img {
+    width: min(300px, 62vw);
+    filter: drop-shadow(0 40px 70px rgba(0,0,0,0.65));
+    animation: floaty 6.5s ease-in-out infinite;
+  }
+  @keyframes floaty { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-11px); } }
+  @media (prefers-reduced-motion: reduce) { .hero-book img { animation: none; } }
+  .hero-meta { font-size: 14px; color: var(--text-dim); margin-bottom: 2.4rem; }
+  .hero-btns { display: flex; gap: 0.8rem; flex-wrap: wrap; justify-content: center; }
+  .btn-bronze {
+    display: inline-block; padding: 15px 44px;
+    background: var(--bronze); color: var(--ink);
+    border: none; border-radius: 999px; cursor: pointer;
+    font-family: inherit; font-size: 15px; font-weight: 700;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .btn-bronze:hover { background: var(--bronze-soft); transform: translateY(-1px); }
+  .btn-ghost {
+    display: inline-block; padding: 15px 36px;
+    background: transparent; color: var(--text);
+    border: 1px solid rgba(255,255,255,0.28); border-radius: 999px;
+    font-size: 15px; font-weight: 600; transition: border-color 0.2s, color 0.2s;
+  }
+  .btn-ghost:hover { border-color: #fff; color: #fff; }
+  .hero-note { margin-top: 1.3rem; font-size: 12.5px; color: var(--text-faint); }
+
+  /* ── About ── */
+  .about { background: var(--bg-soft); }
+  .about-head {
+    font-family: var(--serif); font-size: clamp(24px, 4vw, 34px);
+    font-weight: 700; color: #fff; line-height: 1.55; margin-bottom: 1.4rem;
+  }
+  .about-copy { font-size: 16.5px; color: var(--text-dim); line-height: 2.0; margin-bottom: 3.5rem; }
+  .about-def {
+    border-left: 2px solid var(--bronze); padding: 0.5rem 0 0.5rem 1.6rem;
+  }
+  .about-def p {
+    font-family: var(--serif); font-size: clamp(18px, 2.6vw, 22px);
+    font-weight: 600; color: var(--text); line-height: 1.85; margin-bottom: 0.6rem;
+  }
+  .about-def span { font-size: 13px; color: var(--text-faint); }
+
+  /* ── Review ── */
+  .review-lede { font-size: 16px; color: var(--text-dim); margin-bottom: 3rem; }
+  .letter {
+    font-family: var(--serif); font-size: 16.5px; font-weight: 500;
+    color: var(--text); line-height: 2.15;
+  }
+  .letter p { margin-bottom: 1.7rem; }
+  .pullquote {
+    font-family: var(--serif); font-size: clamp(22px, 3.4vw, 30px);
+    font-weight: 700; color: var(--bronze-soft); line-height: 1.7;
+    text-align: center; padding: 2.6rem 0 1.2rem;
+  }
+  .pullquote small { display: block; margin-top: 1.4rem; font-family: 'Pretendard Variable', Pretendard, sans-serif; font-size: 14px; font-weight: 600; color: var(--text-dim); letter-spacing: 0.02em; }
+  .blurb-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; margin-top: 4rem; }
+  .blurb {
+    background: rgba(255,255,255,0.035); border: 1px solid var(--line);
+    border-radius: 14px; padding: 1.6rem 1.5rem;
+    font-size: 14px; color: var(--text-dim); line-height: 1.85;
+  }
+  .blurb::before { content: "★"; display: block; color: var(--bronze); font-size: 12px; margin-bottom: 0.7rem; }
+  .blurb-src { margin-top: 1.1rem; font-size: 12px; color: var(--text-faint); }
+  @media (max-width: 700px) { .blurb-grid { grid-template-columns: 1fr; } }
+
+  /* ── Contents ── */
+  .contents { background: var(--bg-soft); }
+  .toc-note { font-size: 15px; color: var(--text-dim); margin-bottom: 2.4rem; }
+  details { border-top: 1px solid var(--line); }
+  details:last-of-type { border-bottom: 1px solid var(--line); }
+  summary {
+    cursor: pointer; list-style: none;
+    display: flex; align-items: baseline; gap: 1.1rem;
+    padding: 1.35rem 0.2rem;
+  }
+  summary::-webkit-details-marker { display: none; }
+  .part-num { font-size: 13px; font-weight: 800; letter-spacing: 0.12em; color: var(--bronze); flex-shrink: 0; }
+  .part-title { font-size: clamp(16px, 2.2vw, 18.5px); font-weight: 700; color: #fff; flex: 1; }
+  .part-count { font-size: 12.5px; color: var(--text-faint); flex-shrink: 0; }
+  .part-toggle { flex-shrink: 0; color: var(--bronze); font-size: 18px; font-weight: 400; transition: transform 0.25s; line-height: 1; }
+  details[open] .part-toggle { transform: rotate(45deg); }
+  .chapters { padding: 0.2rem 0 1.8rem 0.2rem; columns: 2; column-gap: 3rem; }
+  .chapters li {
+    list-style: none; font-size: 14.5px; color: var(--text-dim);
+    line-height: 1.7; padding: 0.34rem 0; break-inside: avoid;
+    display: flex; gap: 0.75rem; align-items: baseline;
+  }
+  .chapters li b { color: var(--bronze-deep); font-weight: 700; font-size: 12.5px; min-width: 20px; }
+  @media (max-width: 700px) { .chapters { columns: 1; } }
+
+  /* ── Author ── */
+  .author-grid { display: grid; grid-template-columns: 240px 1fr; gap: 3.2rem; align-items: start; }
+  .author-name { font-size: clamp(26px, 4vw, 34px); font-weight: 800; color: #fff; margin-bottom: 0.4rem; }
+  .author-role { font-size: 14px; color: var(--bronze-soft); margin-bottom: 1.6rem; }
+  .author-link {
+    display: inline-block; font-size: 13.5px; font-weight: 600; color: var(--text-dim);
+    border: 1px solid rgba(255,255,255,0.24); border-radius: 999px;
+    padding: 9px 20px; transition: border-color 0.2s, color 0.2s;
+  }
+  .author-link:hover { border-color: var(--bronze); color: var(--bronze-soft); }
+  .author-bio p { font-size: 15px; color: var(--text-dim); line-height: 2.0; margin-bottom: 1.1rem; }
+  @media (max-width: 760px) { .author-grid { grid-template-columns: 1fr; gap: 1.8rem; } }
+
+  /* ── CTA ── */
+  .cta {
+    text-align: center; padding: 110px 24px;
+    background: radial-gradient(ellipse 60% 50% at 50% 100%, rgba(198,156,109,0.14), transparent 70%), var(--bg-soft);
+  }
+  .cta h2 {
+    font-family: var(--serif); font-size: clamp(24px, 3.8vw, 33px);
+    font-weight: 700; color: #fff; line-height: 1.6; margin-bottom: 1.2rem;
+  }
+  .cta .desc { font-size: 15.5px; color: var(--text-dim); line-height: 1.95; margin-bottom: 2.6rem; }
+  .cta .stars { display: block; margin-bottom: 2rem; }
+
+  footer { padding: 3rem 24px 2.4rem; background: var(--bg); border-top: 1px solid var(--line); text-align: center; }
+  .footer-line { font-size: 13px; color: var(--text-dim); margin-bottom: 0.5rem; }
+  .footer-line a { color: var(--bronze-soft); font-weight: 600; }
+  .footer-copy { font-size: 11px; color: var(--text-faint); letter-spacing: 0.07em; margin-top: 1.2rem; padding-top: 1.2rem; border-top: 1px solid var(--line); max-width: 620px; margin-left: auto; margin-right: auto; }
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-title"><span class="star">★</span>모두의 품질</a>
+    <div class="nav-links">
+      <a href="#about">책 소개</a>
+      <a href="#review">추천사</a>
+      <a href="#contents">목차</a>
+      <a href="#author">저자</a>
+      <a href="#cta" class="nav-buy">구매하기</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero">
+  <div class="hero-inner">
+    <p class="hero-tag reveal">성장하는 회사가 선택한 단 하나의 전략</p>
+    <h1 class="reveal">모두의 품질</h1>
+    <p class="hero-en reveal">Quality is Everyone's Responsibility</p>
+    <p class="stars reveal">★★★★★</p>
+    <div class="hero-book reveal"><img src="book.png" alt="모두의 품질 도서 표지"></div>
+    <p class="hero-meta reveal">박해원 지음 · 파지트 · 2026년 8월 출간</p>
+    <div class="hero-btns reveal">
+      <a href="#cta" class="btn-bronze">구매하기</a>
+      <a href="#contents" class="btn-ghost">목차 보기</a>
+    </div>
+  </div>
+</header>
+
+<!-- About -->
+<section class="about" id="about">
+  <div class="container">
+    <p class="eyebrow reveal">About the Book</p>
+    <p class="about-head reveal">"일하는 모두가 알아야 할<br>최소한의 지식"</p>
+    <p class="about-copy reveal">생존을 위한 최소한의 조건이자, 성장을 위한 최선의 전략, 품질.<br>기초 개념부터 실제 사례까지, 품질을 가장 쉽고 친절하게 풀어낸 책입니다.</p>
+    <div class="about-def reveal">
+      <p>"품질이란 고객의 명시적 요구사항과 묵시적 기대수준을<br>지속적으로 충족시키는 조직의 능력이다"</p>
+      <span>《모두의 품질》 중에서</span>
+    </div>
+  </div>
+</section>
+
+<!-- Review -->
+<section id="review">
+  <div class="container">
+    <p class="eyebrow reveal">Recommendation</p>
+    <p class="review-lede reveal">30년 현장 경영자가 이 책을 읽고 보내온 글입니다.</p>
+    <div class="letter reveal">
+      <p>30년 넘는 세월을 생산과 품질의 현장에서 일해온 사람으로서, 품질을 다룬 책은 늘 반가우면서도 아쉬웠다. 대부분 이론에 머물거나, 현장의 사정과는 동떨어져 있었기 때문이다. 이 책은 달랐다. 페이지마다 내가 겪어온 현장이 있었고, 그 시절 명쾌하게 설명하지 못했던 문제들의 답이 있었다.</p>
+      <p>이 책은 품질을 줄여야 할 비용이 아니라 수익을 만드는 자산으로 다시 세운다. 눈앞의 원가를 아끼려다 신뢰 하락과 재작업, 클레임이라는 더 큰 실패 비용을 치르게 되는 구조를 이토록 선명하게 보여주는 책은 드물다. 부서마다 각자의 지표만 완벽히 달성하는 부분 최적화가 오히려 회사 전체의 성과를 망칠 수 있다는 지적, 품질은 수주하는 순간부터 협력사를 선정하는 과정까지 조직 전체의 합(合)으로 완성된다는 통찰은, 현장에서 잔뼈가 굵은 사람일수록 뼈아프게 공감할 것이다.</p>
+      <p>특히 오래 마음에 남는 것은 사람을 보는 저자의 시선이다. 불량이 발생하면 작업자의 부주의를 탓하고 정신 교육으로 덮으려는 관행을 현장에서 수없이 보아왔다. 이 책은 인간은 실수할 수밖에 없는 존재임을 인정하는 데서 출발해, 실수가 불량으로 이어지지 않게 막는 시스템이 먼저라고 말한다. 문제가 발생했을 때 "누구 책임이냐"를 묻는 경영자와 "시스템의 근본 원인이 무엇이냐"를 묻는 경영자, 그 첫 질문의 차이가 조직이 문제를 은폐할지 정직하게 개선할지를 가른다는 대목에서는 오래 책장을 덮지 못했다.</p>
+      <p>AI가 현장에 들어오는 시대에도, 무엇이 좋은 품질인지 판단하고 책임지는 일은 결국 사람의 몫이라는 저자의 결론에 깊이 동의한다. 품질은 어쩌다 한 번 잘 만드는 운이 아니라, 흔들리지 않는 시스템과 올바른 경영 철학으로 한결같이 기대를 충족해 내는 일관성 그 자체다. 품질을 업으로 삼은 사람만이 아니라, 조직을 이끄는 리더와 모든 구성원에게 이 책을 권한다.</p>
+    </div>
+    <p class="pullquote reveal">현문현답(現問現答)<br>모든 문제는 현장에 있으며,<br>그 해답 또한 현장에 있다.<small>한국엔에스케이 성영환 전무</small></p>
+    <div class="blurb-grid">
+      <div class="blurb reveal">이 책은 고객의 가치를 다시 정의하게 하고, 탁월한 품질은 흔들림 없는 철학과 체계, 그리고 현장의 실천에서 완성된다는 것을 깊이 깨닫게 한다.</div>
+      <div class="blurb reveal">회사의 모든 구성원이 품질의 본질을 이해하고 실무에서 어떻게 협력해야 하는지 알려주는 훌륭한 가이드북</div>
+      <div class="blurb reveal">품질이 기업의 지속 가능한 성장을 좌우하는 생존 전략임을 다시금 일깨워 주는 책</div>
+      <div class="blurb reveal">단순한 품질 기술서가 아니라, 현장의 이야기를 생생하게 담은 경영서</div>
+    </div>
+    <p class="blurb-src reveal">현장의 경영자·실무자들의 극찬 중에서</p>
+  </div>
+</section>
+
+<!-- Contents -->
+<section class="contents" id="contents">
+  <div class="container">
+    <p class="eyebrow reveal">Contents</p>
+    <p class="toc-note reveal">5개 PART, 40개 챕터. 품질의 본질에서 경영까지 한 권으로 담았습니다.</p>
+    <div class="reveal">
+      <details open>
+        <summary><span class="part-num">PART 1</span><span class="part-title">품질의 본질</span><span class="part-count">5개 챕터</span><span class="part-toggle">+</span></summary>
+        <ul class="chapters">
+          <li><b>01</b>품질이란 무엇인가?</li>
+          <li><b>02</b>품질, 고객의 선택 기준</li>
+          <li><b>03</b>생존품질(Survival Quality)이란?</li>
+          <li><b>04</b>품질은 조직의 합에서 나온다</li>
+          <li><b>05</b>그때는 맞았지만 지금은 틀리다</li>
+        </ul>
+      </details>
+      <details>
+        <summary><span class="part-num">PART 2</span><span class="part-title">품질의 경제학</span><span class="part-count">6개 챕터</span><span class="part-toggle">+</span></summary>
+        <ul class="chapters">
+          <li><b>01</b>품질은 비용인가, 자산인가</li>
+          <li><b>02</b>품질은 어떻게 수익을 만드나</li>
+          <li><b>03</b>불량 하나의 진짜 비용</li>
+          <li><b>04</b>보이지 않는 비용을 보는 법 COPQ</li>
+          <li><b>05</b>품질은 설계에서 시작된다</li>
+          <li><b>06</b>고객은 더 이상 기다려주지 않는다</li>
+        </ul>
+      </details>
+      <details>
+        <summary><span class="part-num">PART 3</span><span class="part-title">품질은 연결에서 나온다</span><span class="part-count">7개 챕터</span><span class="part-toggle">+</span></summary>
+        <ul class="chapters">
+          <li><b>01</b>부분 최적화와 전체 최적화</li>
+          <li><b>02</b>가장 약한 연결고리</li>
+          <li><b>03</b>변경은 왜 품질을 흔드는가</li>
+          <li><b>04</b>품질은 혼자 아는 것도, 혼자 하는 것도 아니다</li>
+          <li><b>05</b>영업이 수주하는 순간 품질이 시작된다</li>
+          <li><b>06</b>구매가 품질을 결정한다</li>
+          <li><b>07</b>선정이 아닌 육성이다, 협력사 관리</li>
+        </ul>
+      </details>
+      <details>
+        <summary><span class="part-num">PART 4</span><span class="part-title">품질은 시스템과 사람으로 완성된다</span><span class="part-count">14개 챕터</span><span class="part-toggle">+</span></summary>
+        <ul class="chapters">
+          <li><b>01</b>품질 문제는 왜 반복되는가</li>
+          <li><b>02</b>표준이 없으면 품질도 없다</li>
+          <li><b>03</b>FMEA, 문제를 미리 보는 눈</li>
+          <li><b>04</b>관리계획서, 품질의 설계도</li>
+          <li><b>05</b>3정 5S, 일상 관리가 무너지면 품질도 무너진다</li>
+          <li><b>06</b>SPC, 평균이 아니라 일관성이다</li>
+          <li><b>07</b>Gage R&amp;R, 측정이 흔들리면 관리도 흔들린다</li>
+          <li><b>08</b>설비가 품질을 만든다</li>
+          <li><b>09</b>처음부터 막아야 한다, Error Proofing</li>
+          <li><b>10</b>특별특성, 선택과 집중</li>
+          <li><b>11</b>외국인 작업자와 품질</li>
+          <li><b>12</b>교육훈련, 아는 것과 하는 것의 차이</li>
+          <li><b>13</b>안전은 품질의 전제 조건이다</li>
+          <li><b>14</b>건강과 품질의 상관관계</li>
+        </ul>
+      </details>
+      <details>
+        <summary><span class="part-num">PART 5</span><span class="part-title">품질은 결국 경영이다</span><span class="part-count">8개 챕터</span><span class="part-toggle">+</span></summary>
+        <ul class="chapters">
+          <li><b>01</b>ISO 품질경영시스템, 꼭 필요한가</li>
+          <li><b>02</b>내부심사, 형식인가 실질인가</li>
+          <li><b>03</b>품질목표는 어떻게 세우는가</li>
+          <li><b>04</b>경영자와 품질</li>
+          <li><b>05</b>함께 성장하는 파트너십</li>
+          <li><b>06</b>작은 회사일수록 빠르다</li>
+          <li><b>07</b>품질이 문화가 될 때</li>
+          <li><b>08</b>AI 시대, 품질의 중심</li>
+        </ul>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- Author -->
+<section id="author">
+  <div class="container">
+    <p class="eyebrow reveal">Author</p>
+    <div class="author-grid">
+      <div class="reveal">
+        <p class="author-name">박해원</p>
+        <p class="author-role">라운드업컴퍼니 대표</p>
+        <a href="https://www.roundupcompany.com" class="author-link" target="_blank" rel="noopener">ROUND UP COMPANY →</a>
+      </div>
+      <div class="author-bio reveal">
+        <p>현재 라운드업컴퍼니 대표로 기업의 품질경영을 코칭하고 있다. 대학에서 산업공학을 전공하고, 대학원에서 경영학 석사학위를 받았다.</p>
+        <p>제조 현장에서 품질경영시스템 업무로 경력을 시작했고, 이후 경영컨설턴트로서 여러 기업의 품질경영시스템을 구축하고 운영혁신을 이끌어왔다. 글로벌 기업, 대기업, 중견·중소기업, IT 기업 등 다양한 산업과 규모의 조직을 접하며 깨달은 것은, 대부분의 문제는 고객에게 답이 있다는 사실이었다.</p>
+        <p>탁월한 품질 역시 고객의 관점에서 문제를 바라보고 더 나은 방식을 찾아가는 치열한 과정 속에서 만들어진다는 믿음으로, 오늘도 현장에서 고객과 함께 답을 찾고 있다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta" id="cta">
+  <span class="stars reveal">★★★★★</span>
+  <h2 class="reveal">품질은 어쩌다 한 번 잘 만드는 운이 아니라,<br>한결같이 기대를 충족해 내는 일관성입니다</h2>
+  <p class="desc reveal">《모두의 품질》 · 박해원 지음 · 파지트<br>2026년 8월 출간, 온라인 서점에서 만나보실 수 있습니다.</p>
+  <div class="hero-btns reveal">
+    <a href="#" class="btn-bronze" onclick="return false;">구매하기</a>
+    <a href="https://www.roundupcompany.com/#contact" class="btn-ghost" target="_blank" rel="noopener">강연·교육 문의</a>
+  </div>
+  <p class="hero-note reveal">구매 링크는 출간과 함께 연결됩니다.</p>
+</div>
+
+<footer>
+  <p class="footer-line">이 책은 <a href="https://www.roundupcompany.com" target="_blank" rel="noopener">라운드업 컴퍼니</a>가 만들었습니다.</p>
+  <p class="footer-copy">COPYRIGHT ⓒ ROUND UP COMPANY. ALL RIGHTS RESERVED.</p>
+</footer>
+
+<script>
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 20);
+}, { passive: true });
+
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
