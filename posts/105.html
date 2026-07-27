@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>하인리히 법칙 | 모두의 품질 연재</title>
+<meta name="description" content="'어느날인가 마주칠지 모를 사고는 우리가 소홀히 보낸 어느 시간에 대한 보복이다. '
+      집으로 가는 길에, 건설현장 벽면에 부착되어 있던 소름끼치도록 와">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#111009; --bg-soft:#1A1810; --ink:#17150F; --bronze:#C2996B; --bronze-soft:#D6B58C;
+    --bronze-deep:#8F6C3F; --text:rgba(255,255,255,0.85); --text-dim:rgba(255,255,255,0.55);
+    --text-faint:rgba(255,255,255,0.38); --line:rgba(255,255,255,0.12); --serif:'Noto Serif KR',serif; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Pretendard Variable',Pretendard,-apple-system,sans-serif; background:var(--bg);
+    color:var(--text); line-height:1.75; -webkit-font-smoothing:antialiased; word-break:keep-all; }
+  a { color:inherit; text-decoration:none; }
+  nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(17,16,9,0.85);
+    backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+  .nav-inner { max-width:1000px; margin:0 auto; padding:0 24px; height:60px;
+    display:flex; align-items:center; justify-content:space-between; }
+  .nav-title { font-size:15px; font-weight:800; color:#fff; }
+  .nav-title .star { color:var(--bronze); margin-right:0.4rem; font-size:12px; }
+  .nav-links { display:flex; gap:1.4rem; align-items:center; }
+  .nav-links a { font-size:13px; font-weight:500; color:var(--text-dim); }
+  .nav-links a:hover { color:#fff; }
+  .nav-buy { padding:7px 18px; background:var(--bronze); color:var(--ink)!important;
+    border-radius:999px; font-size:12.5px!important; font-weight:700!important; }
+
+  article { max-width:720px; margin:0 auto; padding:130px 24px 80px; }
+  .post-cat { display:inline-flex; align-items:center; gap:0.6rem; font-size:11.5px; font-weight:700;
+    letter-spacing:0.2em; text-transform:uppercase; color:var(--bronze); margin-bottom:1.6rem; }
+  .post-pick { font-size:10.5px; letter-spacing:0.08em; border:1px solid var(--bronze-deep);
+    color:var(--bronze-soft); border-radius:999px; padding:2px 9px; }
+  h1 { font-size:clamp(26px,4.6vw,36px); font-weight:800; letter-spacing:-0.02em;
+    line-height:1.4; color:#fff; margin-bottom:0.7rem; }
+  .post-sub { font-size:15.5px; color:var(--bronze-soft); margin-bottom:1rem; }
+  .post-no { font-size:12.5px; color:var(--text-faint); margin-bottom:3rem;
+    padding-bottom:2rem; border-bottom:1px solid var(--line); }
+  .post-body { font-family:var(--serif); font-size:16.5px; font-weight:500; line-height:2.15; }
+  .post-body p { margin-bottom:1.6rem; }
+  .post-body strong { color:var(--bronze-soft); font-weight:700; }
+  .post-tags { margin-top:2.6rem; display:flex; flex-wrap:wrap; gap:0.5rem; }
+  .post-tags span { font-size:12px; color:var(--text-dim); border:1px solid var(--line);
+    border-radius:999px; padding:4px 12px; }
+  .post-nav { margin-top:3.5rem; padding-top:2rem; border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; gap:1rem; font-size:13.5px; }
+  .post-nav a { color:var(--text-dim); max-width:44%; }
+  .post-nav a:hover { color:var(--bronze-soft); }
+  .post-nav .to-list { color:var(--bronze); font-weight:600; }
+  .post-cta { text-align:center; padding:56px 24px 64px; background:var(--bg-soft);
+    border-top:1px solid var(--line); }
+  .post-cta p { font-size:14.5px; color:var(--text-dim); margin-bottom:1.4rem; }
+  .btn-bronze { display:inline-block; padding:12px 34px; background:var(--bronze); color:var(--ink);
+    border-radius:999px; font-size:14px; font-weight:700; }
+  .btn-bronze:hover { background:var(--bronze-soft); }
+  footer { padding:2rem 24px; text-align:center; font-size:11px; color:var(--text-faint);
+    letter-spacing:0.07em; }
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-title"><span class="star">★</span>모두의 품질</a>
+    <div class="nav-links">
+      <a href="../serial.html">연재 목록</a>
+      <a href="../index.html#cta" class="nav-buy">구매하기</a>
+    </div>
+  </div>
+</nav>
+<article>
+  <p class="post-cat">시스템과 문제해결 </p>
+  <h1>하인리히 법칙</h1>
+  
+  <p class="post-no">연재 105 / 137</p>
+  <div class="post-body">
+      <p>'어느날인가 마주칠지 모를 사고는 우리가 소홀히 보낸 어느 시간에 대한 보복이다. '</p>
+      <p>집으로 가는 길에, 건설현장 벽면에 부착되어 있던 소름끼치도록 와닿는 문구였다.</p>
+      <p>'누가 저런 기똥찬 문구를 생각해냈지?' 라는 생각에 혹시나 검색을 해봤더니</p>
+      <p>'나폴레옹'이 했던 말이었다.</p>
+      <p>'1:29:300'</p>
+      <p>하인리히 법칙이라고 있다.</p>
+      <p>보험회사의 직원이었던 하인리히는 사고통계 자료를 분석한 결과</p>
+      <p>1건의 대형사고가 발생 전에</p>
+      <p>29여건의 경미한 사고와</p>
+      <p>300여건의 징후들이 발생한다는 것을 발견했다.</p>
+      <p>역으로 추적해보면 사소한 시그널을 간과하지 말고, 사전에 예측하고, 예방을 통해 문제 그 자체를 만들지 않기 위한 노력을 하는 것이 가장 최선의 방법이라는 것을 알 수 있다.</p>
+      <p>작은 이슈가 발생하면, 그 이슈에 대한 원인을 찾아내서, 반드시 근본원인을 제거해야 한다.</p>
+      <p>단순히 그 상황을 덮는 것만으로는 문제는 해결되지 않는다. 원인이 제거되지 않는 문제는, 반드시 재발된다.</p>
+      <p>경험상 대형사고가 터지고 나서는 그것을 감당하기 위한 엄청난 비용과 노력을 투입하고,아무리 최선을 다해도 그것에 대한 인정을 받기가 쉽지 않다.</p>
+      <p>아무런 문제가 발생하지 않은, 평안한 시절. 그 시절에 예방을 위한 사소한 투자와 관심들이 축적되면, 철옹성같이 흔들리지 않는 단단한 역량으로 거듭날 수 있다.</p>
+      <p>저 너무나도 섬뜩한 문구를 자기 주도적으로 변환을 해본다면,</p>
+      <p>'언젠가 맞이할 성취와 영광은 우리가 꾸준하게 최선을 다한 시간에 대한 보상이다.'</p>
+  </div>
+  
+  <div class="post-nav"><a href="104.html">← 가격이 아니라 가치로 협상하라</a><a href="../serial.html" class="to-list">목록</a><a href="106.html" style="text-align:right;">세상 모든 곳이 배움의 장이다. →</a></div>
+</article>
+<div class="post-cta">
+  <p>이 글의 생각들이 한 권으로 정리되었습니다.<br>성장하는 회사가 선택한 단 하나의 전략, 《모두의 품질》</p>
+  <a href="../index.html" class="btn-bronze">책 자세히 보기</a>
+</div>
+<footer>COPYRIGHT ⓒ ROUND UP COMPANY. ALL RIGHTS RESERVED.</footer>
+</body>
+</html>

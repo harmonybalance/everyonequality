@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>누가 진짜 빌런인가? | 모두의 품질 연재</title>
+<meta name="description" content="간혹 조직을 진단하고 나면, 정리 회의 전에 책임자 혹은 임원분께서 가감없이 엄격하게 이야기 해달라는 주문을 하시는 경우가 있다. 좋은 쪽으로 포장해서 이야기 하">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#111009; --bg-soft:#1A1810; --ink:#17150F; --bronze:#C2996B; --bronze-soft:#D6B58C;
+    --bronze-deep:#8F6C3F; --text:rgba(255,255,255,0.85); --text-dim:rgba(255,255,255,0.55);
+    --text-faint:rgba(255,255,255,0.38); --line:rgba(255,255,255,0.12); --serif:'Noto Serif KR',serif; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Pretendard Variable',Pretendard,-apple-system,sans-serif; background:var(--bg);
+    color:var(--text); line-height:1.75; -webkit-font-smoothing:antialiased; word-break:keep-all; }
+  a { color:inherit; text-decoration:none; }
+  nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(17,16,9,0.85);
+    backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+  .nav-inner { max-width:1000px; margin:0 auto; padding:0 24px; height:60px;
+    display:flex; align-items:center; justify-content:space-between; }
+  .nav-title { font-size:15px; font-weight:800; color:#fff; }
+  .nav-title .star { color:var(--bronze); margin-right:0.4rem; font-size:12px; }
+  .nav-links { display:flex; gap:1.4rem; align-items:center; }
+  .nav-links a { font-size:13px; font-weight:500; color:var(--text-dim); }
+  .nav-links a:hover { color:#fff; }
+  .nav-buy { padding:7px 18px; background:var(--bronze); color:var(--ink)!important;
+    border-radius:999px; font-size:12.5px!important; font-weight:700!important; }
+
+  article { max-width:720px; margin:0 auto; padding:130px 24px 80px; }
+  .post-cat { display:inline-flex; align-items:center; gap:0.6rem; font-size:11.5px; font-weight:700;
+    letter-spacing:0.2em; text-transform:uppercase; color:var(--bronze); margin-bottom:1.6rem; }
+  .post-pick { font-size:10.5px; letter-spacing:0.08em; border:1px solid var(--bronze-deep);
+    color:var(--bronze-soft); border-radius:999px; padding:2px 9px; }
+  h1 { font-size:clamp(26px,4.6vw,36px); font-weight:800; letter-spacing:-0.02em;
+    line-height:1.4; color:#fff; margin-bottom:0.7rem; }
+  .post-sub { font-size:15.5px; color:var(--bronze-soft); margin-bottom:1rem; }
+  .post-no { font-size:12.5px; color:var(--text-faint); margin-bottom:3rem;
+    padding-bottom:2rem; border-bottom:1px solid var(--line); }
+  .post-body { font-family:var(--serif); font-size:16.5px; font-weight:500; line-height:2.15; }
+  .post-body p { margin-bottom:1.6rem; }
+  .post-body strong { color:var(--bronze-soft); font-weight:700; }
+  .post-tags { margin-top:2.6rem; display:flex; flex-wrap:wrap; gap:0.5rem; }
+  .post-tags span { font-size:12px; color:var(--text-dim); border:1px solid var(--line);
+    border-radius:999px; padding:4px 12px; }
+  .post-nav { margin-top:3.5rem; padding-top:2rem; border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; gap:1rem; font-size:13.5px; }
+  .post-nav a { color:var(--text-dim); max-width:44%; }
+  .post-nav a:hover { color:var(--bronze-soft); }
+  .post-nav .to-list { color:var(--bronze); font-weight:600; }
+  .post-cta { text-align:center; padding:56px 24px 64px; background:var(--bg-soft);
+    border-top:1px solid var(--line); }
+  .post-cta p { font-size:14.5px; color:var(--text-dim); margin-bottom:1.4rem; }
+  .btn-bronze { display:inline-block; padding:12px 34px; background:var(--bronze); color:var(--ink);
+    border-radius:999px; font-size:14px; font-weight:700; }
+  .btn-bronze:hover { background:var(--bronze-soft); }
+  footer { padding:2rem 24px; text-align:center; font-size:11px; color:var(--text-faint);
+    letter-spacing:0.07em; }
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-title"><span class="star">★</span>모두의 품질</a>
+    <div class="nav-links">
+      <a href="../serial.html">연재 목록</a>
+      <a href="../index.html#cta" class="nav-buy">구매하기</a>
+    </div>
+  </div>
+</nav>
+<article>
+  <p class="post-cat">시스템과 문제해결 </p>
+  <h1>누가 진짜 빌런인가?</h1>
+  
+  <p class="post-no">연재 116 / 137</p>
+  <div class="post-body">
+      <p>간혹 조직을 진단하고 나면, 정리 회의 전에 책임자 혹은 임원분께서 가감없이 엄격하게 이야기 해달라는 주문을 하시는 경우가 있다. 좋은 쪽으로 포장해서 이야기 하지 말고, 가감없이 뼈를 때려달라고 요청하시는데 정작 회의 시작한지 얼마되지도 않아서 요청자들의 표정이 굉장히 안 좋아지는 것이 보인다. 본론은 정작 이야기도 안했는데 말이다.</p>
+      <p>요청하는 분들의 의도는, 부진한 담당자에게 충격요법을 줘서 그들을 각성하게 하는 그림을 그렸겠지만 요청자의 의도와 다르게 개인보다는 팀/부서, 중역, 경영자, 조직의 시스템이 원인인 경우가 대부분이라 뼈를 맞는 대상자가 결국 요청자 본인들이었기 때문이다.</p>
+      <p>물론 문제의 원인이, 개인의 태업, 불성실인 경우도 많다. 하지만 그러한 개인을 채용하고,업무에 대한 책임과 권한을 부여하는 건 리더, 경영자이며 그 조직의 채용시스템이 문제라 볼 수 있다. 그들의 태업과 불성실을 제대로 모니터링 하지 못했다면 그건 그 조직의 업무 프로세스가 굉장히 부실하다는 것을 반증한다.</p>
+      <p>실무자가 어떠한 일을 제대로 못했을 때 단순한 현상에만 집중해서</p>
+      <p>'왜 제대로 못했어!' 를 따지기 보다 근본 원인을 추적해나가보면 대부분 사람이 원인이라기 보단 리더, 인프라, 시스템의 문제라는 것을 알 수 있다.</p>
+      <p>현상에만 매몰되다보면 진짜 원인을 놓칠 수 있다.</p>
+      <p>어쩌면 지적하는 사람 본인이 빌런일 수 있다는 걸 잊어선 안된다. 상대방을 가리키다보면 정작 자신을 가리키는 손가락이 더 많다는 걸.</p>
+  </div>
+  
+  <div class="post-nav"><a href="115.html">← 큰 문제를 해결하기 위해선.</a><a href="../serial.html" class="to-list">목록</a><a href="117.html" style="text-align:right;">TV를 보다가 →</a></div>
+</article>
+<div class="post-cta">
+  <p>이 글의 생각들이 한 권으로 정리되었습니다.<br>성장하는 회사가 선택한 단 하나의 전략, 《모두의 품질》</p>
+  <a href="../index.html" class="btn-bronze">책 자세히 보기</a>
+</div>
+<footer>COPYRIGHT ⓒ ROUND UP COMPANY. ALL RIGHTS RESERVED.</footer>
+</body>
+</html>

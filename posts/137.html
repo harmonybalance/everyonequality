@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>이자와 수수료 | 모두의 품질 연재</title>
+<meta name="description" content="나는 100을 했다고 생각하지만 상대방은 90은 커녕 70도 후하게 쳤다라고 이야기 한다. 너무 박한거 아니냐고 상대를 원망해봤자 나에게 득이 되는 것은 하나도 ">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#111009; --bg-soft:#1A1810; --ink:#17150F; --bronze:#C2996B; --bronze-soft:#D6B58C;
+    --bronze-deep:#8F6C3F; --text:rgba(255,255,255,0.85); --text-dim:rgba(255,255,255,0.55);
+    --text-faint:rgba(255,255,255,0.38); --line:rgba(255,255,255,0.12); --serif:'Noto Serif KR',serif; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Pretendard Variable',Pretendard,-apple-system,sans-serif; background:var(--bg);
+    color:var(--text); line-height:1.75; -webkit-font-smoothing:antialiased; word-break:keep-all; }
+  a { color:inherit; text-decoration:none; }
+  nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(17,16,9,0.85);
+    backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+  .nav-inner { max-width:1000px; margin:0 auto; padding:0 24px; height:60px;
+    display:flex; align-items:center; justify-content:space-between; }
+  .nav-title { font-size:15px; font-weight:800; color:#fff; }
+  .nav-title .star { color:var(--bronze); margin-right:0.4rem; font-size:12px; }
+  .nav-links { display:flex; gap:1.4rem; align-items:center; }
+  .nav-links a { font-size:13px; font-weight:500; color:var(--text-dim); }
+  .nav-links a:hover { color:#fff; }
+  .nav-buy { padding:7px 18px; background:var(--bronze); color:var(--ink)!important;
+    border-radius:999px; font-size:12.5px!important; font-weight:700!important; }
+
+  article { max-width:720px; margin:0 auto; padding:130px 24px 80px; }
+  .post-cat { display:inline-flex; align-items:center; gap:0.6rem; font-size:11.5px; font-weight:700;
+    letter-spacing:0.2em; text-transform:uppercase; color:var(--bronze); margin-bottom:1.6rem; }
+  .post-pick { font-size:10.5px; letter-spacing:0.08em; border:1px solid var(--bronze-deep);
+    color:var(--bronze-soft); border-radius:999px; padding:2px 9px; }
+  h1 { font-size:clamp(26px,4.6vw,36px); font-weight:800; letter-spacing:-0.02em;
+    line-height:1.4; color:#fff; margin-bottom:0.7rem; }
+  .post-sub { font-size:15.5px; color:var(--bronze-soft); margin-bottom:1rem; }
+  .post-no { font-size:12.5px; color:var(--text-faint); margin-bottom:3rem;
+    padding-bottom:2rem; border-bottom:1px solid var(--line); }
+  .post-body { font-family:var(--serif); font-size:16.5px; font-weight:500; line-height:2.15; }
+  .post-body p { margin-bottom:1.6rem; }
+  .post-body strong { color:var(--bronze-soft); font-weight:700; }
+  .post-tags { margin-top:2.6rem; display:flex; flex-wrap:wrap; gap:0.5rem; }
+  .post-tags span { font-size:12px; color:var(--text-dim); border:1px solid var(--line);
+    border-radius:999px; padding:4px 12px; }
+  .post-nav { margin-top:3.5rem; padding-top:2rem; border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; gap:1rem; font-size:13.5px; }
+  .post-nav a { color:var(--text-dim); max-width:44%; }
+  .post-nav a:hover { color:var(--bronze-soft); }
+  .post-nav .to-list { color:var(--bronze); font-weight:600; }
+  .post-cta { text-align:center; padding:56px 24px 64px; background:var(--bg-soft);
+    border-top:1px solid var(--line); }
+  .post-cta p { font-size:14.5px; color:var(--text-dim); margin-bottom:1.4rem; }
+  .btn-bronze { display:inline-block; padding:12px 34px; background:var(--bronze); color:var(--ink);
+    border-radius:999px; font-size:14px; font-weight:700; }
+  .btn-bronze:hover { background:var(--bronze-soft); }
+  footer { padding:2rem 24px; text-align:center; font-size:11px; color:var(--text-faint);
+    letter-spacing:0.07em; }
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-title"><span class="star">★</span>모두의 품질</a>
+    <div class="nav-links">
+      <a href="../serial.html">연재 목록</a>
+      <a href="../index.html#cta" class="nav-buy">구매하기</a>
+    </div>
+  </div>
+</nav>
+<article>
+  <p class="post-cat">품질 </p>
+  <h1>이자와 수수료</h1>
+  
+  <p class="post-no">연재 137 / 137</p>
+  <div class="post-body">
+      <p>나는 100을 했다고 생각하지만 상대방은 90은 커녕 70도 후하게 쳤다라고 이야기 한다. 너무 박한거 아니냐고 상대를 원망해봤자 나에게 득이 되는 것은 하나도 없다.</p>
+      <p>세상이 그렇다. 나의 기준과 상대방의 기준은 다르다. 그것을 인정해야한다. 나의 성과를 상대방이 평가할 땐 반드시 이자와 수수료가 발생한다는 것을 감안해야 한다. 상대방에게 100을 평가받고 싶다면 최소 120, 130은 해야한다. 정량적인 것도 중요하지만, 나의 관점이 아닌 상대의 관점으로 그들이 필요하고 원하는 것을 정확하게 했느냐가 중요하다.</p>
+      <p>Q. 이자와 수수료를 감안했는가?</p>
+      <p>Q. 상대방의 관점으로, 상대가 필요한 것을 정확히 했는가?</p>
+      <p>그럼에도 불구하고 100을 인정받지 못했다면? 확실하게 인정받으려면 150, 200을 해야한다. 생각보다 이자와 수수료는 높다. 내가 빌려줄 땐 쥐꼬리만큼 받아도 남에게 빌려서 갚을 땐 호랑이 꼬리만큼 내줘야 한다. 그런게 어디있냐고 억울할 수 있겠지만 세상은 대체로 그렇다.</p>
+      <p>내가 제도와 시스템을 바꿀 수 없다면, 시스템을 제대로 파악해서 운영의 효율을 극대화해야한다.</p>
+      <p>'이 정도면 충분할거야' 라고 내민 상대의 결과물을 보고, 충분하다고 느꼈던 적은 거의 없다. 나 역시도 상대에게 그렇게 평가받을 수 있음을 항상 생각해야한다. 세상은 굉장히 비효율이고 박하다는 것을 인정하고, 좀 더 다각도로 고민하고 더 많은 노력을 부어야 한다.</p>
+      <p>대게 그렇더라.</p>
+  </div>
+  
+  <div class="post-nav"><a href="136.html">← 보이지 않는 손</a><a href="../serial.html" class="to-list">목록</a><span></span></div>
+</article>
+<div class="post-cta">
+  <p>이 글의 생각들이 한 권으로 정리되었습니다.<br>성장하는 회사가 선택한 단 하나의 전략, 《모두의 품질》</p>
+  <a href="../index.html" class="btn-bronze">책 자세히 보기</a>
+</div>
+<footer>COPYRIGHT ⓒ ROUND UP COMPANY. ALL RIGHTS RESERVED.</footer>
+</body>
+</html>

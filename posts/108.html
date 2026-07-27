@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>언행일치 | 모두의 품질 연재</title>
+<meta name="description" content="지인의 소개로 어느 기업을 방문했을 때였다.
+      약속시간보다 좀 일찍 도착해서, 회사 앞에 주차를 해서 주변을 둘러보았다.
+      쉬는 시간인지는 모르">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#111009; --bg-soft:#1A1810; --ink:#17150F; --bronze:#C2996B; --bronze-soft:#D6B58C;
+    --bronze-deep:#8F6C3F; --text:rgba(255,255,255,0.85); --text-dim:rgba(255,255,255,0.55);
+    --text-faint:rgba(255,255,255,0.38); --line:rgba(255,255,255,0.12); --serif:'Noto Serif KR',serif; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Pretendard Variable',Pretendard,-apple-system,sans-serif; background:var(--bg);
+    color:var(--text); line-height:1.75; -webkit-font-smoothing:antialiased; word-break:keep-all; }
+  a { color:inherit; text-decoration:none; }
+  nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(17,16,9,0.85);
+    backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+  .nav-inner { max-width:1000px; margin:0 auto; padding:0 24px; height:60px;
+    display:flex; align-items:center; justify-content:space-between; }
+  .nav-title { font-size:15px; font-weight:800; color:#fff; }
+  .nav-title .star { color:var(--bronze); margin-right:0.4rem; font-size:12px; }
+  .nav-links { display:flex; gap:1.4rem; align-items:center; }
+  .nav-links a { font-size:13px; font-weight:500; color:var(--text-dim); }
+  .nav-links a:hover { color:#fff; }
+  .nav-buy { padding:7px 18px; background:var(--bronze); color:var(--ink)!important;
+    border-radius:999px; font-size:12.5px!important; font-weight:700!important; }
+
+  article { max-width:720px; margin:0 auto; padding:130px 24px 80px; }
+  .post-cat { display:inline-flex; align-items:center; gap:0.6rem; font-size:11.5px; font-weight:700;
+    letter-spacing:0.2em; text-transform:uppercase; color:var(--bronze); margin-bottom:1.6rem; }
+  .post-pick { font-size:10.5px; letter-spacing:0.08em; border:1px solid var(--bronze-deep);
+    color:var(--bronze-soft); border-radius:999px; padding:2px 9px; }
+  h1 { font-size:clamp(26px,4.6vw,36px); font-weight:800; letter-spacing:-0.02em;
+    line-height:1.4; color:#fff; margin-bottom:0.7rem; }
+  .post-sub { font-size:15.5px; color:var(--bronze-soft); margin-bottom:1rem; }
+  .post-no { font-size:12.5px; color:var(--text-faint); margin-bottom:3rem;
+    padding-bottom:2rem; border-bottom:1px solid var(--line); }
+  .post-body { font-family:var(--serif); font-size:16.5px; font-weight:500; line-height:2.15; }
+  .post-body p { margin-bottom:1.6rem; }
+  .post-body strong { color:var(--bronze-soft); font-weight:700; }
+  .post-tags { margin-top:2.6rem; display:flex; flex-wrap:wrap; gap:0.5rem; }
+  .post-tags span { font-size:12px; color:var(--text-dim); border:1px solid var(--line);
+    border-radius:999px; padding:4px 12px; }
+  .post-nav { margin-top:3.5rem; padding-top:2rem; border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; gap:1rem; font-size:13.5px; }
+  .post-nav a { color:var(--text-dim); max-width:44%; }
+  .post-nav a:hover { color:var(--bronze-soft); }
+  .post-nav .to-list { color:var(--bronze); font-weight:600; }
+  .post-cta { text-align:center; padding:56px 24px 64px; background:var(--bg-soft);
+    border-top:1px solid var(--line); }
+  .post-cta p { font-size:14.5px; color:var(--text-dim); margin-bottom:1.4rem; }
+  .btn-bronze { display:inline-block; padding:12px 34px; background:var(--bronze); color:var(--ink);
+    border-radius:999px; font-size:14px; font-weight:700; }
+  .btn-bronze:hover { background:var(--bronze-soft); }
+  footer { padding:2rem 24px; text-align:center; font-size:11px; color:var(--text-faint);
+    letter-spacing:0.07em; }
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-title"><span class="star">★</span>모두의 품질</a>
+    <div class="nav-links">
+      <a href="../serial.html">연재 목록</a>
+      <a href="../index.html#cta" class="nav-buy">구매하기</a>
+    </div>
+  </div>
+</nav>
+<article>
+  <p class="post-cat">리더와 경영 </p>
+  <h1>언행일치</h1>
+  
+  <p class="post-no">연재 108 / 137</p>
+  <div class="post-body">
+      <p>지인의 소개로 어느 기업을 방문했을 때였다.</p>
+      <p>약속시간보다 좀 일찍 도착해서, 회사 앞에 주차를 해서 주변을 둘러보았다.</p>
+      <p>쉬는 시간인지는 모르겠지만, 회사 정문 앞에서 삼삼오오 모여서 담배를 피는 직원들이 많이 보였다.</p>
+      <p>위치가 유동인구가 꽤 많은 곳이었는데 회사 이름이 박혀있는 근무복을 입고 입구에서 담배를 피면서</p>
+      <p>바닥에 침을 뱉고 꽁초를 바닥에 버리는 모습은 그리 좋아보이진 않았다.</p>
+      <p>그 앞을 지나가는 사람들도 인상을 쓰며 담배연기를 피해 가고있었다.</p>
+      <p>약속시간에 맞춰 담당자가 나와 해당 부서장과 만나기 위해 사무실로 올라갔는데 회의가 길어져서 조금 기다려 줄 수 있냐는 이야기에 기꺼이 그러시라고 했다.</p>
+      <p>대략 40분이 지난 후.</p>
+      <p>이 회사에 대한 정보가 없어 회사소개 자료를 요청드렸다. 담당자가 PC에 빔프로젝트를 연결해서 회사소개자료를 띄우는데....</p>
+      <p>'Oh my God! 아니! 이럴 수가!'</p>
+      <p>찰나의 순간에 난 세 번 놀랄 수 밖에 없었다.</p>
+      <p>첫번째 'WINDOW 정품 인증필요'표시</p>
+      <p>두번째 'MS OFFICE POWER POINT 정품인증 필요' 표시</p>
+      <p>세번째 바탕화면에 깔려 있던 이 회사의 핵심가치. '기본 원칙에 충실하자'</p>
+      <p>회사소개를 끝내고 이런 저런 이야기를 하는데 요구사항도 굉장히 많다.</p>
+      <p>현재의 능력과 수준은 고려하지 않고 무조건 단기간에 높은 성과만 희망하고 있었다.</p>
+      <p>그곳에서 빨리 도망치고 싶었다. 당연히 그 업체와는 후속 진행을 하지 않았고,</p>
+      <p>좋은 마음으로 소개해준 지인에게는 관련한 이야기는 하지 않았다.</p>
+      <p>조직의 본질이 결여된 그럴싸해보이는 미션, 비전, 핵심가치가 무슨 의미가 있을까. 말만 그럴싸하게 한다고, 회사의 가치가 높아지고, 구성원들의 수준이 높아지는 것은 아니란 걸 경영자와 임원 등은 몰랐을까?</p>
+      <p>회의실에 있는 윈도우 정품인증, Office 정품인증도 안되어 있는 PC로 업무 보고를 받고 외부 고객들에게 프레젠테이션을 해오면서 경영자와 임원들 중 그것에 대해 지적한 사람은 없었을까? 구성원들 조차도 그것에 대해서 대수롭지 않게 생각하고 있었을까?</p>
+      <p>뭔가 생각이 굉장히 많았었던 경험이었다. 말로만 하는 기본이 아니라 작은 것 부터 실천하는 기본이 필요하지 않을까.</p>
+      <p>기본이라는 말을 너무 쉽게 생각하면서 사용하는 조직일수록 기본을 지키지 못하는 듯 하다.</p>
+      <p>몇 년이 지났지만 그때의 쓰리콤보는 아직도 잊을 수가 없다.</p>
+  </div>
+  
+  <div class="post-nav"><a href="107.html">← 누구나 될 수 있지만, 아무나 될 수 없는 그 이름, 달인</a><a href="../serial.html" class="to-list">목록</a><a href="109.html" style="text-align:right;">위기의 시대. PLAN B가 필요하다. →</a></div>
+</article>
+<div class="post-cta">
+  <p>이 글의 생각들이 한 권으로 정리되었습니다.<br>성장하는 회사가 선택한 단 하나의 전략, 《모두의 품질》</p>
+  <a href="../index.html" class="btn-bronze">책 자세히 보기</a>
+</div>
+<footer>COPYRIGHT ⓒ ROUND UP COMPANY. ALL RIGHTS RESERVED.</footer>
+</body>
+</html>

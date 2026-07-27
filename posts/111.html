@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>할 수 밖에 없도록 | 모두의 품질 연재</title>
+<meta name="description" content="10여년 전, 컨설팅 업계에 와서 처음으로 맡았던 고객들은 그리 규모가 크지 않은 중소기업들이었다.
+      모 기업의 주도로 품질수준 하위 15개 협력사를 선">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#111009; --bg-soft:#1A1810; --ink:#17150F; --bronze:#C2996B; --bronze-soft:#D6B58C;
+    --bronze-deep:#8F6C3F; --text:rgba(255,255,255,0.85); --text-dim:rgba(255,255,255,0.55);
+    --text-faint:rgba(255,255,255,0.38); --line:rgba(255,255,255,0.12); --serif:'Noto Serif KR',serif; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Pretendard Variable',Pretendard,-apple-system,sans-serif; background:var(--bg);
+    color:var(--text); line-height:1.75; -webkit-font-smoothing:antialiased; word-break:keep-all; }
+  a { color:inherit; text-decoration:none; }
+  nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(17,16,9,0.85);
+    backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+  .nav-inner { max-width:1000px; margin:0 auto; padding:0 24px; height:60px;
+    display:flex; align-items:center; justify-content:space-between; }
+  .nav-title { font-size:15px; font-weight:800; color:#fff; }
+  .nav-title .star { color:var(--bronze); margin-right:0.4rem; font-size:12px; }
+  .nav-links { display:flex; gap:1.4rem; align-items:center; }
+  .nav-links a { font-size:13px; font-weight:500; color:var(--text-dim); }
+  .nav-links a:hover { color:#fff; }
+  .nav-buy { padding:7px 18px; background:var(--bronze); color:var(--ink)!important;
+    border-radius:999px; font-size:12.5px!important; font-weight:700!important; }
+
+  article { max-width:720px; margin:0 auto; padding:130px 24px 80px; }
+  .post-cat { display:inline-flex; align-items:center; gap:0.6rem; font-size:11.5px; font-weight:700;
+    letter-spacing:0.2em; text-transform:uppercase; color:var(--bronze); margin-bottom:1.6rem; }
+  .post-pick { font-size:10.5px; letter-spacing:0.08em; border:1px solid var(--bronze-deep);
+    color:var(--bronze-soft); border-radius:999px; padding:2px 9px; }
+  h1 { font-size:clamp(26px,4.6vw,36px); font-weight:800; letter-spacing:-0.02em;
+    line-height:1.4; color:#fff; margin-bottom:0.7rem; }
+  .post-sub { font-size:15.5px; color:var(--bronze-soft); margin-bottom:1rem; }
+  .post-no { font-size:12.5px; color:var(--text-faint); margin-bottom:3rem;
+    padding-bottom:2rem; border-bottom:1px solid var(--line); }
+  .post-body { font-family:var(--serif); font-size:16.5px; font-weight:500; line-height:2.15; }
+  .post-body p { margin-bottom:1.6rem; }
+  .post-body strong { color:var(--bronze-soft); font-weight:700; }
+  .post-tags { margin-top:2.6rem; display:flex; flex-wrap:wrap; gap:0.5rem; }
+  .post-tags span { font-size:12px; color:var(--text-dim); border:1px solid var(--line);
+    border-radius:999px; padding:4px 12px; }
+  .post-nav { margin-top:3.5rem; padding-top:2rem; border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; gap:1rem; font-size:13.5px; }
+  .post-nav a { color:var(--text-dim); max-width:44%; }
+  .post-nav a:hover { color:var(--bronze-soft); }
+  .post-nav .to-list { color:var(--bronze); font-weight:600; }
+  .post-cta { text-align:center; padding:56px 24px 64px; background:var(--bg-soft);
+    border-top:1px solid var(--line); }
+  .post-cta p { font-size:14.5px; color:var(--text-dim); margin-bottom:1.4rem; }
+  .btn-bronze { display:inline-block; padding:12px 34px; background:var(--bronze); color:var(--ink);
+    border-radius:999px; font-size:14px; font-weight:700; }
+  .btn-bronze:hover { background:var(--bronze-soft); }
+  footer { padding:2rem 24px; text-align:center; font-size:11px; color:var(--text-faint);
+    letter-spacing:0.07em; }
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-title"><span class="star">★</span>모두의 품질</a>
+    <div class="nav-links">
+      <a href="../serial.html">연재 목록</a>
+      <a href="../index.html#cta" class="nav-buy">구매하기</a>
+    </div>
+  </div>
+</nav>
+<article>
+  <p class="post-cat">시스템과 문제해결 <span class="post-pick">★ 추천</span></p>
+  <h1>할 수 밖에 없도록</h1>
+  
+  <p class="post-no">연재 111 / 137</p>
+  <div class="post-body">
+      <p>10여년 전, 컨설팅 업계에 와서 처음으로 맡았던 고객들은 그리 규모가 크지 않은 중소기업들이었다.</p>
+      <p>모 기업의 주도로 품질수준 하위 15개 협력사를 선정해서 각 회사마다 전문 컨설턴트를 배치해 품질 향상을 목표로 1년간 진행 된 프로젝트였는데, 나는 Junior consultant로서 15개 업체 전체를 모니터링하고 담당 컨설턴트들을 지원하는 역할을 맡으며, 가끔 다른 컨설턴트 분들이 펑크를 내실 경우 땜빵 역할을 하곤 했다.</p>
+      <p>땜빵의 기회가 왔을 때 누를 끼치지 않기 위해 의욕충만하게 열심히 했었는데 그 모습을 좋게 보신 몇 몇 기업의 경영자께서 프로젝트 진행 중임에도 담당 컨설턴트를 나로 바꿔달라는 요청을 하셔서 졸지에 5개 업체를 맡게 되었고 그것이 나의 첫 본격적인 데뷔무대였다.</p>
+      <p>5개 기업들이 비슷비슷한 매출 규모에 업종도 유사해서 주요 지표들을 놓고 업체 간 운영 현황을 비교 모니터링을 했었는데, A 업체의 설비관련 운영비용이 상대적으로 높은 것을 볼 수 있었다. 타업체에 비해서 설비에 들어가는 공구류들의 비용이 30%나 높았는데 비용으로 따지면 월 800여 만원 수준이었고, 1년이면 1억 가까운 금액이었다. 왜 그런가 싶어 공장현장에 자리를 차지해서 유심히 관찰을 해봤더니 설비를 운영하는 직원들이 자율적으로 공구류를 교체하고 있었는데 실제로 더 사용할 수 있음에도 불구하고 조기 교체하거나 필요 이상으로 갖고 가는 듯 한데, 얼마나 가져갔는지에 대한 이력도 관리되지 않았다. 나쁜맘 먹고 빼돌려서 팔아도 알 수 없는 구조였다. 그리고 공구의 교체를 위해서 작업자가 설비를 정지시켜야 하는 LOSS도 반복적으로 발생했다.</p>
+      <p>고민을 오래하지 않고 제안을 한 것이, 전담 인원을 채용해서, 직원들이 기존에 사용하던 공구를 갖고 오면 실물을 확인하고 교체 여부를 판단 후에 맞교환해서 불출하는 시스템으로 변경했다. 처음에는 저항도 있었고, 기존의 방식을 바꾸는 데 어려움도 있었지만 원칙을 지키지 않으면 절대 교체해주지 않기로 했다. 꼼수를 철저히 차단하기로 한 것이다. 그리고 교체 이력을 관리함으로써 전담 인원이 교체 시점에 맞춰서 직접 교체를 해주고, 직원들은 업무에 집중하는 시스템으로 개선했다.</p>
+      <p>그 결과. 불과 2개월이 지나지 않아 해당 공구 사용 비용이 40% 이상 절감이 되었고 맡았던 5개 업체 중 최저의 비용으로 효율적인 운영을 하게 되었다. 물론 직원들은 본인들의 일에 집중할 수 있게 되었고 그 덕분에 품질성과도 동반 개선되었다.아마 어느정도의 여지를 남겨두고 기존의 방식도 허용했다면 절대 변화가 이뤄지지 않았을 것이다. 현상을 파악해서, 단순한 개선을 통한 업무시스템의 정착과 운영만으로도 불필요한 낭비들을 획기적으로 개선해 낼 수 있었다.</p>
+      <p>올바른 원칙을 지킬 수 있게 하려면 지키라고 큰 소리 치기보다, 안지키면 안되도록 해야한다.할 수 밖에 없도록 시스템화 해서 반복하는 것만이 지속적인 성장을 담보할 수 있다. 목소리를 높이고 강제적, 강압적으로 해서는 절대 변화를 이끌어내지 못한다.</p>
+      <p>인간존중을 바탕으로 안하면 안되는, 할 수 밖에 없는 탁월한 성과를 만들어 내기위한 시스템.</p>
+      <p>컨설팅을 해오며 이 영역에서 최고가 되기 위해 10년 넘게 고민하고 노력하고 있다.</p>
+      <p>나만 설친다고 되는게 아니다. 고객과 함께 움직여야 하고, 고객의 성과로 평가 받는다.</p>
+      <p>고객이 잘 되어야지 내가 잘 될 수 밖에 없는 고객과 나는 운명공동체다.</p>
+      <p>PS. 담배꽁초 투기를 예방하기 위해 꽁초 20개를 갖고와야 담배를 살 수 있게 한다면?</p>
+      <p>휴대용 꽁초보관함이 잘 팔리거나 당근마켓에서 꽁초가 팔리겠지.</p>
+  </div>
+  
+  <div class="post-nav"><a href="110.html">← 성공보다 더 값진 건, 끝까지 포기하지 않은 경험이다.</a><a href="../serial.html" class="to-list">목록</a><a href="112.html" style="text-align:right;">올바른 방향이라면 끝까지 포기하지 마라. →</a></div>
+</article>
+<div class="post-cta">
+  <p>이 글의 생각들이 한 권으로 정리되었습니다.<br>성장하는 회사가 선택한 단 하나의 전략, 《모두의 품질》</p>
+  <a href="../index.html" class="btn-bronze">책 자세히 보기</a>
+</div>
+<footer>COPYRIGHT ⓒ ROUND UP COMPANY. ALL RIGHTS RESERVED.</footer>
+</body>
+</html>

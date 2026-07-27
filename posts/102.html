@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check! Check! | 모두의 품질 연재</title>
+<meta name="description" content="중요한 일을 앞둔 상태에서
+      'Go!'의 관점보단 'Wait'의 관점에서 문제를 바라보려고 한다.
+      뭔가 찝찝한 구석이 있지만 그것이 명확하게 ">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#111009; --bg-soft:#1A1810; --ink:#17150F; --bronze:#C2996B; --bronze-soft:#D6B58C;
+    --bronze-deep:#8F6C3F; --text:rgba(255,255,255,0.85); --text-dim:rgba(255,255,255,0.55);
+    --text-faint:rgba(255,255,255,0.38); --line:rgba(255,255,255,0.12); --serif:'Noto Serif KR',serif; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Pretendard Variable',Pretendard,-apple-system,sans-serif; background:var(--bg);
+    color:var(--text); line-height:1.75; -webkit-font-smoothing:antialiased; word-break:keep-all; }
+  a { color:inherit; text-decoration:none; }
+  nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(17,16,9,0.85);
+    backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+  .nav-inner { max-width:1000px; margin:0 auto; padding:0 24px; height:60px;
+    display:flex; align-items:center; justify-content:space-between; }
+  .nav-title { font-size:15px; font-weight:800; color:#fff; }
+  .nav-title .star { color:var(--bronze); margin-right:0.4rem; font-size:12px; }
+  .nav-links { display:flex; gap:1.4rem; align-items:center; }
+  .nav-links a { font-size:13px; font-weight:500; color:var(--text-dim); }
+  .nav-links a:hover { color:#fff; }
+  .nav-buy { padding:7px 18px; background:var(--bronze); color:var(--ink)!important;
+    border-radius:999px; font-size:12.5px!important; font-weight:700!important; }
+
+  article { max-width:720px; margin:0 auto; padding:130px 24px 80px; }
+  .post-cat { display:inline-flex; align-items:center; gap:0.6rem; font-size:11.5px; font-weight:700;
+    letter-spacing:0.2em; text-transform:uppercase; color:var(--bronze); margin-bottom:1.6rem; }
+  .post-pick { font-size:10.5px; letter-spacing:0.08em; border:1px solid var(--bronze-deep);
+    color:var(--bronze-soft); border-radius:999px; padding:2px 9px; }
+  h1 { font-size:clamp(26px,4.6vw,36px); font-weight:800; letter-spacing:-0.02em;
+    line-height:1.4; color:#fff; margin-bottom:0.7rem; }
+  .post-sub { font-size:15.5px; color:var(--bronze-soft); margin-bottom:1rem; }
+  .post-no { font-size:12.5px; color:var(--text-faint); margin-bottom:3rem;
+    padding-bottom:2rem; border-bottom:1px solid var(--line); }
+  .post-body { font-family:var(--serif); font-size:16.5px; font-weight:500; line-height:2.15; }
+  .post-body p { margin-bottom:1.6rem; }
+  .post-body strong { color:var(--bronze-soft); font-weight:700; }
+  .post-tags { margin-top:2.6rem; display:flex; flex-wrap:wrap; gap:0.5rem; }
+  .post-tags span { font-size:12px; color:var(--text-dim); border:1px solid var(--line);
+    border-radius:999px; padding:4px 12px; }
+  .post-nav { margin-top:3.5rem; padding-top:2rem; border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; gap:1rem; font-size:13.5px; }
+  .post-nav a { color:var(--text-dim); max-width:44%; }
+  .post-nav a:hover { color:var(--bronze-soft); }
+  .post-nav .to-list { color:var(--bronze); font-weight:600; }
+  .post-cta { text-align:center; padding:56px 24px 64px; background:var(--bg-soft);
+    border-top:1px solid var(--line); }
+  .post-cta p { font-size:14.5px; color:var(--text-dim); margin-bottom:1.4rem; }
+  .btn-bronze { display:inline-block; padding:12px 34px; background:var(--bronze); color:var(--ink);
+    border-radius:999px; font-size:14px; font-weight:700; }
+  .btn-bronze:hover { background:var(--bronze-soft); }
+  footer { padding:2rem 24px; text-align:center; font-size:11px; color:var(--text-faint);
+    letter-spacing:0.07em; }
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-title"><span class="star">★</span>모두의 품질</a>
+    <div class="nav-links">
+      <a href="../serial.html">연재 목록</a>
+      <a href="../index.html#cta" class="nav-buy">구매하기</a>
+    </div>
+  </div>
+</nav>
+<article>
+  <p class="post-cat">시스템과 문제해결 </p>
+  <h1>Check! Check!</h1>
+  
+  <p class="post-no">연재 102 / 137</p>
+  <div class="post-body">
+      <p>중요한 일을 앞둔 상태에서</p>
+      <p>'Go!'의 관점보단 'Wait'의 관점에서 문제를 바라보려고 한다.</p>
+      <p>뭔가 찝찝한 구석이 있지만 그것이 명확하게 드러나지 않을 때가 있는데</p>
+      <p>대게 그런 것을 무시하고 'Go!'하고 강행한 후에 뒤늦게 문제로 드러난 경우가 꽤 있었기 때문이다.</p>
+      <p>명쾌하고 확실하지 않으면 한 번 더 둘러보고 가는 것이 결국엔 가장 빠른 지름길이라는 것을 많은 경험에서 깨달았다.</p>
+      <p>오늘은 고객사의 신규설비가 도입되는 날이라, 먼 길을 내려왔다. 아침부터 6대의 설비가 바쁘게 설치되고 있었다.</p>
+      <p>그런데...</p>
+      <p>느낌이 좀 싸했다.</p>
+      <p>공정을 둘러보는데 설비의 배치가 물류의 흐름이 고려되지 못한 듯 했고, 작업자의 이동동선과 작업범위를 전혀 고려하지 않은 듯 했다. 여러명의 엔지니어들이 오늘 새벽부터 진행한 작업이었고, 엄청난 노력이 투입된 결과물이란걸 알기 때문에 더욱 더 조심스러워졌다.</p>
+      <p>하지만 실제 사용자의 관점에서 바라보면 현재 설치되고 있는 모습은 결코 최선이 아니었다.</p>
+      <p>길이 아니라고 판단 될 때, 그냥 밀고 나가기 보다는 다시 원점으로 돌아가서 올바른 방향을 찾아나가는 것이 최선이라는 원칙이 있기에 그분들의 고생과 수고로움을 알지만 그렇다고 해서, 'Go!' 하는 건 내 고객을 위해서도 안되지만 이 설비업체를 위해서도 안된다고 생각했다.</p>
+      <p>해당 설비 업체 사장님께 이야기를 드렸다.</p>
+      <p>"사장님. 여기에 이렇게 설치를 하는 건 자재와 완제품이 이동되는 동선을 미처 고려하지 못하신거 같네요."</p>
+      <p>"아니. 우리가 도면을 보고 정확하게 한 건데요."</p>
+      <p>"사장님. 도면도 물론 중요한데요.실제로 현장에서 저 대차들을 보시고 여유공간까지 고려해서 시뮬레이션 해보시는게 맞지 않을까 싶습니다. 여기 설비에서, 자재와 제품 적재하는 대차의 이동을 고려해보니 사람도 못지나갈 정도로 빈틈없이 딱 떨어지는데, 이러면 실제론 공정운영이 어렵습니다. 사장님께서 직접 한 번 해보시겠어요?"</p>
+      <p>사장님께서 이렇게 저렇게 해보시더니 표정이 일그러지셨다.</p>
+      <p>"아...이거 도면으로 할 땐 문제없었는데. 실제로 보니깐 이렇게 차이날 줄 몰랐네요."</p>
+      <p>"그리고 사장님. 여기 설비에 버튼이 이렇게 멀리 떨어져있는데, 실제 여기 공정에서 작업하시는 담당자는 두 팔을 뻗어도 닿이지 않을 듯 한데요. 팔이 긴 저도 겨우 닿을 정도인데, 실제 일 하시는 분께서는 힘들듯 합니다. 여기 스위치를 조정하셔야 할 듯 합니다."</p>
+      <p>"또, 현재의 레이아웃이면 작업자분께서 업무를 하시는게, 설비에 가려질 듯 합니다. 안전을 고려하면, 통로에서 일을 하는 모습이 눈으로 보여야 할 겁니다." 등등 내가 판단했을 때 불합리하다고 느낀 부분들에 대해서 설명을 드렸고, 다행스럽게도 설비업체 사장님은 모두 겸허하게 인정을 하셨다.</p>
+      <p>나의 의견으로 일정도 지연되고 다시 검토해서 수정하는데 드는 비용이 최소 수천만원 이상 들 수 있는 상황이었다. 하지만 지금의 수정 비용과 시간이 나중에 발생할 수 있을 더 큰 문제를 예방할 수 있는 투자라고 생각하기에 미안한 마음안고, 할 말은 다 해드렸다.</p>
+      <p>대신, 어떠한 방향으로 수정해야 할지에 대해서 적극적으로 도움을 주기로 했다.</p>
+      <p>더 늦지 않게 발견해서 너무나 다행이라는 마음과 앞으로의 3일이 예상보다 훨씬 더 바쁜 시간이 될 듯한 걱정이 교차한다.</p>
+  </div>
+  
+  <div class="post-nav"><a href="101.html">← 미생 (未生)</a><a href="../serial.html" class="to-list">목록</a><a href="103.html" style="text-align:right;">고객에게 잊혀지길 희망한다. →</a></div>
+</article>
+<div class="post-cta">
+  <p>이 글의 생각들이 한 권으로 정리되었습니다.<br>성장하는 회사가 선택한 단 하나의 전략, 《모두의 품질》</p>
+  <a href="../index.html" class="btn-bronze">책 자세히 보기</a>
+</div>
+<footer>COPYRIGHT ⓒ ROUND UP COMPANY. ALL RIGHTS RESERVED.</footer>
+</body>
+</html>
