@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>거절하기로 결단하다 | 모두의 품질 연재</title>
+<meta name="description" content="나는 가급적 일정적인 여유를 (자세히 말하면 Buffer) 가지고 일을 하는 편이다. 가급적 주 4일 이상 고객 일정을 잡지 않는다. 고객과 대면해서 일을 하는 ">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#111009; --bg-soft:#1A1810; --ink:#17150F; --bronze:#C2996B; --bronze-soft:#D6B58C;
+    --bronze-deep:#8F6C3F; --text:rgba(255,255,255,0.85); --text-dim:rgba(255,255,255,0.55);
+    --text-faint:rgba(255,255,255,0.38); --line:rgba(255,255,255,0.12); --serif:'Noto Serif KR',serif; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Pretendard Variable',Pretendard,-apple-system,sans-serif; background:var(--bg);
+    color:var(--text); line-height:1.75; -webkit-font-smoothing:antialiased; word-break:keep-all; }
+  a { color:inherit; text-decoration:none; }
+  nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(17,16,9,0.85);
+    backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+  .nav-inner { max-width:1000px; margin:0 auto; padding:0 24px; height:60px;
+    display:flex; align-items:center; justify-content:space-between; }
+  .nav-title { font-size:15px; font-weight:800; color:#fff; }
+  .nav-title .star { color:var(--bronze); margin-right:0.4rem; font-size:12px; }
+  .nav-links { display:flex; gap:1.4rem; align-items:center; }
+  .nav-links a { font-size:13px; font-weight:500; color:var(--text-dim); }
+  .nav-links a:hover { color:#fff; }
+  .nav-buy { padding:7px 18px; background:var(--bronze); color:var(--ink)!important;
+    border-radius:999px; font-size:12.5px!important; font-weight:700!important; }
+
+  article { max-width:720px; margin:0 auto; padding:130px 24px 80px; }
+  .post-cat { display:inline-flex; align-items:center; gap:0.6rem; font-size:11.5px; font-weight:700;
+    letter-spacing:0.2em; text-transform:uppercase; color:var(--bronze); margin-bottom:1.6rem; }
+  .post-pick { font-size:10.5px; letter-spacing:0.08em; border:1px solid var(--bronze-deep);
+    color:var(--bronze-soft); border-radius:999px; padding:2px 9px; }
+  h1 { font-size:clamp(26px,4.6vw,36px); font-weight:800; letter-spacing:-0.02em;
+    line-height:1.4; color:#fff; margin-bottom:0.7rem; }
+  .post-sub { font-size:15.5px; color:var(--bronze-soft); margin-bottom:1rem; }
+  .post-no { font-size:12.5px; color:var(--text-faint); margin-bottom:3rem;
+    padding-bottom:2rem; border-bottom:1px solid var(--line); }
+  .post-body { font-family:var(--serif); font-size:16.5px; font-weight:500; line-height:2.15; }
+  .post-body p { margin-bottom:1.6rem; }
+  .post-body strong { color:var(--bronze-soft); font-weight:700; }
+  .post-tags { margin-top:2.6rem; display:flex; flex-wrap:wrap; gap:0.5rem; }
+  .post-tags span { font-size:12px; color:var(--text-dim); border:1px solid var(--line);
+    border-radius:999px; padding:4px 12px; }
+  .post-nav { margin-top:3.5rem; padding-top:2rem; border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; gap:1rem; font-size:13.5px; }
+  .post-nav a { color:var(--text-dim); max-width:44%; }
+  .post-nav a:hover { color:var(--bronze-soft); }
+  .post-nav .to-list { color:var(--bronze); font-weight:600; }
+  .post-cta { text-align:center; padding:56px 24px 64px; background:var(--bg-soft);
+    border-top:1px solid var(--line); }
+  .post-cta p { font-size:14.5px; color:var(--text-dim); margin-bottom:1.4rem; }
+  .btn-bronze { display:inline-block; padding:12px 34px; background:var(--bronze); color:var(--ink);
+    border-radius:999px; font-size:14px; font-weight:700; }
+  .btn-bronze:hover { background:var(--bronze-soft); }
+  footer { padding:2rem 24px; text-align:center; font-size:11px; color:var(--text-faint);
+    letter-spacing:0.07em; }
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-title"><span class="star">★</span>모두의 품질</a>
+    <div class="nav-links">
+      <a href="../serial.html">연재 목록</a>
+      <a href="../index.html#cta" class="nav-buy">구매하기</a>
+    </div>
+  </div>
+</nav>
+<article>
+  <p class="post-cat">고객 </p>
+  <h1>거절하기로 결단하다</h1>
+  
+  <p class="post-no">연재 073 / 137</p>
+  <div class="post-body">
+      <p>나는 가급적 일정적인 여유를 (자세히 말하면 Buffer) 가지고 일을 하는 편이다. 가급적 주 4일 이상 고객 일정을 잡지 않는다. 고객과 대면해서 일을 하는 것이 원칙이지만, 준비를 하고 정리를 하는 시간이 대면 못지않게 중요하다.</p>
+      <p>컨설턴트 초창기 시절, 새벽 일찍 일어나서 하루에 고객 2~3군데를 다니고, 주말도 없을 때도 많았고, 심지어 고객과 함께 밤을 새우면서 일을 했던 적이 많았다.</p>
+      <p>물론 그 시간들은 짧은 시간에 내가 컨설턴트 세계를 파악하는데 큰 도움이 되었지만,</p>
+      <p>여분의 시간을 고객의 만족을 위해 준비하고 정리하는 시간을 쓰느라 정작 내 개인의 시간과 건강을 챙기는 것에 소홀해질 수밖에 없었다. 그래서 4년 전 독립을 한 이후에는, 가급적 7~80%의 수준으로만 일정을 스케쥴링한다.</p>
+      <p>고객의 일정은 변수가 많기 때문에, 비어있는 여유 일정으로 이리저리 맞춘다. 그래서 고객의 일정 조정 요청이 오면 2~3일 이내로 조정해서 대응을 해준다.</p>
+      <p>여유시간을 없애고, 그 시간을 고객으로 채워 넣으면 매출은 확장될 수 있겠지만, Quality는 현저히 떨어질 것을 잘 안다.</p>
+      <p>작은 Project의 요청의 경우에는, 이리저리 일정을 잘 조정하면 대응이 가능하다. 하지만 나의 원칙은 작은 Project라고 해서, 단기/속성으로 진행하는 것은 철저히 지양한다.</p>
+      <p>밥 한 그릇을 만들더라도, 제대로 쌀을 씻고, 불리고, 취사한 후, 뜸을 들여야 한다. 양이 적다고 해서 진행과정을 소홀히 하고, 반드시 해야 하는 과정을 누락해버리면 Quality는 무너진다.</p>
+      <p>3년 전에 함께 파이팅을 하고, 나름대로 의미 있는 성과를 이뤄낸 고객이 있다. 글로벌 기업이고, 업계에서 굉장히 알아주는 곳인데 며칠 전에 연락이 왔다. 2개 공장의 프로젝트를 진행해야 하는데, 3개월 안에 완결해야 한다고 한다. 과거에 함께 합을 맞춰봤던 터라, 고객사는 나를 PICK 해서 진행했으면 좋겠다고 한다. 사실 고객이 나를 재선택해주는 것만큼 보람찬 일은 없다.</p>
+      <p>하지만 거절해야 했다. 굉장히 의미 있는 프로젝트이고, 단기간에 꽤 밀도 있게 진행돼서, 매출에 엄청난 도움이 될 수 있다. 하지만 그 프로젝트를 맡게 되면, 쉴 틈 없이 진행돼야 한다. 아마도 매일같이 잠도 못 자고 정리하고, 준비하고, 주말에도 워크홀릭이 되어야만 한다.</p>
+      <p>무엇보다도 그로 인해서 기존의 고객 프로젝트 Quality에 영향을 미칠 수 있기 때문이다. 그리고 며칠 동안 고민해서 계획을 짜 봐도, 3개월 만에 그 과정을 진행하게 되면 분명 제대로 완결되지 않을 것이 뻔했다. 해당 조직의 시스템을 새롭게 설계하는 데 있어, 3개월이라는 시간은 너무나 짧다.</p>
+      <p>하지만 업계의 많은 곳들이, 어떻게든 수주를 따기 위해서 속성, 저비용으로 고객들에게 소위 떡밥을 날린다. 그로 인해서 시장이 혼탁하게 변질되고, 제대로 하는 곳들이 상대적으로 피해를 입게 된다.</p>
+      <p>'아니 A업체는 그거 2개월 만에 되고, 단가가 그쪽 업체보다 40%나 저렴하던데.'</p>
+      <p>여전히 Value보다 Price가 구매 기준이 되는 조직들이 많다.</p>
+      <p>주변의 조직들을 보면, 십중팔구 그렇게 진행한 프로젝트들은 형식적인, 쓸모없는 Document만 남기고, 흐지부지 된다. 물론 시간을 오랫동안 진행한다고 해서, 반드시 좋은 결과가 나오는 것은 아니다.</p>
+      <p>'몸에 좋은 Fast food는 없다.' '맛집이 가게 확장해서 계속 잘 되는 경우가 드물다.'</p>
+      <p>거절을 해야 하는 마음은 정말 힘들다. 어쩌면 다시는 그 조직과 프로젝트를 진행하지 못할 수도 있다. 하지만 꾸역 꾸역 힘들게 진행해서, 프로젝트의 Quality를 높이지 못하면 향후 프로젝트의 진행이 아니라, 앞으로 그 고객과의 인간관계도 멀어질 수가 있다. 그런 파국까지 치닫지 않으려면, 거절로 인한 리스크를 감수해야 한다.</p>
+      <p>프로젝트를 많이 해서 매출을 향상하는 것도 물론 중요하지만, 내가 맡은 프로젝트를 고객의 기대 그 이상의 성과로 만들어내는 것이 더 중요하다.</p>
+      <p>그래서 내가 별로 돈을 못 번다. \^\^;;</p>
+      <p>하지만 함께 한 고객들에게 아쉬운 소리를 하지 않아서 좋다. 언제 어디서 어떻게 만나더라도 기분 좋고, 당당하게 인사할 수 있다. 너무나 다행인 것이, 아직까지 이 일을 하는 데 있어 돈에 휘둘리지 않는 것이다. 매 년 하는 다짐이, 타협하는 상황이 오면 이 일 과감하게 떠나자란 생각이다. 내 이익을 위해, 고객에게 피해를 줘선 안된다.</p>
+      <p>컨설턴트는 타율이 낮은 홈런왕보다 타율이 높은 호타준족이 되어야 한다. 거절하면 아쉬울 수 있지만. 거절하지 않고 강행하면, 힘들고 괴로울 수 있다.</p>
+      <p>눈 앞의 이익에 흔들리지 않고, 멀리 내다보고 결단해야 한다.</p>
+  </div>
+  
+  <div class="post-nav"><a href="072.html">← 모방이 아닌 창조를 위한 벤치마킹</a><a href="../serial.html" class="to-list">목록</a><a href="074.html" style="text-align:right;">명분과 실리. 두마리 토끼. →</a></div>
+</article>
+<div class="post-cta">
+  <p>이 글의 생각들이 한 권으로 정리되었습니다.<br>성장하는 회사가 선택한 단 하나의 전략, 《모두의 품질》</p>
+  <a href="../index.html" class="btn-bronze">책 자세히 보기</a>
+</div>
+<footer>COPYRIGHT ⓒ ROUND UP COMPANY. ALL RIGHTS RESERVED.</footer>
+</body>
+</html>

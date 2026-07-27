@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>미쳐야 미친다. | 모두의 품질 연재</title>
+<meta name="description" content="'나보다 땀을 많이 흘렸다면 금메달을 가져가도 좋다.'
+      예전에 태릉선수촌을 밀착 취재한 '다큐멘터리 72시간'에서 본 인상 깊은 멘트였다. 본인의 영역">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#111009; --bg-soft:#1A1810; --ink:#17150F; --bronze:#C2996B; --bronze-soft:#D6B58C;
+    --bronze-deep:#8F6C3F; --text:rgba(255,255,255,0.85); --text-dim:rgba(255,255,255,0.55);
+    --text-faint:rgba(255,255,255,0.38); --line:rgba(255,255,255,0.12); --serif:'Noto Serif KR',serif; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Pretendard Variable',Pretendard,-apple-system,sans-serif; background:var(--bg);
+    color:var(--text); line-height:1.75; -webkit-font-smoothing:antialiased; word-break:keep-all; }
+  a { color:inherit; text-decoration:none; }
+  nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(17,16,9,0.85);
+    backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+  .nav-inner { max-width:1000px; margin:0 auto; padding:0 24px; height:60px;
+    display:flex; align-items:center; justify-content:space-between; }
+  .nav-title { font-size:15px; font-weight:800; color:#fff; }
+  .nav-title .star { color:var(--bronze); margin-right:0.4rem; font-size:12px; }
+  .nav-links { display:flex; gap:1.4rem; align-items:center; }
+  .nav-links a { font-size:13px; font-weight:500; color:var(--text-dim); }
+  .nav-links a:hover { color:#fff; }
+  .nav-buy { padding:7px 18px; background:var(--bronze); color:var(--ink)!important;
+    border-radius:999px; font-size:12.5px!important; font-weight:700!important; }
+
+  article { max-width:720px; margin:0 auto; padding:130px 24px 80px; }
+  .post-cat { display:inline-flex; align-items:center; gap:0.6rem; font-size:11.5px; font-weight:700;
+    letter-spacing:0.2em; text-transform:uppercase; color:var(--bronze); margin-bottom:1.6rem; }
+  .post-pick { font-size:10.5px; letter-spacing:0.08em; border:1px solid var(--bronze-deep);
+    color:var(--bronze-soft); border-radius:999px; padding:2px 9px; }
+  h1 { font-size:clamp(26px,4.6vw,36px); font-weight:800; letter-spacing:-0.02em;
+    line-height:1.4; color:#fff; margin-bottom:0.7rem; }
+  .post-sub { font-size:15.5px; color:var(--bronze-soft); margin-bottom:1rem; }
+  .post-no { font-size:12.5px; color:var(--text-faint); margin-bottom:3rem;
+    padding-bottom:2rem; border-bottom:1px solid var(--line); }
+  .post-body { font-family:var(--serif); font-size:16.5px; font-weight:500; line-height:2.15; }
+  .post-body p { margin-bottom:1.6rem; }
+  .post-body strong { color:var(--bronze-soft); font-weight:700; }
+  .post-tags { margin-top:2.6rem; display:flex; flex-wrap:wrap; gap:0.5rem; }
+  .post-tags span { font-size:12px; color:var(--text-dim); border:1px solid var(--line);
+    border-radius:999px; padding:4px 12px; }
+  .post-nav { margin-top:3.5rem; padding-top:2rem; border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; gap:1rem; font-size:13.5px; }
+  .post-nav a { color:var(--text-dim); max-width:44%; }
+  .post-nav a:hover { color:var(--bronze-soft); }
+  .post-nav .to-list { color:var(--bronze); font-weight:600; }
+  .post-cta { text-align:center; padding:56px 24px 64px; background:var(--bg-soft);
+    border-top:1px solid var(--line); }
+  .post-cta p { font-size:14.5px; color:var(--text-dim); margin-bottom:1.4rem; }
+  .btn-bronze { display:inline-block; padding:12px 34px; background:var(--bronze); color:var(--ink);
+    border-radius:999px; font-size:14px; font-weight:700; }
+  .btn-bronze:hover { background:var(--bronze-soft); }
+  footer { padding:2rem 24px; text-align:center; font-size:11px; color:var(--text-faint);
+    letter-spacing:0.07em; }
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-title"><span class="star">★</span>모두의 품질</a>
+    <div class="nav-links">
+      <a href="../serial.html">연재 목록</a>
+      <a href="../index.html#cta" class="nav-buy">구매하기</a>
+    </div>
+  </div>
+</nav>
+<article>
+  <p class="post-cat">시스템과 문제해결 </p>
+  <h1>미쳐야 미친다.</h1>
+  <p class="post-sub">Crazy to meet</p>
+  <p class="post-no">연재 062 / 137</p>
+  <div class="post-body">
+      <p>'나보다 땀을 많이 흘렸다면 금메달을 가져가도 좋다.'</p>
+      <p>예전에 태릉선수촌을 밀착 취재한 '다큐멘터리 72시간'에서 본 인상 깊은 멘트였다. 본인의 영역에서 최선을 다했기에 말할 수 있는 자신감의 표현이라 생각했다.</p>
+      <p>TV 예능에서 유쾌하게 비친 탓에 선수 시절의 엄청난 업적이 다소 가려져 있는 레슬링의 '심권호' 선수는 세계 레슬링 최경량급의 레전드이자 전설적인 선수다. 작년에 심권호 선수가 팟캐스트에 나와서 이야기 한 굉장히 인상 깊었던 내용이 있었다. 어떻게 그렇게 작은 체구로, 상대 선수들을 만나면 위기도 없이 넘겨버리냐, 선천적으로 타고났냐는 질문에, 자신은 할 수 있는 모든 가능성에서 수천번 수만 번 연습을 해왔기 때문에, 상대방 선수가 어떠한 방향으로 기술이 들어와도, 본능적으로 대비가 되어있기 때문에 문제가 없다고 했다.</p>
+      <p>끝없는 연습과 노력, 그 안에서 얼마나 많은 실패와 극복이 있었을까?</p>
+      <p>이정동 교수의 '축적의 시간'에 사례로도 나왔던, 잠수 기네스 기록 달성의 마법과도 같은 비밀은, 'Training(연습), Practice(훈련), Experimentation(실험)'의 계속적인 반복을 통한 Scale up이었다.</p>
+      <p>그저 생각 없는 실행, 실패에서 배우는 것 없이 다시 원점으로 돌아가서 실패를 반복하는 것은 그 어떤 도움이 되지 않고, 비용을 발생시킬 뿐이다. 똑똑한 실패를 통해서, 철저하게 재발되지 않는 원리를 깨우치는 것만이 새로운 성공을 위한 Input으로의 가치가 될 수 있다. 실패 이익률 (Return on failure)을 높이기 위해선 실패에서 잘 배워야 한다.</p>
+      <p>학창 시절 공부를 잘하는 학생들의 공통점이 '오답노트'를 통해 자신의 틀린 문제를 반복해서 학습함으로써 완벽하게 자기 것으로 만드는 것과 맥락이 같지 않나 싶다.</p>
+      <p>마법은 없다.</p>
+      <p>실패를 슬기롭게 극복하고,올바른 목표를 향해, 올바른 방향과, 올바른 원리, 방법을 장착하고, 미쳐야(Crazy) 한다. 그래야 목표에 미칠 수 (Meet) 있다.</p>
+  </div>
+  
+  <div class="post-nav"><a href="061.html">← 어떠한 모습으로 비춰질 것인가?</a><a href="../serial.html" class="to-list">목록</a><a href="063.html" style="text-align:right;">정면으로 승부하고 극복하라 →</a></div>
+</article>
+<div class="post-cta">
+  <p>이 글의 생각들이 한 권으로 정리되었습니다.<br>성장하는 회사가 선택한 단 하나의 전략, 《모두의 품질》</p>
+  <a href="../index.html" class="btn-bronze">책 자세히 보기</a>
+</div>
+<footer>COPYRIGHT ⓒ ROUND UP COMPANY. ALL RIGHTS RESERVED.</footer>
+</body>
+</html>

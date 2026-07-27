@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>End가 아닌 '&amp;'로 이어지는... | 모두의 품질 연재</title>
+<meta name="description" content="다행이다. 큰소리쳤던 '30일 매일 글쓰기'를 겨우겨우 마쳤다. 사실 이것도 지키지 못하면, 뭘 할 수 있을까 하는 생각으로 버텼다. 주변에 200일 넘게 글 쓰">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#111009; --bg-soft:#1A1810; --ink:#17150F; --bronze:#C2996B; --bronze-soft:#D6B58C;
+    --bronze-deep:#8F6C3F; --text:rgba(255,255,255,0.85); --text-dim:rgba(255,255,255,0.55);
+    --text-faint:rgba(255,255,255,0.38); --line:rgba(255,255,255,0.12); --serif:'Noto Serif KR',serif; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Pretendard Variable',Pretendard,-apple-system,sans-serif; background:var(--bg);
+    color:var(--text); line-height:1.75; -webkit-font-smoothing:antialiased; word-break:keep-all; }
+  a { color:inherit; text-decoration:none; }
+  nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(17,16,9,0.85);
+    backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+  .nav-inner { max-width:1000px; margin:0 auto; padding:0 24px; height:60px;
+    display:flex; align-items:center; justify-content:space-between; }
+  .nav-title { font-size:15px; font-weight:800; color:#fff; }
+  .nav-title .star { color:var(--bronze); margin-right:0.4rem; font-size:12px; }
+  .nav-links { display:flex; gap:1.4rem; align-items:center; }
+  .nav-links a { font-size:13px; font-weight:500; color:var(--text-dim); }
+  .nav-links a:hover { color:#fff; }
+  .nav-buy { padding:7px 18px; background:var(--bronze); color:var(--ink)!important;
+    border-radius:999px; font-size:12.5px!important; font-weight:700!important; }
+
+  article { max-width:720px; margin:0 auto; padding:130px 24px 80px; }
+  .post-cat { display:inline-flex; align-items:center; gap:0.6rem; font-size:11.5px; font-weight:700;
+    letter-spacing:0.2em; text-transform:uppercase; color:var(--bronze); margin-bottom:1.6rem; }
+  .post-pick { font-size:10.5px; letter-spacing:0.08em; border:1px solid var(--bronze-deep);
+    color:var(--bronze-soft); border-radius:999px; padding:2px 9px; }
+  h1 { font-size:clamp(26px,4.6vw,36px); font-weight:800; letter-spacing:-0.02em;
+    line-height:1.4; color:#fff; margin-bottom:0.7rem; }
+  .post-sub { font-size:15.5px; color:var(--bronze-soft); margin-bottom:1rem; }
+  .post-no { font-size:12.5px; color:var(--text-faint); margin-bottom:3rem;
+    padding-bottom:2rem; border-bottom:1px solid var(--line); }
+  .post-body { font-family:var(--serif); font-size:16.5px; font-weight:500; line-height:2.15; }
+  .post-body p { margin-bottom:1.6rem; }
+  .post-body strong { color:var(--bronze-soft); font-weight:700; }
+  .post-tags { margin-top:2.6rem; display:flex; flex-wrap:wrap; gap:0.5rem; }
+  .post-tags span { font-size:12px; color:var(--text-dim); border:1px solid var(--line);
+    border-radius:999px; padding:4px 12px; }
+  .post-nav { margin-top:3.5rem; padding-top:2rem; border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; gap:1rem; font-size:13.5px; }
+  .post-nav a { color:var(--text-dim); max-width:44%; }
+  .post-nav a:hover { color:var(--bronze-soft); }
+  .post-nav .to-list { color:var(--bronze); font-weight:600; }
+  .post-cta { text-align:center; padding:56px 24px 64px; background:var(--bg-soft);
+    border-top:1px solid var(--line); }
+  .post-cta p { font-size:14.5px; color:var(--text-dim); margin-bottom:1.4rem; }
+  .btn-bronze { display:inline-block; padding:12px 34px; background:var(--bronze); color:var(--ink);
+    border-radius:999px; font-size:14px; font-weight:700; }
+  .btn-bronze:hover { background:var(--bronze-soft); }
+  footer { padding:2rem 24px; text-align:center; font-size:11px; color:var(--text-faint);
+    letter-spacing:0.07em; }
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-title"><span class="star">★</span>모두의 품질</a>
+    <div class="nav-links">
+      <a href="../serial.html">연재 목록</a>
+      <a href="../index.html#cta" class="nav-buy">구매하기</a>
+    </div>
+  </div>
+</nav>
+<article>
+  <p class="post-cat">성장과 태도 </p>
+  <h1>End가 아닌 '&amp;'로 이어지는...</h1>
+  
+  <p class="post-no">연재 032 / 137</p>
+  <div class="post-body">
+      <p>다행이다. 큰소리쳤던 '30일 매일 글쓰기'를 겨우겨우 마쳤다. 사실 이것도 지키지 못하면, 뭘 할 수 있을까 하는 생각으로 버텼다. 주변에 200일 넘게 글 쓰신 분도 계시고, 몇 년을 지속적으로 글 쓴 분들에 비하면 너무나 초라한 성취 일지 모른다. 하지만 에베레스트 산을 정복하기 위해서는, 작은 언덕부터 정복해야 한다. 이러한 작은 과정을 거치지 않고, 한 번에 높은 곳을 갈 수 있는 방법은 없다.</p>
+      <p>하루하루 위기가 많았다.</p>
+      <p>보기 좋게 실패하는 것을 기대하며 의기투합한 건 아닌가 싶을 정도로, 과정에서 많은 위기들이 나의 발목을 붙잡았다. 그럴 때마다 그 위기를 탈출한 나의 방법은..</p>
+      <p>그냥 앞으로 달려가는 것이었다. 발목에 붙잡힌 상황으로 인해서 브레이크를 밟고 설 수도 있었는데, 그냥 앞으로 달려 나갔다.</p>
+      <p>'그것이 최선이었나?'라고 누군가 물어본다면</p>
+      <p>'최선?... 최악은 아니었길....'이라고 이야기할 수 있다.</p>
+      <p>나는 무모했고, 무식했다.</p>
+      <p>몇 차례나 늦은 밤 일정을 마치고 집으로 돌아가는 고속도로 휴게소와 공터 주차장에 차를 세우고 글을 썼다. 아기를 재우기 위해 고군분투하는 아내에게 미안한 표정만 던지고, 글을 쓰기도 했다. 부랴부랴 글을 등록하고 "이제 내가 아이 볼게!"하고 거실로 나가면 어느새 딸은 잠이 들어있고, 아내는 녹초가 되어 있었다. 굉장히 미안했다. '열정을 빙자한 욕심은 아닌가' 싶었다.</p>
+      <p>어찌 보면 '30일 매일 글쓰기' 프로젝트를 통해서, 비정상적이고 균형적이지 못한 나의 일상 스케줄과 패턴을 파악하게 되었다. 하루에 30분 ~ 1시간도 온전히 나의 생각을 정리하는데에 시간을 투자하지 못할 정도의 일상생활이라면, 그것은 다른데 문제가 있는 것이 아니라 나의 문제였다. 직장생활을 하고 있다면 회사 탓을 하겠지만, 1인 경영을 하는 내가 바빠서 정신을 못 차린다면 그것은 100% 나의 능력 부족이고, 스케쥴링 잘못이다.</p>
+      <p>이번 기회를 통해, 건강한 삶을 위해 나를 되짚어 봐야 함을 깨달았다. 아마 상황 되는 대로 글을 쓰거나 대충 글을 써서, 올리는 것에만 급급했더라면 못 깨달았을지도 모르겠다. 만족할 순 없지만, 많은 생각과 고민을 했고, 현재의 내 능력치의 100을 다해 글을 적었기 때문에 후회는 없다.</p>
+      <p>그것만으로도 이번 프로젝트는 나에게 커다란 성취다. 지금 나의 수준이 어떤지 깨달았으니.</p>
+      <p>30일간 적은 글을 정리를 해봤다.</p>
+      <p>1. 평균 글 등록 시간 : 20시 48분</p>
+      <p>2. 제일 빠른 등록 시간 : 02시 00분</p>
+      <p>3. 제일 늦은 등록 시간 : 23시 58분 (공동 3건)</p>
+      <p>4. 밤 11시 이후에 등록한 글이 30건 중, 총 15건으로 50%를 차지했다. 11시의 사나이라고 불릴 정도였다.</p>
+      <p>5. 11시 50분 이후 등록 글이 8건이었다. 정말 1분 1초가 아슬아슬한 시간에 겨우겨우 글을 마무리하고 등록했다.</p>
+      <p>6.MS WORD의 기준 (맑은 고딕, 10포인트)으로, 7/17 ~ 8/15, 30회의 글쓰기 동안, 11,959 단어로 총 83page를 채웠다.</p>
+      <p>30일 간 나의 글쓰기의 원칙은 아래와 같았다.</p>
+      <p>1. 남 이야기 쓰지 말고, 내 경험, 생각을 쓰자.</p>
+      <p>2. 그날 새로운 주제를 고민하고 글을 쓰자. (평소에 적어 놓았던 글 재고 사용 금지)</p>
+      <p>3. 행여나 누군가에게 상처가 될 글은 쓰지 말자.</p>
+      <p>4. 아끼지 말고, 다 나누자.</p>
+      <p>예상했지만 매일 30일 글쓰기를 했다고 해서, 갑자기 노트북 화면이 밝아지며 마우스가 금빛으로 변하는 등의 기적은 일어나지 않았다. 어제와 같은 오늘이고, 내일도 오늘과는 크게 다르지 않을 일상일 것이다. 하지만 생각들에 생명을 불어넣어, 글로 재창조하여 세상과 소통을 하는 것의 매력을 느끼게 되었다. 그거면 충분하다.</p>
+      <p>무엇보다도, 30일의 미션을 성공했다는 것에 나 자신에게 칭찬을 해주고 싶다. 끈기가 부족한 나도, 맘먹으면 할 수 있다는 자신감을 갖게 해 주었다. 이 작은 도전과 성취들을 쌓아 올려 가다 보면, 조금 더 큰 도전과 성취를 할 수 있을 것이며 이것의 반복을 통해 언젠가 크고 위대한 도전을 성취할 때가 올 것이라 믿는다.</p>
+      <p>이제는 좀 자유롭게 글을 쓰려한다.딸이 울면, 먼저 챙기고, 아내가 음식물 쓰레기나, 분리수거하고 오라고 하면 그것부터 하고 글을 쓸 것이다. 갑자기 늦은 시간 전화 온 친구가 고민 상담을 한다면, 진정으로 그 이야기를 들어주고 나서 글을 쓸 것이다.</p>
+      <p>사실 처음에 3달을 도전했다가, 3일 차에 부랴부랴 1달만 하겠다고 이 프로젝트 Host인 Peter Kim님께 말씀을 드렸다. 아마도 첨부터 3달을 목표로 했더라면 이미 떨어져서 포기했을 듯하다.</p>
+      <p>너무나 부족하지만, 격려와 칭찬을 해준 주변 분들이 있었기에 이 작은 도전을 마칠 수 있었다. 그리고 글을 쓰라고 이야기한 적이 없지만, 글을 쓸 수밖에 없도록 해주신 Peter Kim님께 진심으로 감사드린다.</p>
+      <p>그리고 글의 영감을 주는, 나의 소중한 고객들과 주변 지인분들, 그리고 가족에게 감사드린다.</p>
+      <p>이제 나의 글쓰기의 예열은 끝났다.</p>
+      <p>End가 아닌 &amp;로 이어지는 새로운 시작이다.</p>
+      <p>꺼지지 않는 엔진이 될 수 있기를...</p>
+  </div>
+  
+  <div class="post-nav"><a href="031.html">← 나는 꾸준함의 증거가 되고 싶다.</a><a href="../serial.html" class="to-list">목록</a><a href="033.html" style="text-align:right;">잠재적인 리스크를 예방하기 위한 준비 →</a></div>
+</article>
+<div class="post-cta">
+  <p>이 글의 생각들이 한 권으로 정리되었습니다.<br>성장하는 회사가 선택한 단 하나의 전략, 《모두의 품질》</p>
+  <a href="../index.html" class="btn-bronze">책 자세히 보기</a>
+</div>
+<footer>COPYRIGHT ⓒ ROUND UP COMPANY. ALL RIGHTS RESERVED.</footer>
+</body>
+</html>

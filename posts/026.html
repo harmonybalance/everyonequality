@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>감히 넘볼 수 없는 '넘사벽'의 조건 | 모두의 품질 연재</title>
+<meta name="description" content="예? 얼마라고요!?
+      며칠 전 처갓집이 있는 아파트 상가의 과일가게에서 있었던 일이다. 실평수가 3~4평이나 될까 하는 작은 가게인데, 젊은 사장님이">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#111009; --bg-soft:#1A1810; --ink:#17150F; --bronze:#C2996B; --bronze-soft:#D6B58C;
+    --bronze-deep:#8F6C3F; --text:rgba(255,255,255,0.85); --text-dim:rgba(255,255,255,0.55);
+    --text-faint:rgba(255,255,255,0.38); --line:rgba(255,255,255,0.12); --serif:'Noto Serif KR',serif; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Pretendard Variable',Pretendard,-apple-system,sans-serif; background:var(--bg);
+    color:var(--text); line-height:1.75; -webkit-font-smoothing:antialiased; word-break:keep-all; }
+  a { color:inherit; text-decoration:none; }
+  nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(17,16,9,0.85);
+    backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+  .nav-inner { max-width:1000px; margin:0 auto; padding:0 24px; height:60px;
+    display:flex; align-items:center; justify-content:space-between; }
+  .nav-title { font-size:15px; font-weight:800; color:#fff; }
+  .nav-title .star { color:var(--bronze); margin-right:0.4rem; font-size:12px; }
+  .nav-links { display:flex; gap:1.4rem; align-items:center; }
+  .nav-links a { font-size:13px; font-weight:500; color:var(--text-dim); }
+  .nav-links a:hover { color:#fff; }
+  .nav-buy { padding:7px 18px; background:var(--bronze); color:var(--ink)!important;
+    border-radius:999px; font-size:12.5px!important; font-weight:700!important; }
+
+  article { max-width:720px; margin:0 auto; padding:130px 24px 80px; }
+  .post-cat { display:inline-flex; align-items:center; gap:0.6rem; font-size:11.5px; font-weight:700;
+    letter-spacing:0.2em; text-transform:uppercase; color:var(--bronze); margin-bottom:1.6rem; }
+  .post-pick { font-size:10.5px; letter-spacing:0.08em; border:1px solid var(--bronze-deep);
+    color:var(--bronze-soft); border-radius:999px; padding:2px 9px; }
+  h1 { font-size:clamp(26px,4.6vw,36px); font-weight:800; letter-spacing:-0.02em;
+    line-height:1.4; color:#fff; margin-bottom:0.7rem; }
+  .post-sub { font-size:15.5px; color:var(--bronze-soft); margin-bottom:1rem; }
+  .post-no { font-size:12.5px; color:var(--text-faint); margin-bottom:3rem;
+    padding-bottom:2rem; border-bottom:1px solid var(--line); }
+  .post-body { font-family:var(--serif); font-size:16.5px; font-weight:500; line-height:2.15; }
+  .post-body p { margin-bottom:1.6rem; }
+  .post-body strong { color:var(--bronze-soft); font-weight:700; }
+  .post-tags { margin-top:2.6rem; display:flex; flex-wrap:wrap; gap:0.5rem; }
+  .post-tags span { font-size:12px; color:var(--text-dim); border:1px solid var(--line);
+    border-radius:999px; padding:4px 12px; }
+  .post-nav { margin-top:3.5rem; padding-top:2rem; border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; gap:1rem; font-size:13.5px; }
+  .post-nav a { color:var(--text-dim); max-width:44%; }
+  .post-nav a:hover { color:var(--bronze-soft); }
+  .post-nav .to-list { color:var(--bronze); font-weight:600; }
+  .post-cta { text-align:center; padding:56px 24px 64px; background:var(--bg-soft);
+    border-top:1px solid var(--line); }
+  .post-cta p { font-size:14.5px; color:var(--text-dim); margin-bottom:1.4rem; }
+  .btn-bronze { display:inline-block; padding:12px 34px; background:var(--bronze); color:var(--ink);
+    border-radius:999px; font-size:14px; font-weight:700; }
+  .btn-bronze:hover { background:var(--bronze-soft); }
+  footer { padding:2rem 24px; text-align:center; font-size:11px; color:var(--text-faint);
+    letter-spacing:0.07em; }
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-title"><span class="star">★</span>모두의 품질</a>
+    <div class="nav-links">
+      <a href="../serial.html">연재 목록</a>
+      <a href="../index.html#cta" class="nav-buy">구매하기</a>
+    </div>
+  </div>
+</nav>
+<article>
+  <p class="post-cat">품질 <span class="post-pick">★ 추천</span></p>
+  <h1>감히 넘볼 수 없는 '넘사벽'의 조건</h1>
+  <p class="post-sub">Value &gt; Price &gt; Cost</p>
+  <p class="post-no">연재 026 / 137</p>
+  <div class="post-body">
+      <p>"예? 얼마라고요!?"</p>
+      <p>며칠 전 처갓집이 있는 아파트 상가의 과일가게에서 있었던 일이다. 실평수가 3~4평이나 될까 하는 작은 가게인데, 젊은 사장님이 굉장히 열정적으로 운영하는 곳이다.내 기준으로 대형마트 과일이 맛있을 확률은 50% 내외인데, 이 곳에서 산 과일의 만족도는 90% 이상일 정도로 믿고 먹는 곳이었다.</p>
+      <p>수박을 한 통 사려고 했는데, 생각보다 가격이 높았다. 며칠 전에 대형마트에서 샀던 수박 가격보다 3배는 더 비쌌는데 왜 이리 비싸냐고 물었더니, 이 수박의 품질은 다른 수박과 차원이 다르다고 했다. 수박은 단지 단맛만 있다고 좋은 수박이 아니라, 수박 그 본연의 향과 과육의 맛을 느낄 수 있어야 좋은 수박인데 이 수박이 바로 그렇다고 했다.</p>
+      <p>과일가게 젊은 사장님은 "괜찮은 과일과 정말 좋은 과일의 맛의 차이는 생각보다 그렇게 차이가 나지 않을 수 있어요. 하지만 그 사소한 차이에 가격은 몇 배나 차이가 나죠. 하지만 비싸다고 그냥 일반적인 수박을 사는 사람들은 절대 이런 수박의 맛을 느껴보지 못해요. 사소한 차이일 수 있지만, 좀 더 맛있는 최고 수준의 수박을 기꺼이 비용을 지불하고 구매를 하는 사람들이 있어요." 그러면서 알만한 동네 몇 곳을 이야기하면서 "그런데가 아니면 이 수박은 볼 수도 없어요."</p>
+      <p>그의 당당한 설명에, 자부심을 넘어선 경외심이 느껴졌다. 그리고 잠시 고민했던 나를 반성하며 결제를 하고 수박을 구매했다. "혹시나 드셔 보시고 맛이 없으시면 100% 환불해드립니다."</p>
+      <p>'사람 입맛이 다 다를 텐데, 저런 호기로운 장담까지야.'라고 속으로 생각을 하며, 한 편으로 도대체 얼마나 맛있는지 두고 보자라는 마음으로 처갓집으로 향했다.</p>
+      <p>'넘사벽 - '넘을 수 없는 사차원의 벽'의 줄임말. 아무리 노력해도 자신의 힘으로는 격차를 줄이거나 뛰어넘을 수 없는 상대를 가리키는 말이다. 자신의 무력감을 표현하기 위해 잘난 상대방을 두드러지게 과장해 보이는 경우 사용한다. (대중문화사전, 2009, 김기란, 최기호)'</p>
+      <p>'와... 대박... 엄청난 수박이다... 넘사벽이야'</p>
+      <p>한 입 베어 물었을 때 아삭한 식감과 함께 수박의 향과 육즙이 파도처럼 밀려왔다. 장인어른, 장모님, 아내와 나 모두 "와~ 수박 진~짜 맛있다."라고 감탄사를 외쳤다.지금까지 먹어온 수박과 비교해서 모든 면에서 월등히 뛰어났다.</p>
+      <p>'이 정도 품질이면 기꺼이 이 돈 내고 먹겠구나.'</p>
+      <p>일반적인 조직은 예측 가능하고, 예상 가능한 수준의 제품과 서비스를 만들어낸다. 대게 이런 조직은 의사결정을 하는 데 있어서, 투자 대비 수익률, 생산성, 설비 비가동률을 최우선적으로 고려하고 제품과 공정을 설계하고 진행을 한다. 그러면서 회사 여기저기에는 '품질 최우선, 무결점 품질'등의 구호가 적인 플래카드가 사무실이나 현장에 덕지덕지 부착되어 있다. 하지만 정작 품질을 파악하고, 예방하기 위한 노력은 굉장히 형식적이며, 검사를 통해 불량품을 어떻게 잡아 낼 것인가에 집중을 하고 운영을 한다. 저기 앞에서는 불량품이 계속 생산되어 후속 공정으로 밀려오는데, 저 뒤쪽에서 여기저기서 날아오는 불량품을 위태롭게 막아내는 골키퍼 같은 모습으로 운영을 하는 경우가 많다. 문제의 원인은 공정에서 일을 하는 직원이 제대로 불량품을 검출해내지 못했기 때문에 발생한다고 생각하며, 항상 직원에 대한 교육을 문제 해결을 위한 최우선적인 대책으로 수립해서 실행을 한다. 그리고선 또 문제는 재발이 되고, 그렇게 다람쥐 쳇바퀴 돌 듯 재미없고 힘든 하루하루를 보낸다.</p>
+      <p>사실 '넘사벽' 수준의 조직과 보편적인 범위의 일반적인 조직의 수준은, 절대적인 기준으로 놓고 보면 위의 수박의 사례처럼 그렇게 차이가 크지 않을 수도 있다. 그래서인지 일반적인 기업의 경영자들은 이런 이야기를 많이 한다. "(넘사벽 기업) 저 회사하고 우리 회사 하고 사실 큰 차이도 없다고 봐요. 우리도 사람만 좀 많으면, 아이템이 저렇게 단순하면 (대게 이런 경영자들은 자기네 회사 아이템이 가장 힘들다고 생각한다.), 그거 수주만 받아서 영업이익이 좀만 커서 투자 여력이 있었더라면 저 정도 품질 우리도 충분히 따라잡지요."</p>
+      <p>감히 장담은 할 수 없지만, 확신할 수 있다. 이런 기업은 절대 '넘사벽'기업이 될 수 없다는 걸.</p>
+      <p>왜냐면 이 기업은 한 번도 '넘사벽'이었던 적이 없었기 때문에, 자신들의 위치에서 보이는 별로 차이가 나 보이지 않는 저 높이까지 가는 것이 얼마나 힘든지를 모른다. 그저 자신들과 그 조직의 차이만큼, 과거에 성장해 온 시간과 노력만 있으면 충분히 가능할 거라고 착각한다.</p>
+      <p>70점에서 80점까지 10점을 올리기 위한 노력의 크기와 90점에서 100점까지 10점을 올리기 위한 노력의 크기는 감히 비교할 수 없을 정도로 차이가 크다. 단순 비교는 어렵지만, 70점에서 80점으로 10점을 올리는 노력의 질과 양보다, 90점에서 91점으로 올리기 위한 노력의 질과 양이 훨씬 클 수도 있다.</p>
+      <p>세계적인 경쟁력을 갖춘 조직이, 그 자리에 오기까지 얼마나 치열하게 노력을 해왔는지, 일반적인 조직은 감히 상상하지 못한다.</p>
+      <p>"그 회사는 규모가 크고, 돈도 많고, 사람도 많으니깐 품질에도 투자하고, 직원들 교육도 체계적으로 할 수 있는 거죠." 품질에 투자를 하고, 직원들을 교육을 시켰기 때문에 그 회사가 성장하고, 돈을 벌고, 사람도 많아진 거라고는 생각하지 못한다.</p>
+      <p>'회사가 좀 잘되면 투자도 하고 직원들 역량을 위한 교육도 하고, 무엇이든 하겠다!'는 조직이 제대로 노력하고 투자하는 것을 본 적이 없다. 이런 조직들은 항상 세계정세와 산업의 분위기 탓, 최저시급 상승 탓, 요즘 직원들의 끈기가 부족한 탓을 한다. 한편으로 이런 생각도 든다. 핑곗거리 댈 수 있는 이유들이 많아서 그나마 다행이라고.</p>
+      <p>하지만 이런 조직들은 '넘사벽' 기업이 투자하는 시간과 비용보다 어찌 보면 더 많은 시간과 비용을 투자하는지 모른다. '잘못된 오더로 인한 실패비용과 재작업에 들어가는 시간, 품질문제 발생으로 인한 클레임 비용과 고객에게 대책서 보내기 위해 들어가는 페이퍼 워킹 시간, 잦은 직원들의 퇴사로 인한 재교육 비용과 채용 및 교육시간 등등.' 결국에 시간과 돈을 제대로 써보지도 못하고, 회사가 어렵다고 이면지 쓰자, 전기 아끼자, 복리후생 줄이자, 월급 깎자라고 21세기형 새마을 운동을 펼친다. 결국 구성원들은 투덜투덜 조직에 불만을 갖고, 능력 있는 직원들은 자기 살 길 찾아서 떠나게 된다.</p>
+      <p>어차피 노력과 투자를 할 거라면, 할 수 있는 한 빨리 하는 것, 처음 할 때 올바르게 하는 것 (Do it right the first time) 이 탁월한 수준의 '넘사벽' 기업이 될 수 있는 첫걸음이 아닐까 생각한다.</p>
+      <p>PS. 수박이 비싸기만 하고 맛이 없었더라면, 아마도 글의 주제는 정반대가 되었을지 모르겠다.</p>
+      <p>'과잉, 과대, 과장광고에 속지 않는 현명한 방법'</p>
+      <p>'넘사벽' 맛의 수박을 맛보게 해 준 과일가게 사장님. 리스펙트!!</p>
+  </div>
+  
+  <div class="post-nav"><a href="025.html">← Brake than Accelerator</a><a href="../serial.html" class="to-list">목록</a><a href="027.html" style="text-align:right;">승부에서 절대 지지 않는 전략. →</a></div>
+</article>
+<div class="post-cta">
+  <p>이 글의 생각들이 한 권으로 정리되었습니다.<br>성장하는 회사가 선택한 단 하나의 전략, 《모두의 품질》</p>
+  <a href="../index.html" class="btn-bronze">책 자세히 보기</a>
+</div>
+<footer>COPYRIGHT ⓒ ROUND UP COMPANY. ALL RIGHTS RESERVED.</footer>
+</body>
+</html>

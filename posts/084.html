@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>징글징글한 프로젝트를 마치며 -- 좌충우돌 컨설팅 스토리 | 모두의 품질 연재</title>
+<meta name="description" content="1. 시작
+      올 2월.
+      기존 고객으로 부터, 관계사의 새로운 프로젝트를 요청 받았다.
+      꽤 거리가 먼 곳이라, 다소 제약은 있었지만 ">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#111009; --bg-soft:#1A1810; --ink:#17150F; --bronze:#C2996B; --bronze-soft:#D6B58C;
+    --bronze-deep:#8F6C3F; --text:rgba(255,255,255,0.85); --text-dim:rgba(255,255,255,0.55);
+    --text-faint:rgba(255,255,255,0.38); --line:rgba(255,255,255,0.12); --serif:'Noto Serif KR',serif; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Pretendard Variable',Pretendard,-apple-system,sans-serif; background:var(--bg);
+    color:var(--text); line-height:1.75; -webkit-font-smoothing:antialiased; word-break:keep-all; }
+  a { color:inherit; text-decoration:none; }
+  nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(17,16,9,0.85);
+    backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+  .nav-inner { max-width:1000px; margin:0 auto; padding:0 24px; height:60px;
+    display:flex; align-items:center; justify-content:space-between; }
+  .nav-title { font-size:15px; font-weight:800; color:#fff; }
+  .nav-title .star { color:var(--bronze); margin-right:0.4rem; font-size:12px; }
+  .nav-links { display:flex; gap:1.4rem; align-items:center; }
+  .nav-links a { font-size:13px; font-weight:500; color:var(--text-dim); }
+  .nav-links a:hover { color:#fff; }
+  .nav-buy { padding:7px 18px; background:var(--bronze); color:var(--ink)!important;
+    border-radius:999px; font-size:12.5px!important; font-weight:700!important; }
+
+  article { max-width:720px; margin:0 auto; padding:130px 24px 80px; }
+  .post-cat { display:inline-flex; align-items:center; gap:0.6rem; font-size:11.5px; font-weight:700;
+    letter-spacing:0.2em; text-transform:uppercase; color:var(--bronze); margin-bottom:1.6rem; }
+  .post-pick { font-size:10.5px; letter-spacing:0.08em; border:1px solid var(--bronze-deep);
+    color:var(--bronze-soft); border-radius:999px; padding:2px 9px; }
+  h1 { font-size:clamp(26px,4.6vw,36px); font-weight:800; letter-spacing:-0.02em;
+    line-height:1.4; color:#fff; margin-bottom:0.7rem; }
+  .post-sub { font-size:15.5px; color:var(--bronze-soft); margin-bottom:1rem; }
+  .post-no { font-size:12.5px; color:var(--text-faint); margin-bottom:3rem;
+    padding-bottom:2rem; border-bottom:1px solid var(--line); }
+  .post-body { font-family:var(--serif); font-size:16.5px; font-weight:500; line-height:2.15; }
+  .post-body p { margin-bottom:1.6rem; }
+  .post-body strong { color:var(--bronze-soft); font-weight:700; }
+  .post-tags { margin-top:2.6rem; display:flex; flex-wrap:wrap; gap:0.5rem; }
+  .post-tags span { font-size:12px; color:var(--text-dim); border:1px solid var(--line);
+    border-radius:999px; padding:4px 12px; }
+  .post-nav { margin-top:3.5rem; padding-top:2rem; border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; gap:1rem; font-size:13.5px; }
+  .post-nav a { color:var(--text-dim); max-width:44%; }
+  .post-nav a:hover { color:var(--bronze-soft); }
+  .post-nav .to-list { color:var(--bronze); font-weight:600; }
+  .post-cta { text-align:center; padding:56px 24px 64px; background:var(--bg-soft);
+    border-top:1px solid var(--line); }
+  .post-cta p { font-size:14.5px; color:var(--text-dim); margin-bottom:1.4rem; }
+  .btn-bronze { display:inline-block; padding:12px 34px; background:var(--bronze); color:var(--ink);
+    border-radius:999px; font-size:14px; font-weight:700; }
+  .btn-bronze:hover { background:var(--bronze-soft); }
+  footer { padding:2rem 24px; text-align:center; font-size:11px; color:var(--text-faint);
+    letter-spacing:0.07em; }
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-title"><span class="star">★</span>모두의 품질</a>
+    <div class="nav-links">
+      <a href="../serial.html">연재 목록</a>
+      <a href="../index.html#cta" class="nav-buy">구매하기</a>
+    </div>
+  </div>
+</nav>
+<article>
+  <p class="post-cat">고객 <span class="post-pick">★ 추천</span></p>
+  <h1>징글징글한 프로젝트를 마치며 -- 좌충우돌 컨설팅 스토리</h1>
+  
+  <p class="post-no">연재 084 / 137</p>
+  <div class="post-body">
+      <p>1. 시작</p>
+      <p>올 2월.</p>
+      <p>기존 고객으로 부터, 관계사의 새로운 프로젝트를 요청 받았다.</p>
+      <p>꽤 거리가 먼 곳이라, 다소 제약은 있었지만 의미있는 프로젝트라고 생각했다.</p>
+      <p>당시에 내가 여력이 없었던터라, 확정되지 않았던 다른 고객의 제안을 송구스럽게 거절하고 해당 프로젝트를 선택했다. 그만큼 반드시 잘 해내야 하는 도전이었다.</p>
+      <p>3.  Project Kick off</p>
+      <p>4.</p>
+      <p>Kick Off를 위해서 거의 1주일을 꼬박 준비했다.</p>
+      <p>해당 조직의 크고 담대한 목표를 달성하기 위해, 경영자와 각 팀장, 팀원, 현장에 있는 작업자들까지</p>
+      <p>무엇을 어떻게 해야 하는지에 대한 섬세하고 디테일한 계획을 수립했다.</p>
+      <p>Kick off 당일. 본사에 있는 경영자와 임원께서는 화상회의로 참여하시고, 해당 사업장의 구성원들과 함께 프로젝트 달성을 위한 파이팅을 외쳤다. 느낌이 좋았다.</p>
+      <p>'그래! 멋진 레퍼런스를 만들어보는거야!!'</p>
+      <p>하지만. 거짓말 같이 그날 코로나 팬더믹 사태가 터졌다. 해당 고객사가 있는 지역에서 확진자들이 대거 발생하기 시작했다.</p>
+      <p>시작과 동시에 프로젝트는 All stop 되었다.</p>
+      <p>3. 기다림</p>
+      <p>언제 재개 될 지 모르는 상황이었기 때문에 해당 고객사를 위해 비워둔 일정들을 다른 일정으로 채울 수 없었다.</p>
+      <p>고객과의 신뢰를 위해서는 내가 감수해야한다. 만약에 내가 그 빈자리를, 다른 프로젝트로 채웠는데</p>
+      <p>갑작스럽게 재개가 되었을 때 대응을 못하게 된다면 나는 기존 고객을 잃게 되는 것이다.</p>
+      <p>신규고객의 창출을 못하는 건 아쉽지만 기존고객을 잃는 건 치명적이다.</p>
+      <p>물론 고객의 양해를 구하고, 어찌 머리를 굴려서 시간을 채울 수 있었겠지만 복잡한 건 딱 질색이다.</p>
+      <p>내 고객은 내가 기다린다.</p>
+      <p>4. 다시 시작</p>
+      <p>6개월간 진행하기로 했던 프로젝트였는데, 3개월 이상을 프로젝트를 진행하지 못했다.</p>
+      <p>코로나19로 인해 해당 조직의 글로벌 본사 지침상, 출장 및 대외 업무가 모두 stop이었기 때문에</p>
+      <p>묵묵하게 그 지침을 따를 수 밖에 없었다. 5월 말이 되어서야, 대외 업무가 가능하게 되었다.</p>
+      <p>주어진 시간이 2개월 남짓이었다.</p>
+      <p>6개월이라는 Quantity를, 2개월의 Quality로 변환해야 했다.</p>
+      <p>힘든 도전이었다.</p>
+      <p>5. All in</p>
+      <p>프로젝트 마무리를 위해 8박 9일을 짐을 싸서 내려와 있는 동안 항상 가장 늦게 퇴근을 했다. 평균 밤 11시, 늦을 땐 자정을 넘겨서 갔는데 여기 그 누구도 부탁하거나 시킨 사람도 없었다. 일찍 퇴근해서 같이 식사하러 가자는 제안도 다 거절했다.</p>
+      <p>이것이 최선은 아니란 걸 잘 안다. 하지만 나 스스로가 그렇게 하지 않으면 후회할거 같아서, 쏟아낼 수 있는 전부를 다 쏟아내려했다. 아직은 나의 내공이 많이 부족하기 때문에, Quality가 부족한 만큼, Quantity 로 채워야 한다. 어떻게든 내가 할 수 있는 최선, 고객의 기대 그 이상을 해야한다.</p>
+      <p>나보다 더 열심히 땀을 흘린 직원이 있다면, 감히 딴지 걸어도 좋다라는 생각으로 하다보면 안다.</p>
+      <p>'고객이 나를 인정하고, 따라주는구나.'</p>
+      <p>고객의 목표를 달성하기 위해, 고객보다 더 간절하고, 열정적으로 준비하는 것</p>
+      <p>마치 내가 이 조직의 구성원이자, 경영자 더 나아가 이 조직의 고객이 되어 일을 하게 되는 단계까지 가게 되면 느끼게 된다.</p>
+      <p>'동기화 완료'</p>
+      <p>6. 원칙</p>
+      <p>진행하는 과정에 있어서 부딪히는 경우도 있다.</p>
+      <p>"대표님이 이야기 하시는 내용이 맞다는 건 너무도 잘 알고 이해가 되는데, 너무 시간도 많이 걸리고, 번거로운데 그냥 기존처럼하면 안되나요?"</p>
+      <p>내 원칙은 명확하다.</p>
+      <p>"고객은 기존 처럼 하는 방식을 인정하지 않을 겁니다. 나를 설득하려하지 마세요. 내가 고객이라고 생각하세요. 다만 어떻게 우리가 어떻게 효율적으로 할 수 있을지 함께 고민해보죠."</p>
+      <p>다소 의아스러울 수 있지만,고객의 요청을 받고 하는 프로젝트지만, 고객의 입장이 아닌 고객의 고객 입장에서 일을 한다. 나의 목적은 고객으로 하여금 그들의 고객을 만족시키게 하는 것이다. 그래서 내 고객보다, 내 고객의 고객을 더 잘 알고 있어야 한다.</p>
+      <p>내 고객이 단순히 그들의 편리함을 위해 그들의 고객을 기만하는 일을 하는 것을 나는 용납하지 못한다.</p>
+      <p>무슨 자신감이냐 할 수 있겠지만 나는 그런 고객은 필요없다.</p>
+      <p>벼락치기 꼼수를 요청하거나, 허위로 작성하거나, 고객을 속이기 위한 일을 하는 조직의 발전을 위해</p>
+      <p>나의 시간을 허비하지 않고 싶다. 돈을 아무리 많이 준다고 하더라도, 그런 고객은 필요 없다.</p>
+      <p>그래서 잔소리를 많이 하는 편이다. 아주 많이.</p>
+      <p>왜냐면 고객은 까다롭고, 고객 요구사항은 항상 비현실적일 때가 많기 때문이다.</p>
+      <p>그럼에도 불구하고, 우리는 고객의 요구사항을 충족하고 고객만족을 지향해야 한다.</p>
+      <p>고객을 만족시킬 자신이 없다면, 하지 말아야 한다. 쉽게 생각하고 그냥 되면 되겠지하고 뛰어들었다가는, 결국 거품뿐인 조직이 될 뿐이다.</p>
+      <p>내 고객사들 중에는, 해당 분야 세계 1위 기업들도 여럿있다.</p>
+      <p>그 조직들 조차도 항상 문제에 부딪히고,문제를 해결하기 위해 고민하고 노력한다.</p>
+      <p>완벽한 조직은 없다. 다만 고객감동을 위해 지속적으로 노력하고 개선해나가는 조직만 있을 뿐이다.</p>
+      <p>7. 말의 무게감</p>
+      <p>어려운 시기임에도, 프로젝트를 준비해나가는 과정에서 억 단위의 투자가 실행됐다. 진단을 통해 이슈화했던 부분의 변화와 혁신을 위한 투자였기 때문에, 말 한마디의 무게감을 느끼게 된 계기가 되었다.</p>
+      <p>사실 나에겐, 투자로 문제를 해결하는 것은 Plan A가 아니라 Plan B OR C이다. 조금은 번거로울 수 있지만, 구성원 스스로 A TO Z를 만들어 나가자고 하는 것이 내 원칙이다. 나의 역할이 구성원들이 스스로 습득해서, 이해하고, 실행하는 것을 돕는 사람이기 때문이다. 그리고 돈으로 할 수 있는 건, 언제라도 할 수 있다고 생각하며 굳이 컨설팅이 필요하지 않다고 생각하기 때문이다. 하지만 돈을 들여 외부 전문업체를 활용해서 시간을 아끼고, 좋은 아웃풋을 지향하기 위한 조직의 자체적인 투자결정을 굳이 말리진 않는다. 평소에 투자가 필요하다고 판단했지만 지지부진하게 진행되던 것들이, 본 프로젝트 덕분에 가속화되어 투자할 수 있었다고 감사하다고 한 분들이 많아서, 다행이란 생각이 들었다.</p>
+      <p>8. D-day</p>
+      <p>몇 날 며칠을 못 자다가, 거짓말 같이 4시간의 꿀잠을 잤다. 샤워를 하고 새벽 6시에 회사로 갔다. '내가 1등이겠지?' 라고 생각했는데, 그건 오산이었다. 이미 절반 이상의 직원들이 나와있었고, 일부는 새벽 4시까지 프로젝트 마무리를 하고 휴게실에서 쪽잠을 잔 담당자들도 있었다.</p>
+      <p>절실한 마음으로 모두가 열심히 했다. 그리고 고객의 고객이 방문했다.</p>
+      <p>주사위는 던져졌다.</p>
+      <p>9. Wrap up</p>
+      <p>정말 힘들거라 생각했던 게임이 의외로 너무 싱겁게 끝날때가 있다.</p>
+      <p>'어라? 이정도 밖에 안되는거였어?'</p>
+      <p>하지만 그런 생각을 경계해야 한다.</p>
+      <p>고객의 고객이 돌아가고 나서, 안도감과 만족감이 채 가시기도 전에 회의실에 전원을 소집했다.</p>
+      <p>잘 끝났다. 기대보다 훨씬 잘 끝났다.</p>
+      <p>하지만 이것이 끝이 아니고, 시작임을 잘 안다.</p>
+      <p>경영자와 임원분께서 다들 수고했다는 이야기를 하셨고, 마지막으로 내가 당부의 이야기를 할 기회가 주어졌다.</p>
+      <p>두 가지를 전했다.</p>
+      <p>1) 겸손해야 한다.</p>
+      <p>단지 운이 좋았던 것일 뿐이다. 우리가 잘해서가 아니다.</p>
+      <p>아직 너무나 부족하다. 절대로 자만하지 말자.</p>
+      <p>여기에서 모든 것이 끝나버리면, 아마도 시작 그 이전으로 돌아갈 것이다.</p>
+      <p>2) 준비의 과정이 치열했기 때문에, 싱겁게 끝날 수 있었던 것이다.</p>
+      <p>준비를 제대로 하지 않았더라면, 웃으면서 이야기 하지 못했을 것이다.</p>
+      <p>언제라도 연습을 실전같이 준비해야한다. 우리의 성장은, 준비해나가는 과정에서 이뤄진다.</p>
+      <p>너무 고생하셨다.</p>
+      <p>10, 후기</p>
+      <p>해당 조직의 프로젝트를 몰아서 한 덕분에, 기존 일정의 고객들을 대응해야 해서 딱히 쉬지도 못하고 바로 일정을 소화해야 했다. 그러다 바로 어제, 몸살이 찾아왔다. 그래서 오늘 중요한 일정도 양해를 구하고 취소했다.</p>
+      <p>항상 그랬다. 정신없이 달릴 때엔 피곤한 줄도 모르다가, 끝나고 나면 찾아오는 피로감.</p>
+      <p>하지만 기쁘게 이 피로를 극복할 수 있을 듯하다.</p>
+      <p>이젠 이런 프로젝트 안 하고 싶다.</p>
+      <p>쫓기는 기분 더 이상 안 느끼면서 여유있게, 뜸 들여가면서 하고 싶다. 하지만 그게 내 맘처럼 되지 않을 거란것도 잘 안다.</p>
+      <p>'너무 감사했다고. 다음에도 좋은 코칭 부탁한다'는 프로젝트 담당자의 문자만으로 힘들었던 시간이 충분히 보상되는걸 보면 힘들고 그만두고 싶을때가 많지만 그만두지 못하는 이 일이다.</p>
+      <p>- end</p>
+  </div>
+  
+  <div class="post-nav"><a href="083.html">← 어떻게 부하직원을 긍정적으로 변화시킬 수 있을까?</a><a href="../serial.html" class="to-list">목록</a><a href="085.html" style="text-align:right;">위기감에 흔들리지 않는 원칙과 소신 →</a></div>
+</article>
+<div class="post-cta">
+  <p>이 글의 생각들이 한 권으로 정리되었습니다.<br>성장하는 회사가 선택한 단 하나의 전략, 《모두의 품질》</p>
+  <a href="../index.html" class="btn-bronze">책 자세히 보기</a>
+</div>
+<footer>COPYRIGHT ⓒ ROUND UP COMPANY. ALL RIGHTS RESERVED.</footer>
+</body>
+</html>

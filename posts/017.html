@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>품질이 우선인가? 비용이 우선인가? | 모두의 품질 연재</title>
+<meta name="description" content="Quality, Cost, Delivery.
+      조직이 의사결정을 하는데 있어서 QCD를 매우 중요하게 고려한다. 그 와중에 Quality를 높이는 것은 ">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#111009; --bg-soft:#1A1810; --ink:#17150F; --bronze:#C2996B; --bronze-soft:#D6B58C;
+    --bronze-deep:#8F6C3F; --text:rgba(255,255,255,0.85); --text-dim:rgba(255,255,255,0.55);
+    --text-faint:rgba(255,255,255,0.38); --line:rgba(255,255,255,0.12); --serif:'Noto Serif KR',serif; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Pretendard Variable',Pretendard,-apple-system,sans-serif; background:var(--bg);
+    color:var(--text); line-height:1.75; -webkit-font-smoothing:antialiased; word-break:keep-all; }
+  a { color:inherit; text-decoration:none; }
+  nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(17,16,9,0.85);
+    backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+  .nav-inner { max-width:1000px; margin:0 auto; padding:0 24px; height:60px;
+    display:flex; align-items:center; justify-content:space-between; }
+  .nav-title { font-size:15px; font-weight:800; color:#fff; }
+  .nav-title .star { color:var(--bronze); margin-right:0.4rem; font-size:12px; }
+  .nav-links { display:flex; gap:1.4rem; align-items:center; }
+  .nav-links a { font-size:13px; font-weight:500; color:var(--text-dim); }
+  .nav-links a:hover { color:#fff; }
+  .nav-buy { padding:7px 18px; background:var(--bronze); color:var(--ink)!important;
+    border-radius:999px; font-size:12.5px!important; font-weight:700!important; }
+
+  article { max-width:720px; margin:0 auto; padding:130px 24px 80px; }
+  .post-cat { display:inline-flex; align-items:center; gap:0.6rem; font-size:11.5px; font-weight:700;
+    letter-spacing:0.2em; text-transform:uppercase; color:var(--bronze); margin-bottom:1.6rem; }
+  .post-pick { font-size:10.5px; letter-spacing:0.08em; border:1px solid var(--bronze-deep);
+    color:var(--bronze-soft); border-radius:999px; padding:2px 9px; }
+  h1 { font-size:clamp(26px,4.6vw,36px); font-weight:800; letter-spacing:-0.02em;
+    line-height:1.4; color:#fff; margin-bottom:0.7rem; }
+  .post-sub { font-size:15.5px; color:var(--bronze-soft); margin-bottom:1rem; }
+  .post-no { font-size:12.5px; color:var(--text-faint); margin-bottom:3rem;
+    padding-bottom:2rem; border-bottom:1px solid var(--line); }
+  .post-body { font-family:var(--serif); font-size:16.5px; font-weight:500; line-height:2.15; }
+  .post-body p { margin-bottom:1.6rem; }
+  .post-body strong { color:var(--bronze-soft); font-weight:700; }
+  .post-tags { margin-top:2.6rem; display:flex; flex-wrap:wrap; gap:0.5rem; }
+  .post-tags span { font-size:12px; color:var(--text-dim); border:1px solid var(--line);
+    border-radius:999px; padding:4px 12px; }
+  .post-nav { margin-top:3.5rem; padding-top:2rem; border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; gap:1rem; font-size:13.5px; }
+  .post-nav a { color:var(--text-dim); max-width:44%; }
+  .post-nav a:hover { color:var(--bronze-soft); }
+  .post-nav .to-list { color:var(--bronze); font-weight:600; }
+  .post-cta { text-align:center; padding:56px 24px 64px; background:var(--bg-soft);
+    border-top:1px solid var(--line); }
+  .post-cta p { font-size:14.5px; color:var(--text-dim); margin-bottom:1.4rem; }
+  .btn-bronze { display:inline-block; padding:12px 34px; background:var(--bronze); color:var(--ink);
+    border-radius:999px; font-size:14px; font-weight:700; }
+  .btn-bronze:hover { background:var(--bronze-soft); }
+  footer { padding:2rem 24px; text-align:center; font-size:11px; color:var(--text-faint);
+    letter-spacing:0.07em; }
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-title"><span class="star">★</span>모두의 품질</a>
+    <div class="nav-links">
+      <a href="../serial.html">연재 목록</a>
+      <a href="../index.html#cta" class="nav-buy">구매하기</a>
+    </div>
+  </div>
+</nav>
+<article>
+  <p class="post-cat">품질 <span class="post-pick">★ 추천</span></p>
+  <h1>품질이 우선인가? 비용이 우선인가?</h1>
+  
+  <p class="post-no">연재 017 / 137</p>
+  <div class="post-body">
+      <p>Quality, Cost, Delivery.</p>
+      <p>조직이 의사결정을 하는데 있어서 QCD를 매우 중요하게 고려한다. 그 와중에 Quality를 높이는 것은 Cost의 상승을 유발한다고 생각하는 경우가 있다. 충격적인 것은, 이러한 개념을 소위 전문가라고 하는 사람들이 교육을 하고 다닌다는 것이다. 적정 품질이라는 개념으로.</p>
+      <p>근본적으로 Quality를 개선하려는 것이 아닌, 검사를 강화하는 방어 중심의 시스템에서는 Cost가 상승이 될 수밖에 없다. 그리고 중요한 것은 검사를 강화하는 것은 절대 Quality를 개선시킬 수 없다. 단지 후속공정/고객으로 유출을 시키지 않는 것일 뿐.</p>
+      <p>예방지향적인 노력만이 Quality를 높일 수 있고, 궁극적으로 Cost를 낮출 수 있다. 굳이 예방비용, 평가비용, 실패비용으로 구분해서 Q-Cost의 개념을 설명하지 않더라도, 주변의 많은 조직들을 보면 품질수준이 높은 조직일 수록 상대적으로 COPQ (Cost of Poor Quality, 저품질비용)의 수준이 낮은 것을 알 수 있다.</p>
+      <p>'우리한테 불량만 안주면 돼'라는 생각으로, 공급자에게 관리비용의 상승 (특히 검사 비용)을 유도하는 행위, 목표 수익률을 달성하기 위해, 일괄적으로 협력사의 단가 후려치는 행위, 수시로 요구사항을 변경하면서, 급박한 납기(Delivery)를 강요하는 것은 행위 등은 지양되어야 하지 않을까.</p>
+      <p>근본적으로 개선할 수 있는 지원을 하면, 품질수준이 향상되면서 저절로 원가와 납기/생산성이 개선될 것이다. Quality의 개선 없이 Cost를 낮추거나, Delivery를 단축시키는 것은 '관리의 부실', '재료의 부실' 등으로 인해 언젠가는 저품질로 복수를 당한다.그것이 제품이건, 서비스건 간에, Quality를 높이는 것만이, Cost와 Delivery의 수준을 향상시킬 수 있다.</p>
+      <p>결론은 품질이 최우선이다.</p>
+  </div>
+  <div class="post-tags"><span>#품질최우선원칙</span><span>#저품질전략은결국원가상승납기의상승으로돌아온다</span></div>
+  <div class="post-nav"><a href="016.html">← 품질의 판단 기준</a><a href="../serial.html" class="to-list">목록</a><a href="018.html" style="text-align:right;">모르면, 아는 척하지 말고 물어보자. →</a></div>
+</article>
+<div class="post-cta">
+  <p>이 글의 생각들이 한 권으로 정리되었습니다.<br>성장하는 회사가 선택한 단 하나의 전략, 《모두의 품질》</p>
+  <a href="../index.html" class="btn-bronze">책 자세히 보기</a>
+</div>
+<footer>COPYRIGHT ⓒ ROUND UP COMPANY. ALL RIGHTS RESERVED.</footer>
+</body>
+</html>

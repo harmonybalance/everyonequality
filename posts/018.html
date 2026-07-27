@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>모르면, 아는 척하지 말고 물어보자. | 모두의 품질 연재</title>
+<meta name="description" content="생산라인에서 일을 하는 입사 3개월 미만 직원들을 대상으로 인터뷰 하는 일이 있었다. 해당 조직은 업무에 대한 체계나 프로세스가 잘 정비되었다고 자부하고 있었고,">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#111009; --bg-soft:#1A1810; --ink:#17150F; --bronze:#C2996B; --bronze-soft:#D6B58C;
+    --bronze-deep:#8F6C3F; --text:rgba(255,255,255,0.85); --text-dim:rgba(255,255,255,0.55);
+    --text-faint:rgba(255,255,255,0.38); --line:rgba(255,255,255,0.12); --serif:'Noto Serif KR',serif; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Pretendard Variable',Pretendard,-apple-system,sans-serif; background:var(--bg);
+    color:var(--text); line-height:1.75; -webkit-font-smoothing:antialiased; word-break:keep-all; }
+  a { color:inherit; text-decoration:none; }
+  nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(17,16,9,0.85);
+    backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+  .nav-inner { max-width:1000px; margin:0 auto; padding:0 24px; height:60px;
+    display:flex; align-items:center; justify-content:space-between; }
+  .nav-title { font-size:15px; font-weight:800; color:#fff; }
+  .nav-title .star { color:var(--bronze); margin-right:0.4rem; font-size:12px; }
+  .nav-links { display:flex; gap:1.4rem; align-items:center; }
+  .nav-links a { font-size:13px; font-weight:500; color:var(--text-dim); }
+  .nav-links a:hover { color:#fff; }
+  .nav-buy { padding:7px 18px; background:var(--bronze); color:var(--ink)!important;
+    border-radius:999px; font-size:12.5px!important; font-weight:700!important; }
+
+  article { max-width:720px; margin:0 auto; padding:130px 24px 80px; }
+  .post-cat { display:inline-flex; align-items:center; gap:0.6rem; font-size:11.5px; font-weight:700;
+    letter-spacing:0.2em; text-transform:uppercase; color:var(--bronze); margin-bottom:1.6rem; }
+  .post-pick { font-size:10.5px; letter-spacing:0.08em; border:1px solid var(--bronze-deep);
+    color:var(--bronze-soft); border-radius:999px; padding:2px 9px; }
+  h1 { font-size:clamp(26px,4.6vw,36px); font-weight:800; letter-spacing:-0.02em;
+    line-height:1.4; color:#fff; margin-bottom:0.7rem; }
+  .post-sub { font-size:15.5px; color:var(--bronze-soft); margin-bottom:1rem; }
+  .post-no { font-size:12.5px; color:var(--text-faint); margin-bottom:3rem;
+    padding-bottom:2rem; border-bottom:1px solid var(--line); }
+  .post-body { font-family:var(--serif); font-size:16.5px; font-weight:500; line-height:2.15; }
+  .post-body p { margin-bottom:1.6rem; }
+  .post-body strong { color:var(--bronze-soft); font-weight:700; }
+  .post-tags { margin-top:2.6rem; display:flex; flex-wrap:wrap; gap:0.5rem; }
+  .post-tags span { font-size:12px; color:var(--text-dim); border:1px solid var(--line);
+    border-radius:999px; padding:4px 12px; }
+  .post-nav { margin-top:3.5rem; padding-top:2rem; border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; gap:1rem; font-size:13.5px; }
+  .post-nav a { color:var(--text-dim); max-width:44%; }
+  .post-nav a:hover { color:var(--bronze-soft); }
+  .post-nav .to-list { color:var(--bronze); font-weight:600; }
+  .post-cta { text-align:center; padding:56px 24px 64px; background:var(--bg-soft);
+    border-top:1px solid var(--line); }
+  .post-cta p { font-size:14.5px; color:var(--text-dim); margin-bottom:1.4rem; }
+  .btn-bronze { display:inline-block; padding:12px 34px; background:var(--bronze); color:var(--ink);
+    border-radius:999px; font-size:14px; font-weight:700; }
+  .btn-bronze:hover { background:var(--bronze-soft); }
+  footer { padding:2rem 24px; text-align:center; font-size:11px; color:var(--text-faint);
+    letter-spacing:0.07em; }
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-title"><span class="star">★</span>모두의 품질</a>
+    <div class="nav-links">
+      <a href="../serial.html">연재 목록</a>
+      <a href="../index.html#cta" class="nav-buy">구매하기</a>
+    </div>
+  </div>
+</nav>
+<article>
+  <p class="post-cat">고객 </p>
+  <h1>모르면, 아는 척하지 말고 물어보자.</h1>
+  
+  <p class="post-no">연재 018 / 137</p>
+  <div class="post-body">
+      <p>생산라인에서 일을 하는 입사 3개월 미만 직원들을 대상으로 인터뷰 하는 일이 있었다. 해당 조직은 업무에 대한 체계나 프로세스가 잘 정비되었다고 자부하고 있었고, 고객으로부터 높은 신뢰를 받고 있는 기업이었다.</p>
+      <p>인터뷰 이전에 잠시 이야기를 나눴던 인사팀의 실무자는, 직원들에 대한 OJT (On the Job Training) 프로그램이 그 어느 기업보다 체계적이라고 이야기했다.</p>
+      <p>"우리 회사는요. 회사, 제품, 공정에 대한 소개, 안전에 대한 교육 등 체계적으로 교육프로그램을 구성해 놔서, 새로 온 직원들이 회사에 대해 잘 이해하도록 지원하고 있습니다."라고 굉장히 당당하게 이야기를 했다. 동영상과 화려하게 제작한 교재 PPT 파일을 보니, 겉으로는 꽤 체계적으로 구성된 것 같은, 정비가 잘 된 OJT 프로그램 같았다.</p>
+      <p>신입직원분들과 이런저런 이야기를 하면서, 애로사항은 없는지 여쭤보았다. 한 분께서 손을 들고 이야기를 하셨는데, 그분은 해당 업종과 전혀 다른 외식업 분야에서 20여 년 넘게 영업관리를 하시다 새로운 도전을 위해 오신지 1개월 되었다고 하셨다.</p>
+      <p>＂새로운 직장에, 전혀 해보지 못한 일을 하는 입장에서는 처음에 들어오면 동굴 안 암흑 속에 있는 기분입니다. 스스로가 갓난아기가 된 거 같이, 막연하고 무엇을 해야 할지 모릅니다. 무엇이 어디에 있는지, 어디로 가야 하는지 누가 말을 해주지 않으면 모르고, 한 번 이야기해준다고 해서 그게 머릿속에 잘 들어오지 않습니다. 회사 오는 게 두려울 때도 있습니다. "</p>
+      <p>그분께서 하시는 이야기는 꽤 충격이었다. 다른 직원들이 이야기 한 의견도 크게 다르지 않았다.</p>
+      <p>'어렵다. 잘 모르겠다. 부담스럽다. ABC부터 친절하게 이야기해줬으면 좋겠는데, 무슨 말인지 잘 모르겠다.'</p>
+      <p>그렇게도 자부하던 OJT 시스템이, 전혀 고객지향적이지 못했다는 것을 여실히 드러나게 한 인터뷰였다. 인터뷰 후, 담당 실무자와 이야기하면서 저 OJT 프로그램을 어떻게 구성했냐고 물어보니, 각 부서의 팀장들이 모여서 워크숍도 하고, 이 정도는 기본적으로 알고 있어야 업무 하는데 도움이 된다고 판단한 것들을 중심으로 프로그램을 만들었다고 했다. 그럼 해당 프로그램을 만들 때, 실제 교육 대상자였던 생산현장에서 근무하시는 분들의 이야기는 들어봤냐고 물어보니 그렇지 않다고 이야기했다.</p>
+      <p>교육을 받는 당사자를 고객이라고 한다면, 고객이 무엇이 필요한지, 어떻게 해주기를 물어봐야 하는데 '이렇게 만들면 도움이 되겠지?'라고 지레 판단하고 일방적이고 이기적으로 OJT를 했던 거였다.</p>
+      <p>지레짐작 감으로 일해서는, 절대 고객을 만족시킬 수 없다. 고객이 요구사항을 명확히 해주면 더할 나위 없겠지만, 그렇지 않다면 물어봐야 한다.</p>
+      <p>"내가 당신을 위해 이러한 준비를 해서 만족시켜드릴 예정이니, 필요한 게 무언지 이야기해 주시겠어요?"</p>
+      <p>"그런 것도 말로 해야 해? 알아서 해!"라고 하는 고객은 없을 거다.</p>
+      <p>야근에 특근으로 힘들어하는 부하직원에게, 고생했으니 오늘 회식 거하게 하자라고 선심 쓰듯 이야기하는 '리더의 눈치 없음' 과도 맥락이 비슷하지 않나 싶다. 부하직원은 빨리 집에 가서 가족들과 여유로운 시간을 보내며, 일찍 잠에 드는 것을 원하는데 말이다.</p>
+      <p>고객이 무엇을 원하는지 모르면 물어보자.안 물어보고 독단적으로 행동했을 때의 뒷감당보다,</p>
+      <p>물어보고 부끄러운 게 훨씬 낫지 않겠는가?</p>
+  </div>
+  
+  <div class="post-nav"><a href="017.html">← 품질이 우선인가? 비용이 우선인가?</a><a href="../serial.html" class="to-list">목록</a><a href="019.html" style="text-align:right;">건강한 신체와 조직을 위한 원칙 →</a></div>
+</article>
+<div class="post-cta">
+  <p>이 글의 생각들이 한 권으로 정리되었습니다.<br>성장하는 회사가 선택한 단 하나의 전략, 《모두의 품질》</p>
+  <a href="../index.html" class="btn-bronze">책 자세히 보기</a>
+</div>
+<footer>COPYRIGHT ⓒ ROUND UP COMPANY. ALL RIGHTS RESERVED.</footer>
+</body>
+</html>

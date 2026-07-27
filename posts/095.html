@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>감당할 일이 없거나 vs 일을 감당할 수 없거나 | 모두의 품질 연재</title>
+<meta name="description" content="사실 전자가 더 힘들거 같지만, 치열하게 둘 다 경험해 본 결과 후자의 상황이 훨씬 더 힘들었던 거 같다.
+      일이 많지 않아 힘들었던 시절들을 복기해보면">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#111009; --bg-soft:#1A1810; --ink:#17150F; --bronze:#C2996B; --bronze-soft:#D6B58C;
+    --bronze-deep:#8F6C3F; --text:rgba(255,255,255,0.85); --text-dim:rgba(255,255,255,0.55);
+    --text-faint:rgba(255,255,255,0.38); --line:rgba(255,255,255,0.12); --serif:'Noto Serif KR',serif; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Pretendard Variable',Pretendard,-apple-system,sans-serif; background:var(--bg);
+    color:var(--text); line-height:1.75; -webkit-font-smoothing:antialiased; word-break:keep-all; }
+  a { color:inherit; text-decoration:none; }
+  nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(17,16,9,0.85);
+    backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+  .nav-inner { max-width:1000px; margin:0 auto; padding:0 24px; height:60px;
+    display:flex; align-items:center; justify-content:space-between; }
+  .nav-title { font-size:15px; font-weight:800; color:#fff; }
+  .nav-title .star { color:var(--bronze); margin-right:0.4rem; font-size:12px; }
+  .nav-links { display:flex; gap:1.4rem; align-items:center; }
+  .nav-links a { font-size:13px; font-weight:500; color:var(--text-dim); }
+  .nav-links a:hover { color:#fff; }
+  .nav-buy { padding:7px 18px; background:var(--bronze); color:var(--ink)!important;
+    border-radius:999px; font-size:12.5px!important; font-weight:700!important; }
+
+  article { max-width:720px; margin:0 auto; padding:130px 24px 80px; }
+  .post-cat { display:inline-flex; align-items:center; gap:0.6rem; font-size:11.5px; font-weight:700;
+    letter-spacing:0.2em; text-transform:uppercase; color:var(--bronze); margin-bottom:1.6rem; }
+  .post-pick { font-size:10.5px; letter-spacing:0.08em; border:1px solid var(--bronze-deep);
+    color:var(--bronze-soft); border-radius:999px; padding:2px 9px; }
+  h1 { font-size:clamp(26px,4.6vw,36px); font-weight:800; letter-spacing:-0.02em;
+    line-height:1.4; color:#fff; margin-bottom:0.7rem; }
+  .post-sub { font-size:15.5px; color:var(--bronze-soft); margin-bottom:1rem; }
+  .post-no { font-size:12.5px; color:var(--text-faint); margin-bottom:3rem;
+    padding-bottom:2rem; border-bottom:1px solid var(--line); }
+  .post-body { font-family:var(--serif); font-size:16.5px; font-weight:500; line-height:2.15; }
+  .post-body p { margin-bottom:1.6rem; }
+  .post-body strong { color:var(--bronze-soft); font-weight:700; }
+  .post-tags { margin-top:2.6rem; display:flex; flex-wrap:wrap; gap:0.5rem; }
+  .post-tags span { font-size:12px; color:var(--text-dim); border:1px solid var(--line);
+    border-radius:999px; padding:4px 12px; }
+  .post-nav { margin-top:3.5rem; padding-top:2rem; border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; gap:1rem; font-size:13.5px; }
+  .post-nav a { color:var(--text-dim); max-width:44%; }
+  .post-nav a:hover { color:var(--bronze-soft); }
+  .post-nav .to-list { color:var(--bronze); font-weight:600; }
+  .post-cta { text-align:center; padding:56px 24px 64px; background:var(--bg-soft);
+    border-top:1px solid var(--line); }
+  .post-cta p { font-size:14.5px; color:var(--text-dim); margin-bottom:1.4rem; }
+  .btn-bronze { display:inline-block; padding:12px 34px; background:var(--bronze); color:var(--ink);
+    border-radius:999px; font-size:14px; font-weight:700; }
+  .btn-bronze:hover { background:var(--bronze-soft); }
+  footer { padding:2rem 24px; text-align:center; font-size:11px; color:var(--text-faint);
+    letter-spacing:0.07em; }
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-title"><span class="star">★</span>모두의 품질</a>
+    <div class="nav-links">
+      <a href="../serial.html">연재 목록</a>
+      <a href="../index.html#cta" class="nav-buy">구매하기</a>
+    </div>
+  </div>
+</nav>
+<article>
+  <p class="post-cat">고객 </p>
+  <h1>감당할 일이 없거나 vs 일을 감당할 수 없거나</h1>
+  
+  <p class="post-no">연재 095 / 137</p>
+  <div class="post-body">
+      <p>사실 전자가 더 힘들거 같지만, 치열하게 둘 다 경험해 본 결과 후자의 상황이 훨씬 더 힘들었던 거 같다.</p>
+      <p>일이 많지 않아 힘들었던 시절들을 복기해보면 원인은 두가지였다.</p>
+      <p>1. 개인/조직의 능력 (전문성 or 인지도 or 마케팅 능력) 부족</p>
+      <p>2. 불확실한 경영환경과 불경기</p>
+      <p>1- 능력이 부족하다면, 능력을 키워, 고객이 나를 찾아오게 만들어야 한다.</p>
+      <p>2- 불확실한 경영환경, 불경기, 팬데믹 등은 내가 어떻게 통제할 수 없는 영역이다. 묵묵하게 능력을 갈고 닦으면서 기다리던가 혹은 기다릴 내구력이 없으면 포기하고 빨리 다른 일 찾아 떠나야 한다.</p>
+      <p>감당할 일이 없던 상황에서는 내가 무엇을 해야할 지 명쾌하게 답이 있었다. 하지만 후자의 상황. 내가 해낼 수 있는 능력보다, 더 많은 기회가 주어질 때. 그 상황을 객관적으로 바라보고, 냉철하게 판단하는 것은 그리 쉽지 않다.</p>
+      <p>누군가는 '행복한 고민'이라고 이야기 하는 것이 절대 행복하지 않다는 것은 그 상황이 되어본 사람만이 알 수 있다.</p>
+      <p>고객을 설득하지 못해 기회를 못잡은 것보다 고객을 감당할 여력이 되지 못해, 기회를 놓아야 하는 상황의 미련의 크기가 컸던거 같다.</p>
+      <p>유일무이한 경쟁력으로 대체 불가능한 존재라서,혹은 고객과의 좋은 관계로 인해 고객이 묵묵하게 기다려준다면, 너무나 감사한 일이지만 대부분의 경우 주어진 기회를 잡지 못하면 고객과의 인연을 이어갈 수 없는 경우가 많다. 고객은 기다려주는 경우가 많지 않기 때문이다.</p>
+      <p>현재의 능력으로 감당하기 어려운 기회가 주어질 때 그 기회를 과감하게 포기할 수 있는 대담한 결단을 실제로 행하기는 쉽지 않다.</p>
+      <p>'어떻게 온 기회인데.' '고객이 이렇게 먼저 찾아왔는데.'</p>
+      <p>하지만 상황이 만들어 낸 함정에 빠져선 안된다. 기여코 감당하려고 무리하는 순간 결국엔 모든 것이 무너질 수 있다는 사실을 명심해야 한다.</p>
+      <p>내 능력, 그 이상의 기회를 가지려 하는 것은 욕심이라는 것을 인정하고, 욕심부리지 않도록 스스로를 객관화해서 냉철한 판단을 해야 한다.</p>
+      <p>고객이라는 이유로 무조건 다 받아들여서는 결국 어느 고객도 만족시킬 수 없게 된다.</p>
+      <p>일이 없어서 망하는 조직보다 일이 많을 때, 제대로 통제하지 못해 망하는 조직이 훨씬 많다.</p>
+      <p>전자는 고객을 만족시킬 기회가 없는 것 뿐이지만 후자는 고객을 실망시킬 가능성이 높아지기 때문이다.</p>
+      <p>열 번을 만족해도, 한 번의 실망으로 고객은 떠날 수 있다.</p>
+  </div>
+  
+  <div class="post-nav"><a href="094.html">← 어떠한 삶을 살 것인가?</a><a href="../serial.html" class="to-list">목록</a><a href="096.html" style="text-align:right;">내 가치를 증명할 수 있어야 한다. →</a></div>
+</article>
+<div class="post-cta">
+  <p>이 글의 생각들이 한 권으로 정리되었습니다.<br>성장하는 회사가 선택한 단 하나의 전략, 《모두의 품질》</p>
+  <a href="../index.html" class="btn-bronze">책 자세히 보기</a>
+</div>
+<footer>COPYRIGHT ⓒ ROUND UP COMPANY. ALL RIGHTS RESERVED.</footer>
+</body>
+</html>

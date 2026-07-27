@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>최적의 조건을 찾기 까지의 투자 | 모두의 품질 연재</title>
+<meta name="description" content="혹시 A회사는 어떤거 쓰는지 알아요?
+      B회사는 어떤 표준과 프로세스로 그 업무를 진행하나요?
+      컨설팅을 하다보면 위와 같은 질문을 많이">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#111009; --bg-soft:#1A1810; --ink:#17150F; --bronze:#C2996B; --bronze-soft:#D6B58C;
+    --bronze-deep:#8F6C3F; --text:rgba(255,255,255,0.85); --text-dim:rgba(255,255,255,0.55);
+    --text-faint:rgba(255,255,255,0.38); --line:rgba(255,255,255,0.12); --serif:'Noto Serif KR',serif; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Pretendard Variable',Pretendard,-apple-system,sans-serif; background:var(--bg);
+    color:var(--text); line-height:1.75; -webkit-font-smoothing:antialiased; word-break:keep-all; }
+  a { color:inherit; text-decoration:none; }
+  nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(17,16,9,0.85);
+    backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+  .nav-inner { max-width:1000px; margin:0 auto; padding:0 24px; height:60px;
+    display:flex; align-items:center; justify-content:space-between; }
+  .nav-title { font-size:15px; font-weight:800; color:#fff; }
+  .nav-title .star { color:var(--bronze); margin-right:0.4rem; font-size:12px; }
+  .nav-links { display:flex; gap:1.4rem; align-items:center; }
+  .nav-links a { font-size:13px; font-weight:500; color:var(--text-dim); }
+  .nav-links a:hover { color:#fff; }
+  .nav-buy { padding:7px 18px; background:var(--bronze); color:var(--ink)!important;
+    border-radius:999px; font-size:12.5px!important; font-weight:700!important; }
+
+  article { max-width:720px; margin:0 auto; padding:130px 24px 80px; }
+  .post-cat { display:inline-flex; align-items:center; gap:0.6rem; font-size:11.5px; font-weight:700;
+    letter-spacing:0.2em; text-transform:uppercase; color:var(--bronze); margin-bottom:1.6rem; }
+  .post-pick { font-size:10.5px; letter-spacing:0.08em; border:1px solid var(--bronze-deep);
+    color:var(--bronze-soft); border-radius:999px; padding:2px 9px; }
+  h1 { font-size:clamp(26px,4.6vw,36px); font-weight:800; letter-spacing:-0.02em;
+    line-height:1.4; color:#fff; margin-bottom:0.7rem; }
+  .post-sub { font-size:15.5px; color:var(--bronze-soft); margin-bottom:1rem; }
+  .post-no { font-size:12.5px; color:var(--text-faint); margin-bottom:3rem;
+    padding-bottom:2rem; border-bottom:1px solid var(--line); }
+  .post-body { font-family:var(--serif); font-size:16.5px; font-weight:500; line-height:2.15; }
+  .post-body p { margin-bottom:1.6rem; }
+  .post-body strong { color:var(--bronze-soft); font-weight:700; }
+  .post-tags { margin-top:2.6rem; display:flex; flex-wrap:wrap; gap:0.5rem; }
+  .post-tags span { font-size:12px; color:var(--text-dim); border:1px solid var(--line);
+    border-radius:999px; padding:4px 12px; }
+  .post-nav { margin-top:3.5rem; padding-top:2rem; border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; gap:1rem; font-size:13.5px; }
+  .post-nav a { color:var(--text-dim); max-width:44%; }
+  .post-nav a:hover { color:var(--bronze-soft); }
+  .post-nav .to-list { color:var(--bronze); font-weight:600; }
+  .post-cta { text-align:center; padding:56px 24px 64px; background:var(--bg-soft);
+    border-top:1px solid var(--line); }
+  .post-cta p { font-size:14.5px; color:var(--text-dim); margin-bottom:1.4rem; }
+  .btn-bronze { display:inline-block; padding:12px 34px; background:var(--bronze); color:var(--ink);
+    border-radius:999px; font-size:14px; font-weight:700; }
+  .btn-bronze:hover { background:var(--bronze-soft); }
+  footer { padding:2rem 24px; text-align:center; font-size:11px; color:var(--text-faint);
+    letter-spacing:0.07em; }
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-title"><span class="star">★</span>모두의 품질</a>
+    <div class="nav-links">
+      <a href="../serial.html">연재 목록</a>
+      <a href="../index.html#cta" class="nav-buy">구매하기</a>
+    </div>
+  </div>
+</nav>
+<article>
+  <p class="post-cat">품질 </p>
+  <h1>최적의 조건을 찾기 까지의 투자</h1>
+  
+  <p class="post-no">연재 087 / 137</p>
+  <div class="post-body">
+      <p>"혹시 A회사는 어떤거 쓰는지 알아요?"</p>
+      <p>"B회사는 어떤 표준과 프로세스로 그 업무를 진행하나요?"</p>
+      <p>컨설팅을 하다보면 위와 같은 질문을 많이 받는다.잘 알지 못하기도 하지만, 알아도 이야기 해주지 않는다. 그 회사에선 정답이지만, 이 회사에선 오답일 확률이 매우 높기 때문이다. 어쩌다 얻어걸려서 딱 떨어질 수도 있겠지만, 그러한 도박과도 같은 시도는 하지 않는게 가장 경제적이고 빠른 길이다.</p>
+      <p>얼마 전에 모 고객사의 진단을 하면서 경험한 사례는 묵직한 가르침을 주었다. 설비를 관리하는 팀이었는데,설비에 들어가는 부품을 꽤나 고사양으로 적용한 것을 보았다.</p>
+      <p>"우와. 보통 가성비 좋은 부품을 많이 쓰던데, 여긴 탑클래스 부품을 적용하셨네요.</p>
+      <p>혹시 이걸 선정하게 된 계기가 있었나요?"</p>
+      <p>"예전에는 저희도 교체하는 부품을 선정할 때 적정 품질을 충족시킨 부품들 중 '가격'이 싼 부품을 구매하는 것이 원칙이었습니다. 실제적으로 구매부서에서는 그 부품이 미치는 영향에 대해서는 전문가가 아니다보니, 그렇게 하더라구요. 그런데 불량이 발생하게 되면, 이로 인해서 후속적으로 제조부서에 투입되는 시간과 비용이 만만찮더라구요. '저품질비용 COPQ (Cost Of Poor Quality)'에 대해서는 전혀 고려하지 않은거죠.고만고만한 품질의 부품을 적용하게 되어 설비가 고장나게 되면 그로 인해 생산하고 있는 제품의 불량 비용, 설비의 비가동으로 인한 기회비용, 설비 수리를 위한 부품 교체 비용, 설비 수리 인원의 육성을 위한 비용, 무엇보다 고객의 요구사항을 충족시키지 못해 발생할 수 있는 불신의 비용 등 구매 비용의 절감 그 이상의 비용이 발생하더라구요.</p>
+      <p>이런 저런 부품들을 교체해보고, 시험해보다가 이 부품으로 교체를 했는데 설비고장이 1/5로 줄었습니다. 생산성도 좋아지고, 품질도 좋아지고, 교체주기도 길어지고. 구매 단가가 얼마 늘었다해도, 실제 교체 주기가 늘어나서 연간 비용으로 따지면 부품구매비용도 오히려 줄었습니다. 기타 미치는 영향들은 말 할 것도 없죠.</p>
+      <p>시행착오 끝에 깨달았습니다. 할 때 제대로 하는 게 가장 경제적인 원가절감이라는 걸. 우리는 최고의 품질을 구매해서, 최고의 품질을 만들어 냅니다."</p>
+      <p>내가 이 조직을 진단을 하러 갔다가, 담당 팀장으로 부터 엄청난 교육을 받았다.</p>
+      <p>그 팀장께서 뒤에 이야기 했다.</p>
+      <p>"모 회사에서 우리가 원가절감, 품질개선한 이야기를 듣고 그 부품 리스트들을 요청을 해서 알려줬는데요. 정작 그 회사에는 안 맞다고 하더라구요. 우리가 이 사양을 적용하기 까지 거의 1년 가까이 시행착오를 거쳤습니다. 항상 생산으로 바쁘다보니 적용할 타이밍을 맞추기 어려웠는데, 그래도 시간 내서 Try out을 해낸 결과였죠. 자기 회사에 내재화 하는 노력없이, 남들꺼 모방해서는 안될 겁니다. "</p>
+      <p>성공 사례든 실패 사례든, 고객으로 부터 많은 것을 배울 수 있어서 너무 감사할때가 많다.</p>
+      <p>멋지게 성장해나가는 고객의 모습들을 통해 많이 배우고 성장하게 된다.</p>
+  </div>
+  
+  <div class="post-nav"><a href="086.html">← 성급한 일반화의 오류</a><a href="../serial.html" class="to-list">목록</a><a href="088.html" style="text-align:right;">기꺼이 비교를 환영한다. →</a></div>
+</article>
+<div class="post-cta">
+  <p>이 글의 생각들이 한 권으로 정리되었습니다.<br>성장하는 회사가 선택한 단 하나의 전략, 《모두의 품질》</p>
+  <a href="../index.html" class="btn-bronze">책 자세히 보기</a>
+</div>
+<footer>COPYRIGHT ⓒ ROUND UP COMPANY. ALL RIGHTS RESERVED.</footer>
+</body>
+</html>

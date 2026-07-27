@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KPI 관리. 꼭 필요한가? | 모두의 품질 연재</title>
+<meta name="description" content="- KPI (Key Performance Indicator, 핵심 성과지표)
+      KPI 관리 잘해야 해, KPI 달성했어?, 우리는 오직 KPI ">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#111009; --bg-soft:#1A1810; --ink:#17150F; --bronze:#C2996B; --bronze-soft:#D6B58C;
+    --bronze-deep:#8F6C3F; --text:rgba(255,255,255,0.85); --text-dim:rgba(255,255,255,0.55);
+    --text-faint:rgba(255,255,255,0.38); --line:rgba(255,255,255,0.12); --serif:'Noto Serif KR',serif; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Pretendard Variable',Pretendard,-apple-system,sans-serif; background:var(--bg);
+    color:var(--text); line-height:1.75; -webkit-font-smoothing:antialiased; word-break:keep-all; }
+  a { color:inherit; text-decoration:none; }
+  nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(17,16,9,0.85);
+    backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+  .nav-inner { max-width:1000px; margin:0 auto; padding:0 24px; height:60px;
+    display:flex; align-items:center; justify-content:space-between; }
+  .nav-title { font-size:15px; font-weight:800; color:#fff; }
+  .nav-title .star { color:var(--bronze); margin-right:0.4rem; font-size:12px; }
+  .nav-links { display:flex; gap:1.4rem; align-items:center; }
+  .nav-links a { font-size:13px; font-weight:500; color:var(--text-dim); }
+  .nav-links a:hover { color:#fff; }
+  .nav-buy { padding:7px 18px; background:var(--bronze); color:var(--ink)!important;
+    border-radius:999px; font-size:12.5px!important; font-weight:700!important; }
+
+  article { max-width:720px; margin:0 auto; padding:130px 24px 80px; }
+  .post-cat { display:inline-flex; align-items:center; gap:0.6rem; font-size:11.5px; font-weight:700;
+    letter-spacing:0.2em; text-transform:uppercase; color:var(--bronze); margin-bottom:1.6rem; }
+  .post-pick { font-size:10.5px; letter-spacing:0.08em; border:1px solid var(--bronze-deep);
+    color:var(--bronze-soft); border-radius:999px; padding:2px 9px; }
+  h1 { font-size:clamp(26px,4.6vw,36px); font-weight:800; letter-spacing:-0.02em;
+    line-height:1.4; color:#fff; margin-bottom:0.7rem; }
+  .post-sub { font-size:15.5px; color:var(--bronze-soft); margin-bottom:1rem; }
+  .post-no { font-size:12.5px; color:var(--text-faint); margin-bottom:3rem;
+    padding-bottom:2rem; border-bottom:1px solid var(--line); }
+  .post-body { font-family:var(--serif); font-size:16.5px; font-weight:500; line-height:2.15; }
+  .post-body p { margin-bottom:1.6rem; }
+  .post-body strong { color:var(--bronze-soft); font-weight:700; }
+  .post-tags { margin-top:2.6rem; display:flex; flex-wrap:wrap; gap:0.5rem; }
+  .post-tags span { font-size:12px; color:var(--text-dim); border:1px solid var(--line);
+    border-radius:999px; padding:4px 12px; }
+  .post-nav { margin-top:3.5rem; padding-top:2rem; border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; gap:1rem; font-size:13.5px; }
+  .post-nav a { color:var(--text-dim); max-width:44%; }
+  .post-nav a:hover { color:var(--bronze-soft); }
+  .post-nav .to-list { color:var(--bronze); font-weight:600; }
+  .post-cta { text-align:center; padding:56px 24px 64px; background:var(--bg-soft);
+    border-top:1px solid var(--line); }
+  .post-cta p { font-size:14.5px; color:var(--text-dim); margin-bottom:1.4rem; }
+  .btn-bronze { display:inline-block; padding:12px 34px; background:var(--bronze); color:var(--ink);
+    border-radius:999px; font-size:14px; font-weight:700; }
+  .btn-bronze:hover { background:var(--bronze-soft); }
+  footer { padding:2rem 24px; text-align:center; font-size:11px; color:var(--text-faint);
+    letter-spacing:0.07em; }
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-title"><span class="star">★</span>모두의 품질</a>
+    <div class="nav-links">
+      <a href="../serial.html">연재 목록</a>
+      <a href="../index.html#cta" class="nav-buy">구매하기</a>
+    </div>
+  </div>
+</nav>
+<article>
+  <p class="post-cat">시스템과 문제해결 <span class="post-pick">★ 추천</span></p>
+  <h1>KPI 관리. 꼭 필요한가?</h1>
+  
+  <p class="post-no">연재 003 / 137</p>
+  <div class="post-body">
+      <p>- KPI (Key Performance Indicator, 핵심 성과지표)</p>
+      <p>"KPI 관리 잘해야 해", "KPI 달성했어?", "우리는 오직 KPI 지수로만 평가해"</p>
+      <p>기업에서 KPI는 팀과 개인을 평가하는 수단으로써 오랫동안 사용되고 있다. 도전적인 KPI 목표를 정하고, 그 목표를 달성하면 조직이나 개인의 성과가 성공적이었다고 평가받고, 그렇지 않으면 실패했다는 평가로 불이익을 받는, 기업의 평가 및 보상의 가장 보편적인 Tool로 활용되고 있다.</p>
+      <p>CASE 1.</p>
+      <p>"올해 우리 회사의 KPI는 매출액 1조를 달성하는 것입니다. 수단과 방법을 가리지 않고 매출액 1조 달성을 위해 최선을 다해주시기 바랍니다."</p>
+      <p>매출액 그 자체만이 목표라면, 아주 좋은 품질의 제품을 탁월한 마케팅 전략을 통해 제조원가보다 훨씬 싼 가격에 공급을 하면 고객들은 너도 나도 제품을 구매하려 할 것이다. 그 대신 파는 족족 손해가 날 것이고, KPI 목표인 매출액 그 자체는 달성하겠으나, 부채는 그보다 훨씬 더 커져서 결국에 회사는 엄청난 손실로 망하게 될 것이다.</p>
+      <p>CASE 2.</p>
+      <p>"제품검사 담당자 A 씨의 KPI는, 외주 협력사로부터 입고되는 제품을 검사해서, 검사 불량률을 0.1% 이내로 하는 것을 목표로 해주세요."</p>
+      <p>A 씨가 입고된 제품들을 검사를 해보니, 검사하는 족족 불량품이 확인되었다. 본인은 열심히 검사를 했을 뿐인데, 열심히 일을 할수록 회사에서 제시한 KPI 목표와는 점점 멀어지고 있음을 느꼈다. 그래서 A 씨는 검사를 하지 않고, 입고되어 오는 모든 제품을 합격품으로 판정하고, KPI 목표에 대한 실적을 불량률 0%로 처리하여 실적 달성했다. 그 결과 공정과 출하된 완제품에서 대량의 불량이 발생하여, 해당 회사는 엄청난 클레임 비용을 지불하게 되었다.</p>
+      <p>위의 사례가 다소 과장되어 보일지 모르지만, 실제적으로 대한민국의 많은 기업에서 형식적인 KPI 관리를 함으로써 위와 같은 비정상적인 프로세스가 운영되고 있다.</p>
+      <p>사람이 부족해서 일을 하기 힘들다고 하는 조직들이 많지만, 그중 절반 이상은 부가가치가 없는 쓸데없는 일을 하느라 시간을 보낸다. 단순 반복 작업, 보고 그 자체를 위한 Paper work, 고객 지향적이지 않은, 상사 지향적인 업무 등.</p>
+      <p>개인적으로 KPI를 수립하는 데 있어서의 원칙은 아래와 같다.</p>
+      <p>1. KPI 그 자체가 적절한가?</p>
+      <p>- KPI는 철저히 고객 지향적이고, 고객을 만족시키기 위한 목적으로 수립되어 있는가?</p>
+      <p>2. KPI 목표는 과연 실현 가능한 것인가?</p>
+      <p>- 정상적인 방법으로는 실현 불가능한 목표로 인해, 달성을 위한 편법, 불법을 자행하는 여지는 없는가?</p>
+      <p>3. KPI를 달성하면 고객, 조직, 개인이 일관성 있게 만족하는가?</p>
+      <p>- 특정의 만족을 위해, 희생당하는 쪽은 없는가?</p>
+      <p>몇 년 전에, 국내 모 대기업의 경영시스템/프로세스에 대한 진단 컨설팅을 한 적이 있다.</p>
+      <p>핵심 내용은</p>
+      <p>1. 업무시스템이 고객 지향적인가? (적절성 평가)</p>
+      <p>2. 시스템이 고객 지향적이라면, 구성원들은 시스템을 올바르게 수행하고 있는가? (준수성 평가)</p>
+      <p>3. 올바르게 수행하지 못하는 경우, 근본 원인은 무엇인가? (원인계 분석)</p>
+      <p>4. 문제를 해결하기 위한 방안은 무엇인가? (문제 해결 방안)</p>
+      <p>에 대한 진단이었는데,</p>
+      <p>단순하게 문제점만 쭉 나열하고, '알아서 문제 해결하세요.'와 같은 천편일률적인 진단이 아닌 문제의 발생에 대한 근본원인을 찾는 'WHY?'라는 관점에서, 관련부서들과 현장의 소리를 듣고 함께 문제를 해결하기 위해 고민을 했다.</p>
+      <p>그 결과,</p>
+      <p>1. KPI를 달성하지 못하는 것은 조직과 개인의 역량 부족이다?</p>
+      <p>→ 아니다, 시스템에 준하여 열심히 일을 하였음에도 불구하고 성과가 좋지 않다면 그 시스템 자체가 문제가 있는 것이다. 시스템이 고객 지향적인지, 실현 가능한 것인지를 검토하여 지속적인 개선활동 (검토 및 개정 등)이 이뤄져야 할 것이다.</p>
+      <p>2. 시스템을 제대로 실행하지 않는 것은 개인만의 문제이다?</p>
+      <p>→ 아니다, 업무 실행 자체의 제약에는 많은 원인들이 있을 수 있다.</p>
+      <p>해당 업무에 대한 교육과 훈련의 부족 (OJT/인수인계 포함), 업무 수행을 위한 물리적인 시간 및 자원 제약, 관계부서와의 커뮤니케이션 지연, 인프라 부재, 리더의 의사결정 문제 등의 연결고리로 문제를 접근을 하게 하고</p>
+      <p>조직 구성원들과 최고경영자에게</p>
+      <p>1. 해당 조직의 업무시스템의 최적의 운영에 제약이 되는 근본 원인 도출 및 해결을 위한 방안</p>
+      <p>2. 업무시스템들의 개선 방향성 (고객지향적)</p>
+      <p>에 대해 보고하며, 꽤 성공적으로 프로젝트를 마무리했었다.</p>
+      <p>개인적으로 프로젝트의 성공 여부는,</p>
+      <p>1. 프로젝트가 끝나고 나서도 고객과의 관계가 지속적인가</p>
+      <p>2. 고객이 Next Project를 요청하는가로 판단하는데</p>
+      <p>다행히 둘 다 이뤄졌던 프로젝트였다.</p>
+      <p>감히 'KPI관리를 하지 않는 것이 조직의 운영에 더 효과적이다.'라고 이야기할 수는 없지만, KPI 성과가 조직과 개인을 평가하는 지표로 활용되는 것이 아니라, 조직의 업무 시스템이 효과적인지를 모니터링하는 지표로 활용이 된다면, 지속적인 개선활동을 통한 건강한 업무시스템 운영을 통해, 고객과 조직 그리고 개인의 발전을 함께 도모할 수 있지 않을까 하는 강력한 확신을 가지고 있다.</p>
+  </div>
+  <div class="post-tags"><span>#KPI는 결과가 아닌 과정에 집중</span><span>#KPI는 개인과 조직을 평가하기 위함이아닌 조직의 시스템을 개선하기 위한</span><span>#수단</span></div>
+  <div class="post-nav"><a href="002.html">← 초심(初心)</a><a href="../serial.html" class="to-list">목록</a><a href="004.html" style="text-align:right;">Message vs Messengr →</a></div>
+</article>
+<div class="post-cta">
+  <p>이 글의 생각들이 한 권으로 정리되었습니다.<br>성장하는 회사가 선택한 단 하나의 전략, 《모두의 품질》</p>
+  <a href="../index.html" class="btn-bronze">책 자세히 보기</a>
+</div>
+<footer>COPYRIGHT ⓒ ROUND UP COMPANY. ALL RIGHTS RESERVED.</footer>
+</body>
+</html>

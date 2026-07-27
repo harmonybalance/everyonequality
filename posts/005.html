@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>기존 고객 vs 신규 고객 | 모두의 품질 연재</title>
+<meta name="description" content="- 어떠한 원칙으로 고객을 선택할 것인가?
+      '고객을 선택한다?'
+      누가 누굴 선택해? 어딜 감히....
+      보편적으로 고객이 선택을 하">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#111009; --bg-soft:#1A1810; --ink:#17150F; --bronze:#C2996B; --bronze-soft:#D6B58C;
+    --bronze-deep:#8F6C3F; --text:rgba(255,255,255,0.85); --text-dim:rgba(255,255,255,0.55);
+    --text-faint:rgba(255,255,255,0.38); --line:rgba(255,255,255,0.12); --serif:'Noto Serif KR',serif; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Pretendard Variable',Pretendard,-apple-system,sans-serif; background:var(--bg);
+    color:var(--text); line-height:1.75; -webkit-font-smoothing:antialiased; word-break:keep-all; }
+  a { color:inherit; text-decoration:none; }
+  nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(17,16,9,0.85);
+    backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+  .nav-inner { max-width:1000px; margin:0 auto; padding:0 24px; height:60px;
+    display:flex; align-items:center; justify-content:space-between; }
+  .nav-title { font-size:15px; font-weight:800; color:#fff; }
+  .nav-title .star { color:var(--bronze); margin-right:0.4rem; font-size:12px; }
+  .nav-links { display:flex; gap:1.4rem; align-items:center; }
+  .nav-links a { font-size:13px; font-weight:500; color:var(--text-dim); }
+  .nav-links a:hover { color:#fff; }
+  .nav-buy { padding:7px 18px; background:var(--bronze); color:var(--ink)!important;
+    border-radius:999px; font-size:12.5px!important; font-weight:700!important; }
+
+  article { max-width:720px; margin:0 auto; padding:130px 24px 80px; }
+  .post-cat { display:inline-flex; align-items:center; gap:0.6rem; font-size:11.5px; font-weight:700;
+    letter-spacing:0.2em; text-transform:uppercase; color:var(--bronze); margin-bottom:1.6rem; }
+  .post-pick { font-size:10.5px; letter-spacing:0.08em; border:1px solid var(--bronze-deep);
+    color:var(--bronze-soft); border-radius:999px; padding:2px 9px; }
+  h1 { font-size:clamp(26px,4.6vw,36px); font-weight:800; letter-spacing:-0.02em;
+    line-height:1.4; color:#fff; margin-bottom:0.7rem; }
+  .post-sub { font-size:15.5px; color:var(--bronze-soft); margin-bottom:1rem; }
+  .post-no { font-size:12.5px; color:var(--text-faint); margin-bottom:3rem;
+    padding-bottom:2rem; border-bottom:1px solid var(--line); }
+  .post-body { font-family:var(--serif); font-size:16.5px; font-weight:500; line-height:2.15; }
+  .post-body p { margin-bottom:1.6rem; }
+  .post-body strong { color:var(--bronze-soft); font-weight:700; }
+  .post-tags { margin-top:2.6rem; display:flex; flex-wrap:wrap; gap:0.5rem; }
+  .post-tags span { font-size:12px; color:var(--text-dim); border:1px solid var(--line);
+    border-radius:999px; padding:4px 12px; }
+  .post-nav { margin-top:3.5rem; padding-top:2rem; border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; gap:1rem; font-size:13.5px; }
+  .post-nav a { color:var(--text-dim); max-width:44%; }
+  .post-nav a:hover { color:var(--bronze-soft); }
+  .post-nav .to-list { color:var(--bronze); font-weight:600; }
+  .post-cta { text-align:center; padding:56px 24px 64px; background:var(--bg-soft);
+    border-top:1px solid var(--line); }
+  .post-cta p { font-size:14.5px; color:var(--text-dim); margin-bottom:1.4rem; }
+  .btn-bronze { display:inline-block; padding:12px 34px; background:var(--bronze); color:var(--ink);
+    border-radius:999px; font-size:14px; font-weight:700; }
+  .btn-bronze:hover { background:var(--bronze-soft); }
+  footer { padding:2rem 24px; text-align:center; font-size:11px; color:var(--text-faint);
+    letter-spacing:0.07em; }
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-title"><span class="star">★</span>모두의 품질</a>
+    <div class="nav-links">
+      <a href="../serial.html">연재 목록</a>
+      <a href="../index.html#cta" class="nav-buy">구매하기</a>
+    </div>
+  </div>
+</nav>
+<article>
+  <p class="post-cat">고객 <span class="post-pick">★ 추천</span></p>
+  <h1>기존 고객 vs 신규 고객</h1>
+  
+  <p class="post-no">연재 005 / 137</p>
+  <div class="post-body">
+      <p>- 어떠한 원칙으로 고객을 선택할 것인가?</p>
+      <p>'고객을 선택한다?'</p>
+      <p>누가 누굴 선택해? 어딜 감히....</p>
+      <p>보편적으로 고객이 선택을 하는 입장이며, 우리는 고객에게 선택을 받기 위해 부단한 노력을 한다. 하지만 가끔 고객을 선택해야 할 때가 온다.</p>
+      <p>실제로 기존 고객과 신규 고객이 동시에 업무 요청을 한 경우가 몇 차례 있었다. 기존 고객이 요구하는 기대 수준은 까다롭고 보상 수준도 그리 크지 않았고, 신규 고객이 요구하는 기대 수준은 충분히 감당할 만하고 보상의 수준도 기존 고객보다 더 높았다.</p>
+      <p>어떠한 고민을 하고, 어떠한 결정을 했을까?</p>
+      <p>결정하는 데에는 1분도 걸리지 않았다.</p>
+      <p>"죄송합니다. 제가 지금 여력이 되지 않아 귀사의 요청에 대응을 할 수 없을 듯합니다. 다음번에 기회가 주어진다면 꼭 함께 하겠습니다."</p>
+      <p>이 메시지를 신규 고객이 될 뻔한 조직에 전했다. 고객의 제안을 거절하게 되면 인연이 연결되는 가능성은 거의 없다.</p>
+      <p>나 스스로의 KPI를 관리한다면, 제1의 KPI는 '기존 고객의 만족도'이다.</p>
+      <p>몇 년 전, 모 컨설팅사에서 나와 독립을 했던 때였다. 당시의 상황은 살아오면서 손꼽을 정도의 힘든 시기였다. 어떤 인프라도 없이, 덩그러니 남겨져서 스스로 생존해 나가야 하는 상황이었다. 그때 힘이 되어준 곳이 기존의 고객들이었다.</p>
+      <p>"컨설턴트님의 도움이 필요한 곳이 있는데, 컨설팅 좀 해줄 수 있으신가요?"</p>
+      <p>나의 자존심을 세워주며, 오히려 부탁을 하면서 주변의 업체들을 소개해줬었다.소개받았던 첫 업체는 규모도 작고, 보상의 수준도 기존의 반도 되지 않았던 곳이었지만 정말 열정적으로 했었고, 그것이 마중물이 되어 초심을 흔들지 않고 지속적으로 성장할 수 있게 되었다.</p>
+      <p>나의 영업의 90% 이상은 기존 고객으로부터 파생된 프로젝트다. 고객이 얼마나 소중한지, 고객이 있어야 내가 있고, 고객이 없으면 정말 보잘 것 없는 존재라는 것을 너무나 잘 알고 있다.신규 고객을 창출하기 위한 노력의 50%만이라도 기존 고객에게 지속적으로 투자하면 그 성과는 10배, 100배 이상으로 돌아올 것을 믿는다.</p>
+      <p>고객의 비즈니스가 성공할 수 있도록 최선을 다해 돕는 것.</p>
+      <p>고객을 수단이 아닌 목적에 두고, 고객과 함께 성장하는 삶.</p>
+      <p>고객을 향한 원칙이다.</p>
+  </div>
+  <div class="post-tags"><span>#신규고객을창출하려는노력을기존고객을만족시키기위해쏟으면훨씬더큰성과를얻을수있다</span></div>
+  <div class="post-nav"><a href="004.html">← Message vs Messengr</a><a href="../serial.html" class="to-list">목록</a><a href="006.html" style="text-align:right;">고객의 성장을 바라보는 일 →</a></div>
+</article>
+<div class="post-cta">
+  <p>이 글의 생각들이 한 권으로 정리되었습니다.<br>성장하는 회사가 선택한 단 하나의 전략, 《모두의 품질》</p>
+  <a href="../index.html" class="btn-bronze">책 자세히 보기</a>
+</div>
+<footer>COPYRIGHT ⓒ ROUND UP COMPANY. ALL RIGHTS RESERVED.</footer>
+</body>
+</html>

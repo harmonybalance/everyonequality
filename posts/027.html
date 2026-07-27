@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>승부에서 절대 지지 않는 전략. | 모두의 품질 연재</title>
+<meta name="description" content="나는 내기를 좋아한다. 특히 돈을 걸고하는 미션/내기를 해서 잃어본 적은 단 한 번도 없다.
+      (물론 도박이 아니다. 참고로 고스톱도 할 줄 모른다. 그">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#111009; --bg-soft:#1A1810; --ink:#17150F; --bronze:#C2996B; --bronze-soft:#D6B58C;
+    --bronze-deep:#8F6C3F; --text:rgba(255,255,255,0.85); --text-dim:rgba(255,255,255,0.55);
+    --text-faint:rgba(255,255,255,0.38); --line:rgba(255,255,255,0.12); --serif:'Noto Serif KR',serif; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Pretendard Variable',Pretendard,-apple-system,sans-serif; background:var(--bg);
+    color:var(--text); line-height:1.75; -webkit-font-smoothing:antialiased; word-break:keep-all; }
+  a { color:inherit; text-decoration:none; }
+  nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(17,16,9,0.85);
+    backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+  .nav-inner { max-width:1000px; margin:0 auto; padding:0 24px; height:60px;
+    display:flex; align-items:center; justify-content:space-between; }
+  .nav-title { font-size:15px; font-weight:800; color:#fff; }
+  .nav-title .star { color:var(--bronze); margin-right:0.4rem; font-size:12px; }
+  .nav-links { display:flex; gap:1.4rem; align-items:center; }
+  .nav-links a { font-size:13px; font-weight:500; color:var(--text-dim); }
+  .nav-links a:hover { color:#fff; }
+  .nav-buy { padding:7px 18px; background:var(--bronze); color:var(--ink)!important;
+    border-radius:999px; font-size:12.5px!important; font-weight:700!important; }
+
+  article { max-width:720px; margin:0 auto; padding:130px 24px 80px; }
+  .post-cat { display:inline-flex; align-items:center; gap:0.6rem; font-size:11.5px; font-weight:700;
+    letter-spacing:0.2em; text-transform:uppercase; color:var(--bronze); margin-bottom:1.6rem; }
+  .post-pick { font-size:10.5px; letter-spacing:0.08em; border:1px solid var(--bronze-deep);
+    color:var(--bronze-soft); border-radius:999px; padding:2px 9px; }
+  h1 { font-size:clamp(26px,4.6vw,36px); font-weight:800; letter-spacing:-0.02em;
+    line-height:1.4; color:#fff; margin-bottom:0.7rem; }
+  .post-sub { font-size:15.5px; color:var(--bronze-soft); margin-bottom:1rem; }
+  .post-no { font-size:12.5px; color:var(--text-faint); margin-bottom:3rem;
+    padding-bottom:2rem; border-bottom:1px solid var(--line); }
+  .post-body { font-family:var(--serif); font-size:16.5px; font-weight:500; line-height:2.15; }
+  .post-body p { margin-bottom:1.6rem; }
+  .post-body strong { color:var(--bronze-soft); font-weight:700; }
+  .post-tags { margin-top:2.6rem; display:flex; flex-wrap:wrap; gap:0.5rem; }
+  .post-tags span { font-size:12px; color:var(--text-dim); border:1px solid var(--line);
+    border-radius:999px; padding:4px 12px; }
+  .post-nav { margin-top:3.5rem; padding-top:2rem; border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; gap:1rem; font-size:13.5px; }
+  .post-nav a { color:var(--text-dim); max-width:44%; }
+  .post-nav a:hover { color:var(--bronze-soft); }
+  .post-nav .to-list { color:var(--bronze); font-weight:600; }
+  .post-cta { text-align:center; padding:56px 24px 64px; background:var(--bg-soft);
+    border-top:1px solid var(--line); }
+  .post-cta p { font-size:14.5px; color:var(--text-dim); margin-bottom:1.4rem; }
+  .btn-bronze { display:inline-block; padding:12px 34px; background:var(--bronze); color:var(--ink);
+    border-radius:999px; font-size:14px; font-weight:700; }
+  .btn-bronze:hover { background:var(--bronze-soft); }
+  footer { padding:2rem 24px; text-align:center; font-size:11px; color:var(--text-faint);
+    letter-spacing:0.07em; }
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-title"><span class="star">★</span>모두의 품질</a>
+    <div class="nav-links">
+      <a href="../serial.html">연재 목록</a>
+      <a href="../index.html#cta" class="nav-buy">구매하기</a>
+    </div>
+  </div>
+</nav>
+<article>
+  <p class="post-cat">고객 </p>
+  <h1>승부에서 절대 지지 않는 전략.</h1>
+  
+  <p class="post-no">연재 027 / 137</p>
+  <div class="post-body">
+      <p>나는 내기를 좋아한다. 특히 돈을 걸고하는 미션/내기를 해서 잃어본 적은 단 한 번도 없다.</p>
+      <p>(물론 도박이 아니다. 참고로 고스톱도 할 줄 모른다. 그리고 돈내기에서 이겨서 한 번도 돈을 받아본 적도 없다. 내가 받으려는 생각이 없어서가 아니라, 진 사람이 줄 생각이 없었던 거 같다.)</p>
+      <p>승부욕이 강한 편이라, 승부를 볼 거면 반드시 이기는 방법을 찾아 이겨내야 직성이 풀린다. 내기에서 절대로 지지 않는 나만의 전략이 있다. 이 전략은 고객을 컨설팅하는 데에도 동일하게 적용이 된다.</p>
+      <p>일전에 포스팅을 한 적이 있지만, 꽤 많은 기업을 컨설팅 해오면서 단 한 번도 목표 달성에 실패한 적이 없다. 그 전략은 바로...</p>
+      <p>난 애초에 질 거 같은 승부는 하지 않는다. 반드시 이길 수 있는, 이길만한 것에만 승부를 건다. 그렇다고 해서 눈감고, 손 안 대고 해도 이길 수 있는 그런 목표만 승부 보는 것은 아니다. 적어도 고객에게는 생존이 걸린 굉장히 큰 목표들이기도 했다.</p>
+      <p>고객과의 만남에서 초창기에 미팅을 할 때면 장밋빛 미래를 이야기 하기보다는, 고객이 가지고 있는 허황된 목표를 현실적인 목표로 눈높이를 낮춘다. 다만 죽도록 최선을 다한다면, 도달할 수 있는 목표를 제시하고 협의한다. 달성 가능한 목표를 제시하는 고객이라고 다 함께하는 것은 아니다. 목표를 달성해나가는 과정이 올바르지 않다고 판단하면 시작도 하지 않는다.</p>
+      <p>지난주에 오랜만에 연락이 온 예전 고객으로부터 한 업체를 소개해준다라는 연락을 받았다. 소개해준다는 업체가 요청하는 것은, 1 달이라는 짧은 시간 동안 벼락치기로 준비해서 성과를 내는 것이었다. 사실 나의 전문분야라서 작정하고 마음만 먹으면 할 수는 있는 프로젝트였다.</p>
+      <p>하지만 나는 그 프로젝트를 거절했다. 단기간에 타이트하게 진행이 되기 때문에 꽤 큰 매출을 올릴 수 있었음에도 불구하고 말이다.</p>
+      <p>경험상 신규 고객의 요청을 거절하면, 그 고객과는 영원히 인연을 맺지 못하는 경우가 많다.</p>
+      <p>그럼에도 불구하고 거절을 한 이유는 성공은 시킬 수 있겠으나, 그것이 과연 그 조직을 위한 최선이 아닐 거란 생각이 들어서였다. 내가 주도적으로 준비해서, 프로젝트가 완결이 되어 고객이 희망하는 목표가 달성된다고 한들, 그 이후에 '제대로 유지되고 스스로 운영할 수 있을까?'라는 질문을 했을 때, 'No'라고 판단했기 때문이다.</p>
+      <p>나에게 있어 프로젝트의 성공은, 단지 고객이 원하는 성과를 내가 나서서 달성해주는 것이 아니라 고객이 스스로 이해하고, 스스로 실행하고, 스스로 문제를 해결하게 하는 것이다. 그런 관점에서 봤을 때엔, 난 그 프로젝트를 성공시킬 자신이 없었다. 나에게 고객은 최우선이고, 고객의 목표를 달성하기 위해서는 불법, 범법, 편법을 제외한 할 수 있는 수단과 방법을 가리지 않고 최선을 다한다. 단 그 목표를 내가 수긍한다는 전제하에.</p>
+      <p>이런 옹고집으로, 꽤 많은 곳에서 공동 프로젝트를 하자고 제의를 받았지만, 단 한 번도 협업으로 프로젝트를 진행한 적이 없다. 내가 잘나서도 아니고, 상대방들이 옳지 않아서도 아니다. 내가 옳다고 판단하는 선택에, 스스로 책임지고, 어떠한 방식으로든 달성하기 위한 최선을 다하기 위해선 100% 내 게임을 해야 한다. 남의 게임에 용병으로 들어가서는 내가 할 수 있는 대로 할 수 없다.</p>
+      <p>지킬 수 없는 것은 약속하지 말자. 하지만 약속했다면 어떤 일이 있더라도 지키자.</p>
+      <p>나의 철칙이다.</p>
+  </div>
+  
+  <div class="post-nav"><a href="026.html">← 감히 넘볼 수 없는 '넘사벽'의 조건</a><a href="../serial.html" class="to-list">목록</a><a href="028.html" style="text-align:right;">Push 보다 Pull →</a></div>
+</article>
+<div class="post-cta">
+  <p>이 글의 생각들이 한 권으로 정리되었습니다.<br>성장하는 회사가 선택한 단 하나의 전략, 《모두의 품질》</p>
+  <a href="../index.html" class="btn-bronze">책 자세히 보기</a>
+</div>
+<footer>COPYRIGHT ⓒ ROUND UP COMPANY. ALL RIGHTS RESERVED.</footer>
+</body>
+</html>

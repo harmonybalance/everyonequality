@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>두려움 없는 조직 | 모두의 품질 연재</title>
+<meta name="description" content="'심리적 안정감 (Psychological Safety)
+      - 구성원이 업무와 관련해 그 어떤 의견을 제기해도, 벌을 받거나 보복을 당하지 않을 거라고 ">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#111009; --bg-soft:#1A1810; --ink:#17150F; --bronze:#C2996B; --bronze-soft:#D6B58C;
+    --bronze-deep:#8F6C3F; --text:rgba(255,255,255,0.85); --text-dim:rgba(255,255,255,0.55);
+    --text-faint:rgba(255,255,255,0.38); --line:rgba(255,255,255,0.12); --serif:'Noto Serif KR',serif; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Pretendard Variable',Pretendard,-apple-system,sans-serif; background:var(--bg);
+    color:var(--text); line-height:1.75; -webkit-font-smoothing:antialiased; word-break:keep-all; }
+  a { color:inherit; text-decoration:none; }
+  nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(17,16,9,0.85);
+    backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+  .nav-inner { max-width:1000px; margin:0 auto; padding:0 24px; height:60px;
+    display:flex; align-items:center; justify-content:space-between; }
+  .nav-title { font-size:15px; font-weight:800; color:#fff; }
+  .nav-title .star { color:var(--bronze); margin-right:0.4rem; font-size:12px; }
+  .nav-links { display:flex; gap:1.4rem; align-items:center; }
+  .nav-links a { font-size:13px; font-weight:500; color:var(--text-dim); }
+  .nav-links a:hover { color:#fff; }
+  .nav-buy { padding:7px 18px; background:var(--bronze); color:var(--ink)!important;
+    border-radius:999px; font-size:12.5px!important; font-weight:700!important; }
+
+  article { max-width:720px; margin:0 auto; padding:130px 24px 80px; }
+  .post-cat { display:inline-flex; align-items:center; gap:0.6rem; font-size:11.5px; font-weight:700;
+    letter-spacing:0.2em; text-transform:uppercase; color:var(--bronze); margin-bottom:1.6rem; }
+  .post-pick { font-size:10.5px; letter-spacing:0.08em; border:1px solid var(--bronze-deep);
+    color:var(--bronze-soft); border-radius:999px; padding:2px 9px; }
+  h1 { font-size:clamp(26px,4.6vw,36px); font-weight:800; letter-spacing:-0.02em;
+    line-height:1.4; color:#fff; margin-bottom:0.7rem; }
+  .post-sub { font-size:15.5px; color:var(--bronze-soft); margin-bottom:1rem; }
+  .post-no { font-size:12.5px; color:var(--text-faint); margin-bottom:3rem;
+    padding-bottom:2rem; border-bottom:1px solid var(--line); }
+  .post-body { font-family:var(--serif); font-size:16.5px; font-weight:500; line-height:2.15; }
+  .post-body p { margin-bottom:1.6rem; }
+  .post-body strong { color:var(--bronze-soft); font-weight:700; }
+  .post-tags { margin-top:2.6rem; display:flex; flex-wrap:wrap; gap:0.5rem; }
+  .post-tags span { font-size:12px; color:var(--text-dim); border:1px solid var(--line);
+    border-radius:999px; padding:4px 12px; }
+  .post-nav { margin-top:3.5rem; padding-top:2rem; border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; gap:1rem; font-size:13.5px; }
+  .post-nav a { color:var(--text-dim); max-width:44%; }
+  .post-nav a:hover { color:var(--bronze-soft); }
+  .post-nav .to-list { color:var(--bronze); font-weight:600; }
+  .post-cta { text-align:center; padding:56px 24px 64px; background:var(--bg-soft);
+    border-top:1px solid var(--line); }
+  .post-cta p { font-size:14.5px; color:var(--text-dim); margin-bottom:1.4rem; }
+  .btn-bronze { display:inline-block; padding:12px 34px; background:var(--bronze); color:var(--ink);
+    border-radius:999px; font-size:14px; font-weight:700; }
+  .btn-bronze:hover { background:var(--bronze-soft); }
+  footer { padding:2rem 24px; text-align:center; font-size:11px; color:var(--text-faint);
+    letter-spacing:0.07em; }
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-title"><span class="star">★</span>모두의 품질</a>
+    <div class="nav-links">
+      <a href="../serial.html">연재 목록</a>
+      <a href="../index.html#cta" class="nav-buy">구매하기</a>
+    </div>
+  </div>
+</nav>
+<article>
+  <p class="post-cat">시스템과 문제해결 </p>
+  <h1>두려움 없는 조직</h1>
+  
+  <p class="post-no">연재 077 / 137</p>
+  <div class="post-body">
+      <p>'심리적 안정감 (Psychological Safety)</p>
+      <p>- 구성원이 업무와 관련해 그 어떤 의견을 제기해도, 벌을 받거나 보복을 당하지 않을 거라고 믿는 조직 환경</p>
+      <p>by 두려움 없는 조직</p>
+      <p>자랑이 될 지 모르지만 나는 무엇을 탁월하게 잘했던 적은 많지 않지만, 꾸준하게 그 자리를 지키는 것만큼은 잘 해왔던 거 같다.</p>
+      <p>첫 직장을 다니면서 한 번도 결근이나 지각한 적이 없고, 대학원을 다닐 때에도 한 번도 결석, 지각한적이 없다. 믿길지 모르지만, 한때 편도 2시간 거리를 통학하던 대학 4년 동안에도 한 번도 결석, 지각 한 적도 없다. 고등학교, 중학교 때에도 개근상을 받았다.</p>
+      <p>나의 완벽한 출근, 개근 커리어에 유일한 흠집이 하나 있는데, 초등학교 2학년 1학기 때, 단 1번의 결석이다. 이유는, 당시 다니던 미술학원에 교과서를 놔두고 왔기 때문이다.</p>
+      <p>'교과서를 놔두고 온게 뭐 대수냐'라고 생각할 수 있겠지만, 그때 학교 담임선생님께서 책을 안가지고 온 친구 뺨을 때리는 모습을 보고 충격을 받았었는데, 나도 빰 맞을게 두려워 학교를 가지 않았다. 그 어린나이에 아프다는 핑계를 대고.</p>
+      <p>30년이 지난, 어린 시절의 사건이지만 누군가를 무서워하고 두려워 하게되면,솔직해지지 못하게 되고, 그 결과 더 큰 문제가 될 수 있다란 것을 깨달은 첫 경험이지 않나 생각한다.</p>
+      <p>그런 관점에서 조직 내에서 리더의 역할은 매우 중요하다. 리더의 표정, 인상, 말투 하나에 부하직원이 조직을 대하고 일을 대하는 태도와 생각이 달라진다. 신경질적이고 까칠한 리더에게는, 부하직원들이 솔직해지기 어렵다. 솔직하지 못하면 문제가 드러나지 못하게 되고, 속에서 썪어서 전체를 무너뜨린다.</p>
+      <p>결과가 좋지 않을 때, 그것을 개인의 실수로 몰아가는 것이 아닌, 그렇게 나올 수 밖에 없었던 시스템의 문제, 리더의 관심, 모니터링의 문제는 아니었는지를 먼저 생각하고, 고민해봐야 하지 않을까?</p>
+      <p>심리적 안정감이 확보되는 것이, 조직의 성장과 혁신을 위한 기본이지 않을까?</p>
+      <p>아직까지 그런 완벽한 조직을 보진 못했지만, 나의 고객들과 조금씩 학습하며 노력해가고 있다. 심리적 안정감이 확보된 두려움 없는 조직이 만들어 내는 의미있는 결과가 어떨지 꼭 나눌 수 있기를 기대한다.</p>
+  </div>
+  
+  <div class="post-nav"><a href="076.html">← 내가 할 수 있는 것에 집중하라.</a><a href="../serial.html" class="to-list">목록</a><a href="078.html" style="text-align:right;">실패를 통해 깨달은 원칙 →</a></div>
+</article>
+<div class="post-cta">
+  <p>이 글의 생각들이 한 권으로 정리되었습니다.<br>성장하는 회사가 선택한 단 하나의 전략, 《모두의 품질》</p>
+  <a href="../index.html" class="btn-bronze">책 자세히 보기</a>
+</div>
+<footer>COPYRIGHT ⓒ ROUND UP COMPANY. ALL RIGHTS RESERVED.</footer>
+</body>
+</html>
