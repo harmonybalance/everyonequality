@@ -30,7 +30,7 @@
     --serif: 'Noto Serif KR', serif;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+  html { scroll-behavior: smooth; scroll-padding-top: 124px; }
   body {
     font-family: 'Pretendard Variable', Pretendard, -apple-system, sans-serif;
     background: var(--bg);
@@ -44,8 +44,22 @@
   .container { max-width: 880px; margin: 0 auto; padding: 0 24px; }
 
   /* ── Nav ── */
+  .topbar { position: fixed; top: 0; left: 0; right: 0; z-index: 100; }
+  .announce {
+    display: flex; align-items: center; justify-content: center;
+    gap: 0.45rem; flex-wrap: wrap;
+    background: var(--bronze); color: var(--ink);
+    font-size: 13px; font-weight: 600; padding: 9px 18px;
+    line-height: 1.5; transition: background 0.2s;
+  }
+  .announce:hover { background: var(--bronze-soft); }
+  .announce b { font-weight: 800; }
+  .announce-cta { font-weight: 700; text-decoration: underline; text-underline-offset: 3px; margin-left: 0.35rem; }
+  @media (max-width: 640px) {
+    .announce { font-size: 12px; padding: 8px 14px; }
+    .announce-sub { display: none; }
+  }
   nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
     background: rgba(17,16,9,0.82);
     backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid transparent;
@@ -89,7 +103,7 @@
   /* ── Hero ── */
   .hero {
     min-height: 100svh; display: flex; align-items: center; text-align: center;
-    padding: 130px 0 90px;
+    padding: 175px 0 90px;
     background: radial-gradient(ellipse 70% 45% at 50% 18%, rgba(198,156,109,0.16), transparent 65%), var(--bg);
   }
   .hero-inner { max-width: 760px; margin: 0 auto; padding: 0 24px; display: flex; flex-direction: column; align-items: center; }
@@ -249,6 +263,8 @@
 </head>
 <body>
 
+<div class="topbar">
+<a class="announce" href="event.html"><b>서평 인증 이벤트</b><span class="announce-sub">&nbsp;·&nbsp;전원 교육자료 + 추첨으로 싸인본·코칭·특강</span><span class="announce-cta">참여하기 →</span></a>
 <nav id="nav">
   <div class="nav-inner">
     <a href="#" class="nav-title"><span class="star">★</span>모두의 품질</a>
@@ -258,10 +274,12 @@
       <a href="#contents">목차</a>
       <a href="#author">저자</a>
       <a href="serial.html">연재</a>
+      <a href="event.html" style="color:#D6B58C;font-weight:600;">이벤트</a>
       <a href="#cta" class="nav-buy">구매하기</a>
     </div>
   </div>
 </nav>
+</div>
 
 <!-- Hero -->
 <header class="hero">
