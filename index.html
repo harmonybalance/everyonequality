@@ -273,12 +273,32 @@
   .feat-row span { font-size: 15.5px; color: var(--text); }
   .feat-row:hover span { color: #fff; }
   @media (max-width: 760px) { .cat-grid { grid-template-columns: repeat(2, 1fr); } .feat-row b { min-width: 74px; } }
+
+  /* Readers */
+  .reader { margin-top: 5.5rem; padding-top: 4.5rem; border-top: 1px solid var(--line); }
+  .reader-head { font-family: var(--serif); font-size: clamp(22px, 3.4vw, 28px); font-weight: 700; color: #fff; margin-bottom: 2rem; }
+  .rating-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.7rem; margin-bottom: 0.8rem; }
+  .rating { border: 1px solid var(--bronze-deep); border-radius: 14px; padding: 1.2rem 0.8rem; text-align: center; background: rgba(198,156,109,0.06); }
+  .rating b { display: block; font-size: 30px; font-weight: 800; color: var(--bronze-soft); line-height: 1.1; margin-bottom: 0.35rem; }
+  .rating span { font-size: 13px; color: var(--text-dim); }
+  .rating-note { font-size: 12px; color: var(--text-faint); margin-bottom: 2.4rem; }
+  .review-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; }
+  .rv { background: rgba(255,255,255,0.035); border: 1px solid var(--line); border-radius: 14px; padding: 1.6rem 1.5rem; display: flex; flex-direction: column; justify-content: space-between; gap: 1.1rem; }
+  .rv p { font-family: var(--serif); font-size: 15px; font-weight: 500; color: var(--text); line-height: 1.9; }
+  .rv span { font-size: 12px; color: var(--bronze); }
+  @media (max-width: 700px) { .review-grid { grid-template-columns: 1fr; } .rating b { font-size: 24px; } }
+  /* Video */
+  .video-sec { padding: 0 0 72px; background: var(--bg-soft); }
+  .video-card { border: 1px dashed var(--bronze-deep); border-radius: 16px; padding: 1.8rem 1.7rem; text-align: center; }
+  .vc-tag { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.14em; color: var(--bronze); margin-bottom: 0.7rem; }
+  .vc-head { font-size: clamp(17px, 2.4vw, 20px); font-weight: 800; color: #fff; margin-bottom: 0.4rem; }
+  .vc-sub { font-size: 14px; color: var(--text-dim); }
 </style>
 </head>
 <body>
 
 <div class="topbar">
-<a class="announce" href="event.html"><b>서평 인증 이벤트</b><span class="announce-sub">&nbsp;·&nbsp;전원 교육자료 PDF + 추첨으로 상품권·싸인본·특강</span><span class="announce-cta">참여하기 →</span></a>
+<a class="announce" href="#reader"><b>출간 2개월 만에 2쇄</b><span class="announce-sub">&nbsp;·&nbsp;교보문고·YES24·알라딘 독자 평점 10점 만점 (2026년 10월 기준)</span><span class="announce-cta">서평 보기 →</span></a>
 <nav id="nav">
   <div class="nav-inner">
     <a href="#" class="nav-title"><span class="star">★</span>모두의 품질</a>
@@ -288,7 +308,6 @@
       <a href="#contents">목차</a>
       <a href="#author">저자</a>
       <a href="serial.html">연재</a>
-      <a href="event.html" style="color:#D6B58C;font-weight:600;">이벤트</a>
       <a href="https://www.yes24.com/product/goods/194755999" target="_blank" rel="noopener" class="nav-buy">구매하기</a>
     </div>
   </div>
@@ -308,10 +327,10 @@
       <a href="https://www.yes24.com/product/goods/194755999" target="_blank" rel="noopener" class="btn-bronze">구매하기</a>
       <a href="#contents" class="btn-ghost">목차 보기</a>
     </div>
-    <a href="event.html" class="hero-event reveal">
-      <span class="he-tag">EVENT</span>
-      <span class="he-text">서평 인증 이벤트 · 전원 교육자료 PDF + 추첨 선물</span>
-      <span class="he-period">2026. 08. 20 ~ 09. 20</span>
+    <a href="https://www.roundupcompany.com/#contact" target="_blank" rel="noopener" class="hero-event reveal">
+      <span class="he-tag">특강</span>
+      <span class="he-text">《모두의 품질》 저자 특강 · 기업 단체구매 문의</span>
+      <span class="he-period">기업들의 단체 구매가 이어지고 있습니다</span>
       <span class="he-arrow">→</span>
     </a>
   </div>
@@ -349,6 +368,23 @@
       <div class="blurb reveal">단순한 품질 기술서가 아니라, 현장의 이야기를 생생하게 담은 경영서</div>
     </div>
     <p class="blurb-src reveal">현장의 경영자·실무자들의 극찬 중에서</p>
+
+    <div class="reader" id="reader">
+      <p class="eyebrow reveal">Readers</p>
+      <p class="reader-head reveal">독자들이 남긴 서평</p>
+      <div class="rating-row reveal">
+        <div class="rating"><b>10.0</b><span>교보문고</span></div>
+        <div class="rating"><b>10.0</b><span>YES24</span></div>
+        <div class="rating"><b>10.0</b><span>알라딘</span></div>
+      </div>
+      <p class="rating-note reveal">독자 평점 10점 만점 · 2026년 10월 기준</p>
+      <div class="review-grid">
+        <div class="rv reveal"><p>늘 '품질경영' 실행에 대한 갈증이 컸던 CEO로서 … 회사 경영진과 함께 읽고 고객이 원하는 방향과 맞춰 지속적인 성장을 위한 올바른 인식을 함께하고자 '모두의 품질'을 함께 읽기로 했습니다.</p><span>교보문고 구매자 리뷰</span></div>
+        <div class="rv reveal"><p>실무 경험을 바탕으로 품질 경영을 매우 쉽게 정리한 보기 드문 책</p><span>교보문고 구매자 리뷰</span></div>
+        <div class="rv reveal"><p>품질 얘기라길래 딱딱한 이론서인 줄 알았는데 매우 쉽고 재밌게 구성되어 있어서 술술 읽혔다.</p><span>YES24 회원 리뷰</span></div>
+        <div class="rv reveal"><p>매 챕터 마지막 부분마다 현장에서 함께 고민하고 나누면 좋을 질문들이 있어서 이 점도 유익했습니다.</p><span>YES24 회원 리뷰</span></div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -467,14 +503,25 @@
   </div>
 </section>
 
+<!-- Video -->
+<section class="video-sec">
+  <div class="container">
+    <div class="video-card reveal">
+      <span class="vc-tag">COMING SOON</span>
+      <p class="vc-head">《모두의 품질》 직무교육 영상 런칭 예정</p>
+      <p class="vc-sub">책의 내용을 실무자 직무교육 영상으로 만나실 수 있도록 준비하고 있습니다.</p>
+    </div>
+  </div>
+</section>
+
 <!-- CTA -->
 <div class="cta" id="cta">
   <span class="stars reveal">★★★★★</span>
   <h2 class="reveal">품질은 어쩌다 한 번 잘 만드는 운이 아니라,<br>한결같이 기대를 충족해 내는 일관성입니다</h2>
-  <p class="desc reveal">《모두의 품질》 · 박해원 지음 · 파지트<br>2026년 8월 출간, 온라인 서점에서 만나보실 수 있습니다.<br><br>책의 방법론을 조직에 적용하고 싶다면, 라운드업 컴퍼니가 함께합니다.</p>
+  <p class="desc reveal">《모두의 품질》 · 박해원 지음 · 파지트<br>출간 2개월 만에 2쇄, 온라인 서점에서 만나보실 수 있습니다.<br><br>책의 방법론을 조직에 적용하고 싶다면, 라운드업 컴퍼니가 함께합니다.</p>
   <div class="hero-btns reveal">
     <a href="https://www.yes24.com/product/goods/194755999" target="_blank" rel="noopener" class="btn-bronze">구매하기</a>
-    <a href="https://www.roundupcompany.com/#contact" class="btn-ghost" target="_blank" rel="noopener">강연·교육 문의</a>
+    <a href="https://www.roundupcompany.com/#contact" class="btn-ghost" target="_blank" rel="noopener">특강·단체구매 문의</a>
   </div>
 </div>
 
