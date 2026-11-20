@@ -30,7 +30,7 @@
     --serif: 'Noto Serif KR', serif;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; scroll-padding-top: 124px; }
+  html { scroll-behavior: smooth; scroll-padding-top: 84px; }
   body {
     font-family: 'Pretendard Variable', Pretendard, -apple-system, sans-serif;
     background: var(--bg);
@@ -103,7 +103,7 @@
   /* ── Hero ── */
   .hero {
     min-height: 100svh; display: flex; align-items: center; text-align: center;
-    padding: 175px 0 90px;
+    padding: 130px 0 90px;
     background: radial-gradient(ellipse 70% 45% at 50% 18%, rgba(198,156,109,0.16), transparent 65%), var(--bg);
   }
   .hero-inner { max-width: 760px; margin: 0 auto; padding: 0 24px; display: flex; flex-direction: column; align-items: center; }
@@ -148,8 +148,26 @@
   .btn-ghost:hover { border-color: #fff; color: #fff; }
   .hero-note { margin-top: 1.3rem; font-size: 12.5px; color: var(--text-faint); }
   .btn-store { padding: 15px 30px; }
-  .hero-news { margin-top: 2.2rem; font-size: 14px; font-weight: 500; color: var(--bronze-soft); letter-spacing: 0.01em; }
-  .hero-news::before { content: "\2605"; margin-right: 0.5rem; font-size: 11px; color: var(--bronze); }
+  .hero-event {
+    display: inline-flex; flex-wrap: wrap; align-items: center; justify-content: center;
+    gap: 0.5rem 0.9rem; margin-top: 2.6rem;
+    padding: 0.95rem 1.7rem; border: 1px solid var(--bronze-deep);
+    border-radius: 999px; background: rgba(198,156,109,0.09);
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .hero-event:hover { border-color: var(--bronze); background: rgba(198,156,109,0.16); }
+  .he-tag { font-size: 11px; font-weight: 800; letter-spacing: 0.1em; color: var(--ink);
+    background: var(--bronze); border-radius: 999px; padding: 3px 11px; }
+  .he-text { font-size: 14.5px; font-weight: 700; color: #fff; }
+  .he-sub { flex-basis: 100%; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.2rem 0; font-size: 12.5px; color: var(--bronze-soft); }
+  .he-sub span { white-space: nowrap; }
+  .he-sub span + span::before { content: "\00B7"; margin: 0 0.55rem; color: var(--bronze-deep); }
+  @media (max-width: 640px) {
+    .hero-event { padding: 0.95rem 1.2rem; border-radius: 22px; }
+    .he-text { font-size: 13.5px; }
+    .he-sub { font-size: 12px; flex-direction: column; align-items: center; }
+    .he-sub span + span::before { content: none; }
+  }
   @media (max-width: 640px) { .btn-store { padding: 14px 22px; font-size: 14px; } }
 
   /* ── About ── */
@@ -295,7 +313,6 @@
 <body>
 
 <div class="topbar">
-<a class="announce" href="#reader"><b>출간 3개월 만에 4쇄</b><span class="announce-sub">&nbsp;·&nbsp;교보문고·YES24·알라딘 독자 평점 10점 만점 (2026년 11월 기준)</span><span class="announce-cta">서평 보기 →</span></a>
 <nav id="nav">
   <div class="nav-inner">
     <a href="#" class="nav-title"><span class="star">★</span>모두의 품질</a>
@@ -325,7 +342,11 @@
       <a href="https://www.yes24.com/product/goods/194755999" target="_blank" rel="noopener" class="btn-bronze btn-store">YES24에서 구매</a>
       <a href="#contents" class="btn-ghost">목차 보기</a>
     </div>
-    <p class="hero-news reveal">여러 기업이 구성원과 함께 읽고 있습니다</p>
+    <a href="#reader" class="hero-event reveal">
+      <span class="he-tag">4쇄</span>
+      <span class="he-text">출간 3개월 만에 4쇄 · 독자 평점 10점 만점</span>
+      <span class="he-sub"><span>교보문고·YES24·알라딘 기준</span><span>여러 기업이 구성원과 함께 읽고 있습니다</span></span>
+    </a>
   </div>
 </header>
 
