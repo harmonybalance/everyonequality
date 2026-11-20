@@ -294,6 +294,12 @@
   .vc-tag { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.14em; color: var(--bronze); margin-bottom: 0.7rem; }
   .vc-head { font-size: clamp(17px, 2.4vw, 20px); font-weight: 800; color: #fff; margin-bottom: 0.4rem; }
   .vc-sub { font-size: 14px; color: var(--text-dim); }
+
+  .mail-row { margin-top: 1.8rem; display: inline-flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0.5rem 0.8rem; }
+  .mail-label { font-size: 12.5px; color: var(--text-faint); }
+  .mail-addr { font-size: 15px; font-weight: 600; color: var(--bronze-soft); letter-spacing: 0.01em; }
+  .mail-copy { font-family: inherit; font-size: 12px; font-weight: 600; color: var(--text-dim); background: transparent; border: 1px solid rgba(255,255,255,0.24); border-radius: 999px; padding: 5px 12px; cursor: pointer; transition: border-color 0.2s, color 0.2s; }
+  .mail-copy:hover { border-color: var(--bronze); color: var(--bronze-soft); }
 </style>
 </head>
 <body>
@@ -328,7 +334,7 @@
       <a href="https://www.yes24.com/product/goods/194755999" target="_blank" rel="noopener" class="btn-bronze">구매하기</a>
       <a href="#contents" class="btn-ghost">목차 보기</a>
     </div>
-    <a href="https://www.roundupcompany.com/#contact" target="_blank" rel="noopener" class="hero-event reveal">
+    <a href="#cta" class="hero-event reveal js-mail">
       <span class="he-tag">단체구매</span>
       <span class="he-text">여러 기업의 단체 구매가 이어지고 있습니다</span>
       <span class="he-period">저자 특강·단체구매 문의</span>
@@ -523,12 +529,18 @@
   <p class="desc reveal">《모두의 품질》 · 박해원 지음 · 파지트<br>출간 3개월 만에 4쇄, 온라인 서점에서 만나보실 수 있습니다.<br><br>책의 방법론을 조직에 적용하고 싶다면, 라운드업 컴퍼니가 함께합니다.</p>
   <div class="hero-btns reveal">
     <a href="https://www.yes24.com/product/goods/194755999" target="_blank" rel="noopener" class="btn-bronze">구매하기</a>
-    <a href="https://www.roundupcompany.com/#contact" class="btn-ghost" target="_blank" rel="noopener">특강·단체구매 문의</a>
+    <a href="#cta" class="btn-ghost js-mail">특강·단체구매 문의</a>
+  </div>
+  <div class="mail-row reveal">
+    <span class="mail-label">이메일</span>
+    <span class="mail-addr js-addr">biz [at] roundupcompany.com</span>
+    <button type="button" class="mail-copy" id="mailCopy">주소 복사</button>
   </div>
 </div>
 
 <footer>
   <p class="footer-line">이 책은 <a href="https://www.roundupcompany.com" target="_blank" rel="noopener">라운드업 컴퍼니</a>가 만들었습니다.</p>
+  <p class="footer-line">문의 <a href="#cta" class="js-mail js-addr">biz [at] roundupcompany.com</a></p>
   <p class="footer-copy">COPYRIGHT ⓒ ROUND UP COMPANY. ALL RIGHTS RESERVED.</p>
 </footer>
 
@@ -544,5 +556,20 @@ const io = new IntersectionObserver((entries) => {
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 </script>
 
+
+<script>
+(function(){
+  var addr = ['biz','roundupcompany.com'].join('@');
+  var subject = encodeURIComponent('[모두의 품질] 특강·단체구매 문의');
+  document.querySelectorAll('.js-addr').forEach(function(el){ el.textContent = addr; });
+  document.querySelectorAll('.js-mail').forEach(function(el){ el.setAttribute('href', 'mailto:' + addr + '?subject=' + subject); });
+  var btn = document.getElementById('mailCopy');
+  if (btn) btn.addEventListener('click', function(){
+    var done = function(){ btn.textContent = '복사되었습니다'; setTimeout(function(){ btn.textContent = '주소 복사'; }, 1800); };
+    if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(addr).then(done, function(){ window.prompt('주소를 복사하세요', addr); }); }
+    else { window.prompt('주소를 복사하세요', addr); }
+  });
+})();
+</script>
 </body>
 </html>
