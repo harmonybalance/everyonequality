@@ -147,21 +147,10 @@
   }
   .btn-ghost:hover { border-color: #fff; color: #fff; }
   .hero-note { margin-top: 1.3rem; font-size: 12.5px; color: var(--text-faint); }
-  .hero-event {
-    display: inline-flex; flex-wrap: wrap; align-items: center; justify-content: center;
-    gap: 0.5rem 0.9rem; margin-top: 2.6rem;
-    padding: 0.95rem 1.7rem; border: 1px solid var(--bronze-deep);
-    border-radius: 999px; background: rgba(198,156,109,0.09);
-    transition: border-color 0.2s, background 0.2s;
-  }
-  .hero-event:hover { border-color: var(--bronze); background: rgba(198,156,109,0.16); }
-  .he-tag { font-size: 11px; font-weight: 800; letter-spacing: 0.1em; color: var(--ink);
-    background: var(--bronze); border-radius: 999px; padding: 3px 11px; }
-  .he-text { font-size: 14px; font-weight: 600; color: var(--text); }
-  .he-period { font-size: 12.5px; color: var(--bronze-soft); }
-  .he-mail { font-size: 13.5px; font-weight: 700; color: #fff; letter-spacing: 0.01em; padding-left: 0.9rem; border-left: 1px solid rgba(198,156,109,0.45); }
-  .he-arrow { color: var(--bronze); font-weight: 800; }
-  @media (max-width: 640px) { .hero-event { padding: 0.85rem 1.2rem; } .he-text { font-size: 13px; } }
+  .btn-store { padding: 15px 30px; }
+  .hero-news { margin-top: 2.2rem; font-size: 14px; font-weight: 500; color: var(--bronze-soft); letter-spacing: 0.01em; }
+  .hero-news::before { content: "\2605"; margin-right: 0.5rem; font-size: 11px; color: var(--bronze); }
+  @media (max-width: 640px) { .btn-store { padding: 14px 22px; font-size: 14px; } }
 
   /* ── About ── */
   .about { background: var(--bg-soft); }
@@ -332,14 +321,11 @@
     <div class="hero-book reveal"><img src="book.png" alt="모두의 품질 도서 표지"></div>
     <p class="hero-meta reveal">박해원 지음 · 파지트 · 2026년 8월 출간</p>
     <div class="hero-btns reveal">
-      <a href="https://www.yes24.com/product/goods/194755999" target="_blank" rel="noopener" class="btn-bronze">구매하기</a>
+      <a href="https://product.kyobobook.co.kr/detail/S000220735580" target="_blank" rel="noopener" class="btn-bronze btn-store">교보문고에서 구매</a>
+      <a href="https://www.yes24.com/product/goods/194755999" target="_blank" rel="noopener" class="btn-bronze btn-store">YES24에서 구매</a>
       <a href="#contents" class="btn-ghost">목차 보기</a>
     </div>
-    <a href="#cta" class="hero-event reveal js-mail">
-      <span class="he-tag">단체구매</span>
-      <span class="he-text">여러 기업의 단체 구매가 이어지고 있습니다</span>
-      <span class="he-period">특강·단체구매 문의</span><span class="he-mail js-addr">biz [at] roundupcompany.com</span>
-    </a>
+    <p class="hero-news reveal">여러 기업이 구성원과 함께 읽고 있습니다</p>
   </div>
 </header>
 
@@ -528,7 +514,8 @@
   <h2 class="reveal">품질은 어쩌다 한 번 잘 만드는 운이 아니라,<br>한결같이 기대를 충족해 내는 일관성입니다</h2>
   <p class="desc reveal">《모두의 품질》 · 박해원 지음 · 파지트<br>출간 3개월 만에 4쇄, 온라인 서점에서 만나보실 수 있습니다.<br><br>책의 방법론을 조직에 적용하고 싶다면, 라운드업 컴퍼니가 함께합니다.</p>
   <div class="hero-btns reveal">
-    <a href="https://www.yes24.com/product/goods/194755999" target="_blank" rel="noopener" class="btn-bronze">구매하기</a>
+    <a href="https://product.kyobobook.co.kr/detail/S000220735580" target="_blank" rel="noopener" class="btn-bronze btn-store">교보문고에서 구매</a>
+    <a href="https://www.yes24.com/product/goods/194755999" target="_blank" rel="noopener" class="btn-bronze btn-store">YES24에서 구매</a>
     <a href="#cta" class="btn-ghost js-mail">특강·단체구매 문의</a>
   </div>
   <div class="mail-row reveal">
