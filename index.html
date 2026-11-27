@@ -235,7 +235,11 @@
   @media (max-width: 700px) { .chapters { columns: 1; } }
 
   /* ── Author ── */
-  .author-grid { display: grid; grid-template-columns: 240px 1fr; gap: 3.2rem; align-items: start; }
+  .author-grid { display: grid; grid-template-columns: 260px 1fr; gap: 3.2rem; align-items: start; }
+  .author-photo { position: relative; width: 100%; max-width: 260px; margin-bottom: 1.6rem; }
+  .author-photo::before { content: ""; position: absolute; inset: 8% -6% 0 -6%; background: radial-gradient(ellipse 60% 55% at 50% 45%, rgba(198,156,109,0.22), transparent 70%); z-index: 0; }
+  .author-photo img { position: relative; z-index: 1; display: block; width: 100%; height: auto;
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 9%, #000 91%, transparent 100%); mask-image: linear-gradient(to right, transparent 0, #000 9%, #000 91%, transparent 100%); }
   .author-name { font-size: clamp(26px, 4vw, 34px); font-weight: 800; color: #fff; margin-bottom: 0.4rem; }
   .author-role { font-size: 14px; color: var(--bronze-soft); margin-bottom: 1.6rem; }
   .author-link {
@@ -245,7 +249,7 @@
   }
   .author-link:hover { border-color: var(--bronze); color: var(--bronze-soft); }
   .author-bio p { font-size: 15px; color: var(--text-dim); line-height: 2.0; margin-bottom: 1.1rem; }
-  @media (max-width: 760px) { .author-grid { grid-template-columns: 1fr; gap: 1.8rem; } }
+  @media (max-width: 760px) { .author-grid { grid-template-columns: 1fr; gap: 1.8rem; } .author-photo { max-width: 220px; } }
 
   /* ── CTA ── */
   .cta {
@@ -484,6 +488,7 @@
     <p class="eyebrow reveal">Author</p>
     <div class="author-grid">
       <div class="reveal">
+        <div class="author-photo"><img src="author.webp" alt="《모두의 품질》 저자 박해원" width="540" height="720" loading="lazy"></div>
         <p class="author-name">박해원</p>
         <p class="author-role">라운드업컴퍼니 대표</p>
         <a href="https://www.roundupcompany.com" class="author-link" target="_blank" rel="noopener">ROUND UP COMPANY →</a>
